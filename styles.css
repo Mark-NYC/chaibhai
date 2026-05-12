@@ -259,7 +259,7 @@ a {
   color: #fff;
   isolation: isolate;
   background:
-    linear-gradient(90deg, rgba(43, 22, 13, 0.58) 0%, rgba(147, 36, 22, 0.38) 44%, rgba(43, 22, 13, 0.08) 100%),
+    linear-gradient(90deg, rgba(43, 22, 13, 0.58) 0%, rgba(147, 36, 22, 0.38) 24%, rgba(43, 22, 13, 0.08) 80%),
     url("assets/images/jackson-heights.webp") center / cover no-repeat;
 }
 
