@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- REPLACE: Update title and description with your business name and what you do -->
+  <title>Chaibhai — Authentic Chai & More</title>
+  <meta name="description" content="<!-- REPLACE: One sentence describing your business and what makes it special -->" />
+
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- REPLACE: Add your favicon here once you have one -->
+  <!-- <link rel="icon" href="./assets/images/favicon.png" type="image/png" /> -->
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="site-header">
+    <nav class="nav container">
+      <!-- REPLACE: Your business name / logo -->
+      <a href="#" class="nav__logo">Chaibhai</a>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#offerings">Menu</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact" class="btn btn--small">Order Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- ============================================================
+       SECTION 1 — HERO
+  ============================================================ -->
+  <section class="hero">
+    <div class="hero__inner container">
+      <div class="hero__text">
+        <!-- REPLACE: Your main headline — make it specific and compelling -->
+        <h1 class="hero__headline">The Chai That Feels<br>Like Home</h1>
+
+        <!-- REPLACE: One or two sentences. What do you offer? Who is it for? -->
+        <p class="hero__sub">
+          Small-batch masala chai brewed the slow way — rich, warming, and made
+          with spices sourced directly from family farms.
+        </p>
+
+        <!-- REPLACE: CTA text and link — could be a menu, order form, WhatsApp, etc. -->
+        <a href="#offerings" class="btn btn--primary btn--large">See the Menu</a>
+      </div>
+
+      <div class="hero__image">
+        <!-- REPLACE: Add your hero image. Suggested size: 1200×800px, name it hero.jpg -->
+        <img
+          src="./assets/images/hero.jpg"
+          alt="<!-- REPLACE: describe the image, e.g. 'A steaming cup of masala chai on a wooden table' -->"
+          class="hero__img"
+          width="600"
+          height="400"
+          onerror="this.closest('.hero__image').classList.add('hero__image--placeholder')"
+        />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 2 — WHY IT MATTERS
+  ============================================================ -->
+  <section class="why" id="why">
+    <div class="container">
+      <!-- REPLACE: Section headline -->
+      <h2 class="section-title">Not Your Average Chai</h2>
+
+      <div class="why__grid">
+        <!-- REPLACE: Each card — icon (emoji or swap with an SVG), title, description -->
+        <div class="why__card">
+          <span class="why__icon">🌿</span>
+          <h3>Real Ingredients</h3>
+          <p>No powder, no shortcuts. Whole spices, fresh ginger, and full-fat milk — the way it's meant to taste.</p>
+        </div>
+
+        <div class="why__card">
+          <span class="why__icon">🔥</span>
+          <h3>Slow Brewed</h3>
+          <p>Each batch simmers low and slow so every cup is thick, layered, and worth the wait.</p>
+        </div>
+
+        <div class="why__card">
+          <span class="why__icon">📦</span>
+          <h3><!-- REPLACE: Third selling point title --></h3>
+          <p><!-- REPLACE: Third selling point description. Could be delivery, catering, custom orders, etc. --></p>
+        </div>
+
+        <div class="why__card">
+          <span class="why__icon">❤️</span>
+          <h3><!-- REPLACE: Fourth selling point title --></h3>
+          <p><!-- REPLACE: Fourth selling point description --></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 3 — OFFERINGS / MENU / SERVICES
+  ============================================================ -->
+  <section class="offerings" id="offerings">
+    <div class="container">
+      <!-- REPLACE: Section headline -->
+      <h2 class="section-title">What We Make</h2>
+      <!-- REPLACE: Optional subtitle -->
+      <p class="section-sub">Everything is made fresh. Order ahead for same-day pickup.</p>
+
+      <div class="offerings__grid">
+
+        <!-- REPLACE: Each card — image, name, description, price -->
+        <article class="offer-card">
+          <!-- REPLACE: Product image. Suggested: 600×400px, named e.g. classic-chai.jpg -->
+          <div class="offer-card__img-wrap">
+            <img src="./assets/images/classic-chai.jpg" alt="Classic Masala Chai" loading="lazy"
+              onerror="this.closest('.offer-card__img-wrap').classList.add('img--placeholder')" />
+          </div>
+          <div class="offer-card__body">
+            <h3 class="offer-card__name">Classic Masala Chai</h3>
+            <p class="offer-card__desc">The original. Bold, spiced, and unapologetically strong.</p>
+            <!-- REPLACE: Price -->
+            <span class="offer-card__price">$5</span>
+          </div>
+        </article>
+
+        <article class="offer-card">
+          <div class="offer-card__img-wrap">
+            <img src="./assets/images/cardamom-rose.jpg" alt="Cardamom Rose Chai" loading="lazy"
+              onerror="this.closest('.offer-card__img-wrap').classList.add('img--placeholder')" />
+          </div>
+          <div class="offer-card__body">
+            <!-- REPLACE: Second item name, description, price -->
+            <h3 class="offer-card__name">Cardamom Rose</h3>
+            <p class="offer-card__desc">Lighter and floral — great for those who want something a little softer.</p>
+            <span class="offer-card__price">$5</span>
+          </div>
+        </article>
+
+        <article class="offer-card">
+          <div class="offer-card__img-wrap">
+            <img src="./assets/images/item-3.jpg" alt="<!-- REPLACE: item name -->" loading="lazy"
+              onerror="this.closest('.offer-card__img-wrap').classList.add('img--placeholder')" />
+          </div>
+          <div class="offer-card__body">
+            <!-- REPLACE: Third item -->
+            <h3 class="offer-card__name"><!-- REPLACE: Item name --></h3>
+            <p class="offer-card__desc"><!-- REPLACE: Item description --></p>
+            <span class="offer-card__price"><!-- REPLACE: Price --></span>
+          </div>
+        </article>
+
+        <article class="offer-card">
+          <div class="offer-card__img-wrap">
+            <img src="./assets/images/item-4.jpg" alt="<!-- REPLACE: item name -->" loading="lazy"
+              onerror="this.closest('.offer-card__img-wrap').classList.add('img--placeholder')" />
+          </div>
+          <div class="offer-card__body">
+            <!-- REPLACE: Fourth item -->
+            <h3 class="offer-card__name"><!-- REPLACE: Item name --></h3>
+            <p class="offer-card__desc"><!-- REPLACE: Item description --></p>
+            <span class="offer-card__price"><!-- REPLACE: Price --></span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- REPLACE: CTA — could link to a full menu PDF, Google Form, WhatsApp, etc. -->
+      <div class="offerings__cta">
+        <a href="#contact" class="btn btn--primary">Place an Order</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 4 — ABOUT
+  ============================================================ -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__image">
+        <!-- REPLACE: A photo of you, your kitchen, your setup, etc. Suggested: 800×600px -->
+        <img
+          src="./assets/images/about.jpg"
+          alt="<!-- REPLACE: e.g. 'Owner brewing chai in the kitchen' -->"
+          loading="lazy"
+          onerror="this.closest('.about__image').classList.add('img--placeholder')"
+        />
+      </div>
+      <div class="about__text">
+        <!-- REPLACE: Section label (optional — can remove) -->
+        <span class="eyebrow">Our Story</span>
+
+        <!-- REPLACE: About headline -->
+        <h2>Made with Love,<br>Served with Pride</h2>
+
+        <!-- REPLACE: 2–3 sentences about you, your background, your mission -->
+        <p>
+          Chaibhai started in a small Brooklyn kitchen with one goal: make chai
+          the way grandmothers do — unhurried, unapologetic, and deeply satisfying.
+        </p>
+        <p>
+          <!-- REPLACE: More about your story, your sourcing, your values, etc. -->
+          Every spice is hand-selected. Every batch is brewed to order. We don't
+          believe in shortcuts because you deserve the real thing.
+        </p>
+
+        <!-- REPLACE: CTA — could be About page, Instagram, or just scroll to menu -->
+        <a href="#offerings" class="btn btn--outline">See What We Offer</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 5 — TESTIMONIALS
+  ============================================================ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <!-- REPLACE: Section headline -->
+      <h2 class="section-title">What People Are Saying</h2>
+
+      <div class="testimonials__grid">
+
+        <!-- REPLACE: Each quote. Remove the (placeholder) note when you have real ones. -->
+        <blockquote class="testimonial">
+          <p class="testimonial__quote">
+            "<!-- REPLACE: Paste in a real customer quote here -->"
+          </p>
+          <footer class="testimonial__author">
+            <!-- REPLACE: Customer name and optional location/context -->
+            <strong>— Customer Name</strong>
+            <span>Location or context (e.g. "Brooklyn, NY")</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial">
+          <p class="testimonial__quote">
+            "<!-- REPLACE: Second customer quote -->"
+          </p>
+          <footer class="testimonial__author">
+            <strong>— Customer Name</strong>
+            <span>Location or context</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial">
+          <p class="testimonial__quote">
+            "<!-- REPLACE: Third customer quote -->"
+          </p>
+          <footer class="testimonial__author">
+            <strong>— Customer Name</strong>
+            <span>Location or context</span>
+          </footer>
+        </blockquote>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 6 — FAQ
+  ============================================================ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 class="section-title">Common Questions</h2>
+
+      <div class="faq__list">
+
+        <!-- REPLACE: Each question and answer. Add or remove items as needed. -->
+        <details class="faq__item">
+          <summary class="faq__question"><!-- REPLACE: Question 1 -->How do I place an order?</summary>
+          <div class="faq__answer">
+            <p><!-- REPLACE: Answer. Include your preferred contact method — text, Instagram DM, website form, etc. -->
+              The easiest way is to DM us on Instagram or send a text to the number below.
+              We'll confirm your order and arrange pickup or delivery.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question"><!-- REPLACE: Question 2 -->Do you offer delivery?</summary>
+          <div class="faq__answer">
+            <p><!-- REPLACE: Your actual delivery policy --></p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question"><!-- REPLACE: Question 3 -->Do you cater events?</summary>
+          <div class="faq__answer">
+            <p><!-- REPLACE: Your catering info or "not at this time" --></p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question"><!-- REPLACE: Question 4 -->Is the chai vegan / dairy-free?</summary>
+          <div class="faq__answer">
+            <p><!-- REPLACE: Your actual ingredients and any substitution options --></p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question"><!-- REPLACE: Question 5 -->Can I order in bulk?</summary>
+          <div class="faq__answer">
+            <p><!-- REPLACE: Bulk / wholesale info --></p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 7 — FINAL CTA / CONTACT
+  ============================================================ -->
+  <section class="cta-final" id="contact">
+    <div class="container cta-final__inner">
+      <!-- REPLACE: Headline for the final push -->
+      <h2>Ready for a Proper Cup?</h2>
+
+      <!-- REPLACE: Subtext -->
+      <p>Order ahead, ask a question, or just say hi. We'd love to hear from you.</p>
+
+      <div class="cta-final__actions">
+        <!-- REPLACE: Primary CTA — swap href for your ordering link, WhatsApp, form, etc. -->
+        <a href="<!-- REPLACE: ordering link -->" class="btn btn--primary btn--large">Order Now</a>
+
+        <!-- REPLACE: Secondary CTA — could be Instagram, email, etc. -->
+        <a href="<!-- REPLACE: Instagram URL e.g. https://instagram.com/yourusername -->" class="btn btn--outline btn--large" target="_blank" rel="noopener">
+          Follow on Instagram
+        </a>
+      </div>
+
+      <address class="contact-info">
+        <!-- REPLACE: Your actual contact details. Remove any you don't want public. -->
+        <p>
+          <!-- REPLACE: Phone number (tap-to-call) -->
+          <a href="tel:+1XXXXXXXXXX">+1 (XXX) XXX-XXXX</a>
+        </p>
+        <p>
+          <!-- REPLACE: Email address -->
+          <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>
+        </p>
+        <p>
+          <!-- REPLACE: Address or neighborhood (or remove if pickup-by-arrangement) -->
+          Brooklyn, NY
+        </p>
+      </address>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <!-- REPLACE: Business name -->
+      <span class="site-footer__brand">Chaibhai</span>
+
+      <nav class="site-footer__links" aria-label="Footer links">
+        <!-- REPLACE: Update or remove social links. Add real URLs. -->
+        <a href="<!-- REPLACE: Instagram URL -->" target="_blank" rel="noopener">Instagram</a>
+        <!-- <a href="<!-- REPLACE: Facebook URL -->">Facebook</a> -->
+        <!-- <a href="<!-- REPLACE: TikTok URL -->">TikTok</a> -->
+      </nav>
+
+      <!-- REPLACE: Your business name and founding year -->
+      <small>&copy; <span id="year"></span> Chaibhai. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
