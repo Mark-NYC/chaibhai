@@ -253,9 +253,15 @@ a {
   padding: 88px 0 72px;
   color: #fff;
   isolation: isolate;
-  background:
-    linear-gradient(90deg, rgba(43, 22, 13, 0.74) 0%, rgba(117, 35, 22, 0.56) 34%, rgba(43, 22, 13, 0.20) 82%),
-    url("assets/images/jackson-heights.webp") center / cover no-repeat;
+background:
+  linear-gradient(
+    90deg,
+    rgba(43, 22, 13, 0.88) 0%,
+    rgba(43, 22, 13, 0.82) 48%,
+    rgba(117, 35, 22, 0.42) 68%,
+    rgba(43, 22, 13, 0.16) 100%
+  ),
+  url("assets/images/jackson-heights.webp") center / cover no-repeat;
 }
 
 .chb-hero::before {
