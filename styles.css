@@ -252,7 +252,6 @@ a {
 }
 
 /* Hero */
-/* Hero */
 .chb-hero {
   position: relative;
   min-height: 760px;
@@ -260,7 +259,7 @@ a {
   color: #fff;
   isolation: isolate;
   background:
-    linear-gradient(90deg, rgba(43, 22, 13, 0.58) 0%, rgba(147, 36, 22, 0.38) 24%, rgba(43, 22, 13, 0.08) 80%),
+    linear-gradient(90deg, rgba(43, 22, 13, 0.74) 0%, rgba(117, 35, 22, 0.56) 34%, rgba(43, 22, 13, 0.20) 82%),
     url("assets/images/jackson-heights.webp") center / cover no-repeat;
 }
 
@@ -270,8 +269,8 @@ a {
   inset: 0;
   z-index: 1;
   background:
-    radial-gradient(circle at 20% 20%, rgba(247, 201, 72, 0.10), transparent 30%),
-    linear-gradient(180deg, rgba(43, 22, 13, 0.02), rgba(43, 22, 13, 0.16));
+    radial-gradient(circle at 20% 20%, rgba(247, 201, 72, 0.12), transparent 32%),
+    linear-gradient(180deg, rgba(43, 22, 13, 0.08), rgba(43, 22, 13, 0.28));
   pointer-events: none;
 }
 
@@ -1247,7 +1246,7 @@ a {
   .chb-hero {
     padding: 56px 0 54px;
     background:
-      linear-gradient(180deg, rgba(43, 22, 13, 0.58) 0%, rgba(147, 36, 22, 0.42) 58%, rgba(43, 22, 13, 0.18) 100%),
+      linear-gradient(180deg, rgba(43, 22, 13, 0.74) 0%, rgba(117, 35, 22, 0.58) 56%, rgba(43, 22, 13, 0.30) 100%),
       url("assets/images/jackson-heights.webp") center / cover no-repeat;
   }
 
