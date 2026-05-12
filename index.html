@@ -4,386 +4,655 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- REPLACE: Update title and description with your business name and what you do -->
-  <title>Chaibhai — Authentic Chai & More</title>
-  <meta name="description" content="<!-- REPLACE: One sentence describing your business and what makes it special -->" />
+  <title>Jackson Heights Food Tour in Queens NYC | Chai Bhai Tours</title>
+  <meta name="description" content="Book a Jackson Heights food tour in Queens, NYC. Taste momos, chai, sweets, street food, and local favorites with Jim, a local guide. Easy subway ride from Manhattan." />
+
+  <!-- TODO: Update this canonical URL once chaibhai.net is pointed at GitHub Pages.
+       It should match your final live domain exactly, including trailing slash. -->
+  <link rel="canonical" href="https://chaibhai.net/" />
+
+  <meta property="og:title" content="Jackson Heights Food Tour in Queens NYC | Chai Bhai Tours" />
+  <meta property="og:description" content="Taste the real Queens on a small-group Jackson Heights food and culture walking tour with a local guide." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chaibhai.net/" />
+  <!-- TODO: Upload the OG image to assets/images/ and update this URL to match your live domain. -->
+  <meta property="og:image" content="https://chaibhai.net/assets/images/jackson-heights-food-tour-og.jpg" />
+
+  <!-- TODO: All URLs in this JSON-LD block use https://chaibhai.net/ as the final domain.
+       Once chaibhai.net is live and pointed at this site, no changes needed here.
+       If you launch at a different domain first, do a find-and-replace on chaibhai.net. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TravelAgency",
+        "@id": "https://chaibhai.net/#business",
+        "name": "Chai Bhai Tours",
+        "url": "https://chaibhai.net/",
+        "image": "https://chaibhai.net/assets/images/jackson-heights-food-tour-og.jpg",
+        "description": "Small-group food and culture walking tours in Jackson Heights, Queens, NYC.",
+        "areaServed": [
+          "Jackson Heights",
+          "Queens",
+          "New York City"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Jackson Heights",
+          "addressRegion": "NY",
+          "addressCountry": "US"
+        },
+        "email": "hello@chaibhai.net",
+        "sameAs": [
+          "REPLACE_WITH_INSTAGRAM_URL",
+          "REPLACE_WITH_TRIPADVISOR_URL",
+          "REPLACE_WITH_AIRBNB_EXPERIENCE_URL",
+          "REPLACE_WITH_GOOGLE_BUSINESS_PROFILE_URL"
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://chaibhai.net/#jackson-heights-food-tour",
+        "name": "Jackson Heights Food Tour in Queens NYC",
+        "serviceType": "Food and culture walking tour",
+        "provider": {
+          "@id": "https://chaibhai.net/#business"
+        },
+        "areaServed": [
+          "Jackson Heights",
+          "Queens",
+          "New York City"
+        ],
+        "description": "A small-group Jackson Heights food tour in Queens, NYC with multiple food stops, local stories, and easy subway access from Manhattan."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://chaibhai.net/#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://chaibhai.net/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Jackson Heights Food Tour",
+            "item": "https://chaibhai.net/#book"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://chaibhai.net/#faq-schema",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is Jackson Heights easy to get to from Manhattan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Jackson Heights is easy to reach by subway from many Manhattan hotel areas. Exact meeting point and directions are sent after booking."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is food included in the Jackson Heights food tour?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, multiple food stops are included unless otherwise noted on the booking page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long is the Queens food tour?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Jackson Heights food tour is about 2.5 hours at a relaxed walking pace."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer private food tours in Queens?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Private NYC food tours can be requested for families, teams, school groups, birthdays, and custom experiences."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
   <link rel="stylesheet" href="./styles.css" />
-
-  <!-- REPLACE: Add your favicon here once you have one -->
-  <!-- <link rel="icon" href="./assets/images/favicon.png" type="image/png" /> -->
 </head>
+
 <body>
-
-  <!-- ============================================================
-       NAVIGATION
-  ============================================================ -->
-  <header class="site-header">
-    <nav class="nav container">
-      <!-- REPLACE: Your business name / logo -->
-      <a href="#" class="nav__logo">Chaibhai</a>
-
-      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <ul class="nav__links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#offerings">Menu</a></li>
-        <li><a href="#testimonials">Reviews</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact" class="btn btn--small">Order Now</a></li>
-      </ul>
-    </nav>
-  </header>
-
-
-  <!-- ============================================================
-       SECTION 1 — HERO
-  ============================================================ -->
-  <section class="hero">
-    <div class="hero__inner container">
-      <div class="hero__text">
-        <!-- REPLACE: Your main headline — make it specific and compelling -->
-        <h1 class="hero__headline">The Chai That Feels<br>Like Home</h1>
-
-        <!-- REPLACE: One or two sentences. What do you offer? Who is it for? -->
-        <p class="hero__sub">
-          Small-batch masala chai brewed the slow way — rich, warming, and made
-          with spices sourced directly from family farms.
-        </p>
-
-        <!-- REPLACE: CTA text and link — could be a menu, order form, WhatsApp, etc. -->
-        <a href="#offerings" class="btn btn--primary btn--large">See the Menu</a>
-      </div>
-
-      <div class="hero__image">
-        <!-- REPLACE: Add your hero image. Suggested size: 1200×800px, name it hero.jpg -->
-        <img
-          src="./assets/images/hero.jpg"
-          alt="<!-- REPLACE: describe the image, e.g. 'A steaming cup of masala chai on a wooden table' -->"
-          class="hero__img"
-          width="600"
-          height="400"
-          onerror="this.closest('.hero__image').classList.add('hero__image--placeholder')"
-        />
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       SECTION 2 — WHY IT MATTERS
-  ============================================================ -->
-  <section class="why" id="why">
-    <div class="container">
-      <!-- REPLACE: Section headline -->
-      <h2 class="section-title">Not Your Average Chai</h2>
-
-      <div class="why__grid">
-        <!-- REPLACE: Each card — icon (emoji or swap with an SVG), title, description -->
-        <div class="why__card">
-          <span class="why__icon">🌿</span>
-          <h3>Real Ingredients</h3>
-          <p>No powder, no shortcuts. Whole spices, fresh ginger, and full-fat milk — the way it's meant to taste.</p>
-        </div>
-
-        <div class="why__card">
-          <span class="why__icon">🔥</span>
-          <h3>Slow Brewed</h3>
-          <p>Each batch simmers low and slow so every cup is thick, layered, and worth the wait.</p>
-        </div>
-
-        <div class="why__card">
-          <span class="why__icon">📦</span>
-          <h3><!-- REPLACE: Third selling point title --></h3>
-          <p><!-- REPLACE: Third selling point description. Could be delivery, catering, custom orders, etc. --></p>
-        </div>
-
-        <div class="why__card">
-          <span class="why__icon">❤️</span>
-          <h3><!-- REPLACE: Fourth selling point title --></h3>
-          <p><!-- REPLACE: Fourth selling point description --></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       SECTION 3 — OFFERINGS / MENU / SERVICES
-  ============================================================ -->
-  <section class="offerings" id="offerings">
-    <div class="container">
-      <!-- REPLACE: Section headline -->
-      <h2 class="section-title">What We Make</h2>
-      <!-- REPLACE: Optional subtitle -->
-      <p class="section-sub">Everything is made fresh. Order ahead for same-day pickup.</p>
-
-      <div class="offerings__grid">
-
-        <!-- REPLACE: Each card — image, name, description, price -->
-        <article class="offer-card">
-          <!-- REPLACE: Product image. Suggested: 600×400px, named e.g. classic-chai.jpg -->
-          <div class="offer-card__img-wrap">
-            <img src="./assets/images/classic-chai.jpg" alt="Classic Masala Chai" loading="lazy"
-              onerror="this.closest('.offer-card__img-wrap').classList.add('img--placeholder')" />
-          </div>
-          <div class="offer-card__body">
-            <h3 class="offer-card__name">Classic Masala Chai</h3>
-            <p class="offer-card__desc">The original. Bold, spiced, and unapologetically strong.</p>
-            <!-- REPLACE: Price -->
-            <span class="offer-card__price">$5</span>
-          </div>
-        </article>
-
-        <article class="offer-card">
-          <div class="offer-card__img-wrap">
-            <img src="./assets/images/cardamom-rose.jpg" alt="Cardamom Rose Chai" loading="lazy"
-              onerror="this.closest('.offer-card__img-wrap').classList.add('img--placeholder')" />
-          </div>
-          <div class="offer-card__body">
-            <!-- REPLACE: Second item name, description, price -->
-            <h3 class="offer-card__name">Cardamom Rose</h3>
-            <p class="offer-card__desc">Lighter and floral — great for those who want something a little softer.</p>
-            <span class="offer-card__price">$5</span>
-          </div>
-        </article>
-
-        <article class="offer-card">
-          <div class="offer-card__img-wrap">
-            <img src="./assets/images/item-3.jpg" alt="<!-- REPLACE: item name -->" loading="lazy"
-              onerror="this.closest('.offer-card__img-wrap').classList.add('img--placeholder')" />
-          </div>
-          <div class="offer-card__body">
-            <!-- REPLACE: Third item -->
-            <h3 class="offer-card__name"><!-- REPLACE: Item name --></h3>
-            <p class="offer-card__desc"><!-- REPLACE: Item description --></p>
-            <span class="offer-card__price"><!-- REPLACE: Price --></span>
-          </div>
-        </article>
-
-        <article class="offer-card">
-          <div class="offer-card__img-wrap">
-            <img src="./assets/images/item-4.jpg" alt="<!-- REPLACE: item name -->" loading="lazy"
-              onerror="this.closest('.offer-card__img-wrap').classList.add('img--placeholder')" />
-          </div>
-          <div class="offer-card__body">
-            <!-- REPLACE: Fourth item -->
-            <h3 class="offer-card__name"><!-- REPLACE: Item name --></h3>
-            <p class="offer-card__desc"><!-- REPLACE: Item description --></p>
-            <span class="offer-card__price"><!-- REPLACE: Price --></span>
-          </div>
-        </article>
-
-      </div>
-
-      <!-- REPLACE: CTA — could link to a full menu PDF, Google Form, WhatsApp, etc. -->
-      <div class="offerings__cta">
-        <a href="#contact" class="btn btn--primary">Place an Order</a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       SECTION 4 — ABOUT
-  ============================================================ -->
-  <section class="about" id="about">
-    <div class="container about__inner">
-      <div class="about__image">
-        <!-- REPLACE: A photo of you, your kitchen, your setup, etc. Suggested: 800×600px -->
-        <img
-          src="./assets/images/about.jpg"
-          alt="<!-- REPLACE: e.g. 'Owner brewing chai in the kitchen' -->"
-          loading="lazy"
-          onerror="this.closest('.about__image').classList.add('img--placeholder')"
-        />
-      </div>
-      <div class="about__text">
-        <!-- REPLACE: Section label (optional — can remove) -->
-        <span class="eyebrow">Our Story</span>
-
-        <!-- REPLACE: About headline -->
-        <h2>Made with Love,<br>Served with Pride</h2>
-
-        <!-- REPLACE: 2–3 sentences about you, your background, your mission -->
-        <p>
-          Chaibhai started in a small Brooklyn kitchen with one goal: make chai
-          the way grandmothers do — unhurried, unapologetic, and deeply satisfying.
-        </p>
-        <p>
-          <!-- REPLACE: More about your story, your sourcing, your values, etc. -->
-          Every spice is hand-selected. Every batch is brewed to order. We don't
-          believe in shortcuts because you deserve the real thing.
-        </p>
-
-        <!-- REPLACE: CTA — could be About page, Instagram, or just scroll to menu -->
-        <a href="#offerings" class="btn btn--outline">See What We Offer</a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       SECTION 5 — TESTIMONIALS
-  ============================================================ -->
-  <section class="testimonials" id="testimonials">
-    <div class="container">
-      <!-- REPLACE: Section headline -->
-      <h2 class="section-title">What People Are Saying</h2>
-
-      <div class="testimonials__grid">
-
-        <!-- REPLACE: Each quote. Remove the (placeholder) note when you have real ones. -->
-        <blockquote class="testimonial">
-          <p class="testimonial__quote">
-            "<!-- REPLACE: Paste in a real customer quote here -->"
-          </p>
-          <footer class="testimonial__author">
-            <!-- REPLACE: Customer name and optional location/context -->
-            <strong>— Customer Name</strong>
-            <span>Location or context (e.g. "Brooklyn, NY")</span>
-          </footer>
-        </blockquote>
-
-        <blockquote class="testimonial">
-          <p class="testimonial__quote">
-            "<!-- REPLACE: Second customer quote -->"
-          </p>
-          <footer class="testimonial__author">
-            <strong>— Customer Name</strong>
-            <span>Location or context</span>
-          </footer>
-        </blockquote>
-
-        <blockquote class="testimonial">
-          <p class="testimonial__quote">
-            "<!-- REPLACE: Third customer quote -->"
-          </p>
-          <footer class="testimonial__author">
-            <strong>— Customer Name</strong>
-            <span>Location or context</span>
-          </footer>
-        </blockquote>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       SECTION 6 — FAQ
-  ============================================================ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <h2 class="section-title">Common Questions</h2>
-
-      <div class="faq__list">
-
-        <!-- REPLACE: Each question and answer. Add or remove items as needed. -->
-        <details class="faq__item">
-          <summary class="faq__question"><!-- REPLACE: Question 1 -->How do I place an order?</summary>
-          <div class="faq__answer">
-            <p><!-- REPLACE: Answer. Include your preferred contact method — text, Instagram DM, website form, etc. -->
-              The easiest way is to DM us on Instagram or send a text to the number below.
-              We'll confirm your order and arrange pickup or delivery.
-            </p>
-          </div>
-        </details>
-
-        <details class="faq__item">
-          <summary class="faq__question"><!-- REPLACE: Question 2 -->Do you offer delivery?</summary>
-          <div class="faq__answer">
-            <p><!-- REPLACE: Your actual delivery policy --></p>
-          </div>
-        </details>
-
-        <details class="faq__item">
-          <summary class="faq__question"><!-- REPLACE: Question 3 -->Do you cater events?</summary>
-          <div class="faq__answer">
-            <p><!-- REPLACE: Your catering info or "not at this time" --></p>
-          </div>
-        </details>
-
-        <details class="faq__item">
-          <summary class="faq__question"><!-- REPLACE: Question 4 -->Is the chai vegan / dairy-free?</summary>
-          <div class="faq__answer">
-            <p><!-- REPLACE: Your actual ingredients and any substitution options --></p>
-          </div>
-        </details>
-
-        <details class="faq__item">
-          <summary class="faq__question"><!-- REPLACE: Question 5 -->Can I order in bulk?</summary>
-          <div class="faq__answer">
-            <p><!-- REPLACE: Bulk / wholesale info --></p>
-          </div>
-        </details>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       SECTION 7 — FINAL CTA / CONTACT
-  ============================================================ -->
-  <section class="cta-final" id="contact">
-    <div class="container cta-final__inner">
-      <!-- REPLACE: Headline for the final push -->
-      <h2>Ready for a Proper Cup?</h2>
-
-      <!-- REPLACE: Subtext -->
-      <p>Order ahead, ask a question, or just say hi. We'd love to hear from you.</p>
-
-      <div class="cta-final__actions">
-        <!-- REPLACE: Primary CTA — swap href for your ordering link, WhatsApp, form, etc. -->
-        <a href="<!-- REPLACE: ordering link -->" class="btn btn--primary btn--large">Order Now</a>
-
-        <!-- REPLACE: Secondary CTA — could be Instagram, email, etc. -->
-        <a href="<!-- REPLACE: Instagram URL e.g. https://instagram.com/yourusername -->" class="btn btn--outline btn--large" target="_blank" rel="noopener">
-          Follow on Instagram
+  <div class="chb-page">
+    <header class="chb-topbar">
+      <div class="chb-wrap chb-nav">
+        <a class="chb-logo" href="#top" aria-label="Chai Bhai Tours home">
+          <span class="chb-logo-mark">CB</span>
+          <span>Chai Bhai Tours</span>
         </a>
+
+        <nav class="chb-nav-links" aria-label="Main navigation">
+          <a href="#food">What you eat</a>
+          <a href="#queens">Why Queens</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#faq">FAQ</a>
+          <a href="#book">Book</a>
+        </nav>
+
+        <a class="chb-btn" href="#book">Book Your Food Walk</a>
       </div>
+    </header>
 
-      <address class="contact-info">
-        <!-- REPLACE: Your actual contact details. Remove any you don't want public. -->
-        <p>
-          <!-- REPLACE: Phone number (tap-to-call) -->
-          <a href="tel:+1XXXXXXXXXX">+1 (XXX) XXX-XXXX</a>
-        </p>
-        <p>
-          <!-- REPLACE: Email address -->
-          <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>
-        </p>
-        <p>
-          <!-- REPLACE: Address or neighborhood (or remove if pickup-by-arrangement) -->
-          Brooklyn, NY
-        </p>
-      </address>
+    <main id="top">
+      <section class="chb-hero">
+        <div class="chb-wrap chb-hero-grid">
+          <div>
+            <p class="chb-eyebrow">Jackson Heights, Queens, NYC</p>
+            <h1 class="chb-h1">Jackson Heights Food Tour in Queens, NYC</h1>
+            <p class="chb-lead">Taste momos, chai, sweets, street food, and neighborhood favorites with Jim, a local guide who knows where to go, what to order, and the stories behind each stop.</p>
+
+            <div class="chb-trust-line" aria-label="Tour highlights">
+              <span class="chb-pill">Rated 4.9 by guests</span>
+              <span class="chb-pill">Small-group tour</span>
+              <span class="chb-pill">Food included</span>
+              <span class="chb-pill">Easy subway ride from Manhattan</span>
+            </div>
+
+            <div class="chb-platform-proof" aria-label="Platform proof">
+              <span>Available through Airbnb Experiences</span>
+              <span>•</span>
+              <span>Trusted by TripAdvisor travelers</span>
+              <span>•</span>
+              <span>Local Queens guide</span>
+            </div>
+
+            <div class="chb-hero-actions">
+              <a class="chb-btn chb-btn-light" href="#book">Book Your Jackson Heights Food Tour</a>
+              <a class="chb-btn chb-btn-outline" href="#food">See What You Might Eat</a>
+            </div>
+
+            <p class="chb-hero-note">Perfect for NYC visitors who want a real local food experience beyond Times Square, Midtown, and the usual checklist.</p>
+          </div>
+
+          <aside class="chb-booking-mini" aria-label="Quick booking details">
+            <!-- REPLACE: Swap src with ./assets/images/food-closeup.jpg once you have the photo -->
+            <div class="chb-mini-image">Image placeholder: close-up food shot or Jim with guests</div>
+            <div class="chb-mini-body">
+              <h2 class="chb-h3">Queens Food &amp; Culture Walk</h2>
+              <ul>
+                <li>About 2.5 hours</li>
+                <li>Multiple food stops included</li>
+                <li>Easy subway access from Manhattan</li>
+                <li>Small, relaxed groups</li>
+              </ul>
+              <a class="chb-btn chb-btn-full" href="#book">Check Availability</a>
+              <p class="chb-mini-proof">Warm, local, and different from the usual NYC tourist route.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="chb-details" aria-label="Tour details">
+        <div class="chb-wrap">
+          <div class="chb-details-card">
+            <div class="chb-detail-item">
+              <span>Tour length</span>
+              <strong>About 2.5 hours</strong>
+            </div>
+            <div class="chb-detail-item">
+              <span>Neighborhood</span>
+              <strong>Jackson Heights, Queens</strong>
+            </div>
+            <div class="chb-detail-item">
+              <span>Best for</span>
+              <strong>Visitors, couples, solo travelers, food lovers</strong>
+            </div>
+            <div class="chb-detail-item">
+              <span>Includes</span>
+              <strong>Multiple local food stops</strong>
+            </div>
+            <div class="chb-detail-item">
+              <span>Group size</span>
+              <strong>Small and relaxed</strong>
+            </div>
+            <div class="chb-detail-item">
+              <span>From Manhattan</span>
+              <strong>Easy subway access</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chb-mosaic" aria-label="Jackson Heights food tour photos">
+        <div class="chb-wrap">
+          <div class="chb-mosaic-grid">
+            <!-- REPLACE: Add real photos to assets/images/ and update these src paths -->
+            <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/jackson-heights-food-tour-guests.jpg');">
+              <figcaption class="chb-mosaic-caption">Image placeholder: Jim leading guests through Jackson Heights</figcaption>
+            </figure>
+            <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/momos-queens-food-tour.jpg');">
+              <figcaption class="chb-mosaic-caption">Image placeholder: Tibetan momos on a Queens food tour</figcaption>
+            </figure>
+            <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/chai-jackson-heights.jpg');">
+              <figcaption class="chb-mosaic-caption">Image placeholder: chai and sweets in Jackson Heights</figcaption>
+            </figure>
+            <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/roosevelt-avenue-food-walk.jpg');">
+              <figcaption class="chb-mosaic-caption">Image placeholder: Roosevelt Avenue street scene</figcaption>
+            </figure>
+            <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/guests-eating-queens.jpg');">
+              <figcaption class="chb-mosaic-caption">Image placeholder: guests eating local food in Queens</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="chb-section" id="why">
+        <div class="chb-wrap chb-two-col">
+          <div>
+            <p class="chb-eyebrow">Why this NYC food tour</p>
+            <h2 class="chb-h2">Most NYC visitors never make it past Manhattan. That is the mistake.</h2>
+            <p class="chb-p">Jackson Heights is one of the best food neighborhoods in New York City. In just a few blocks, you can find Tibetan momos, Indian sweets, Colombian bakeries, Nepali snacks, Mexican street food, Bangladeshi flavors, and more.</p>
+            <p class="chb-p">This Queens food tour helps you experience the city the way locals actually do: walking, eating, talking, and discovering places you probably would never find on your own.</p>
+            <div style="margin-top: 30px;">
+              <a class="chb-btn" href="#book">Book the Jackson Heights Food Tour</a>
+            </div>
+          </div>
+
+          <!-- REPLACE: Add ./assets/images/jackson-heights-street.jpg -->
+          <div class="chb-photo-card"></div>
+        </div>
+      </section>
+
+      <section class="chb-section chb-local-section" id="queens">
+        <div class="chb-wrap chb-two-col">
+          <div>
+            <p class="chb-eyebrow">Easy from Manhattan</p>
+            <h2 class="chb-h2">A Queens food tour just a subway ride from your NYC hotel.</h2>
+            <p class="chb-p">Jackson Heights is easy to reach from Midtown Manhattan, Times Square, Grand Central, Long Island City, Williamsburg, and many popular NYC hotel areas. After booking, you will receive the exact meeting point and simple directions.</p>
+            <p class="chb-p">This is a strong pick if you are searching for things to do in Queens, a local NYC experience, or a New York food walking tour that gets you beyond the obvious tourist route.</p>
+          </div>
+
+          <aside class="chb-route-card">
+            <h3 class="chb-h3">Good to know</h3>
+            <ul class="chb-route-list">
+              <li>Meeting point is near public transit in Jackson Heights.</li>
+              <li>The pace is relaxed, with food stops along the way.</li>
+              <li>You do not need to know Queens to enjoy the tour.</li>
+              <li>Exact directions are sent after booking.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="chb-section chb-proof-band" id="reviews">
+        <div class="chb-wrap">
+          <p class="chb-eyebrow">Guest proof</p>
+          <h2 class="chb-h2">Loved by travelers who wanted something different.</h2>
+
+          <div class="chb-proof-row">
+            <!-- REPLACE: Swap placeholder quotes and attribution with real guest reviews -->
+            <article class="chb-proof-card">
+              <div class="chb-stars">★★★★★</div>
+              <h3 class="chb-h3">"The highlight of our NYC trip."</h3>
+              <p>We never would have found these places on our own. Jim made the neighborhood feel welcoming, personal, and delicious.</p>
+              <small>Replace with real guest name and platform</small>
+            </article>
+
+            <article class="chb-proof-card">
+              <div class="chb-stars">★★★★★</div>
+              <h3 class="chb-h3">"Way better than a typical tourist tour."</h3>
+              <p>It felt local, relaxed, and full of stories. Exactly the kind of experience we were hoping to find in New York.</p>
+              <small>Replace with real guest name and platform</small>
+            </article>
+
+            <article class="chb-proof-card">
+              <div class="chb-stars">★★★★★</div>
+              <h3 class="chb-h3">"Come hungry."</h3>
+              <p>So much great food, and every stop had a story behind it. A perfect way to see another side of NYC.</p>
+              <small>Replace with real guest name and platform</small>
+            </article>
+          </div>
+
+          <div style="margin-top: 34px;">
+            <a class="chb-btn" href="#book">Reserve Your Spot</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="chb-section" id="video">
+        <div class="chb-wrap">
+          <p class="chb-eyebrow">Watch before you book</p>
+          <h2 class="chb-h2">See the neighborhood before you join the walk.</h2>
+          <p class="chb-p">Watch a quick glimpse of the food, streets, and stops you will experience on this Jackson Heights walking tour.</p>
+
+          <!-- REPLACE: Replace the placeholder div with an <iframe> embed from YouTube, Vimeo, or paste in an Instagram reel embed code -->
+          <div class="chb-video-shell">
+            <div class="chb-video-placeholder">
+              <span>Video placeholder: embed tour preview, Instagram reel, or food walk highlight video</span>
+            </div>
+          </div>
+
+          <p class="chb-p"><strong>This is not a scripted museum-style tour.</strong> It is a local food walk through a living neighborhood.</p>
+        </div>
+      </section>
+
+      <section class="chb-section" id="included">
+        <div class="chb-wrap">
+          <p class="chb-eyebrow">What is included</p>
+          <h2 class="chb-h2">A few hours of food, stories, streets, and local flavor.</h2>
+
+          <div class="chb-cards-grid">
+            <article class="chb-info-card">
+              <h3 class="chb-h3">Taste food from several cultures</h3>
+              <p>Try neighborhood favorites from local spots Jim personally recommends.</p>
+            </article>
+
+            <article class="chb-info-card">
+              <h3 class="chb-h3">Hear the stories behind the food</h3>
+              <p>Learn how immigration, culture, family, faith, and business shaped Jackson Heights.</p>
+            </article>
+
+            <article class="chb-info-card">
+              <h3 class="chb-h3">Explore beyond the tourist map</h3>
+              <p>Walk through one of NYC's most interesting neighborhoods without guessing where to go.</p>
+            </article>
+
+            <article class="chb-info-card">
+              <h3 class="chb-h3">Get local recommendations</h3>
+              <p>Leave with ideas for where to eat, explore, and return during your trip.</p>
+            </article>
+          </div>
+
+          <div style="margin-top: 34px;">
+            <a class="chb-btn" href="#book">Check Tour Dates</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="chb-section chb-food-section" id="food">
+        <div class="chb-wrap">
+          <p class="chb-eyebrow">What you will eat</p>
+          <h2 class="chb-h2">What you might eat on this Jackson Heights food tour.</h2>
+          <p class="chb-p">Depending on the day and local availability, stops may include foods like Tibetan momos, Indian sweets, chai, Colombian pastries, Nepali snacks, Mexican street food, Bangladeshi bites, and other neighborhood favorites.</p>
+
+          <div class="chb-food-grid">
+            <!-- REPLACE: Add real food photos to assets/images/ and update src paths below -->
+            <article class="chb-food-card">
+              <div class="chb-food-photo" style="--food-image: url('./assets/images/momos.jpg');" role="img" aria-label="Tibetan momos on a Jackson Heights food tour in Queens NYC">
+                <span>Image placeholder: momos or savory dish close-up</span>
+              </div>
+              <div class="chb-food-copy">
+                <h3 class="chb-h3">Neighborhood favorites</h3>
+                <p>Local dishes you might walk past if nobody told you what to order.</p>
+              </div>
+            </article>
+
+            <article class="chb-food-card">
+              <div class="chb-food-photo" style="--food-image: url('./assets/images/chai-sweets.jpg');" role="img" aria-label="Chai and sweets in Jackson Heights Queens">
+                <span>Image placeholder: chai, sweets, or bakery stop</span>
+              </div>
+              <div class="chb-food-copy">
+                <h3 class="chb-h3">Sweet stops and chai</h3>
+                <p>Small bites, warm drinks, and flavors tied to the neighborhood's communities.</p>
+              </div>
+            </article>
+
+            <article class="chb-food-card">
+              <div class="chb-food-photo" style="--food-image: url('./assets/images/guests-eating.jpg');" role="img" aria-label="Chai Bhai Tours guests eating food in Jackson Heights Queens">
+                <span>Image placeholder: guests eating together outside or inside a shop</span>
+              </div>
+              <div class="chb-food-copy">
+                <h3 class="chb-h3">Food with a story</h3>
+                <p>Every stop connects to the people, culture, and history of Jackson Heights.</p>
+              </div>
+            </article>
+          </div>
+
+          <p class="chb-p"><strong>Stops may vary, but the goal is always the same:</strong> great food, local places, and a real taste of Queens.</p>
+        </div>
+      </section>
+
+      <section class="chb-section" id="fit">
+        <div class="chb-wrap">
+          <p class="chb-eyebrow">Who this is for</p>
+          <h2 class="chb-h2">Perfect if you want a more local NYC experience.</h2>
+          <p class="chb-p">This tour is a great fit if you are visiting New York and want something more memorable than another crowded landmark.</p>
+
+          <div class="chb-fit-list">
+            <div class="chb-fit-box">
+              <h3 class="chb-h3">Good fit for</h3>
+              <ul>
+                <li>Couples looking for a memorable NYC date or trip experience</li>
+                <li>Solo travelers who want an easy, social way to explore Queens</li>
+                <li>Food lovers who want local spots, not tourist restaurants</li>
+                <li>Repeat NYC visitors who want something they have not done before</li>
+                <li>Families with older kids who enjoy walking and trying new foods</li>
+              </ul>
+            </div>
+
+            <div class="chb-fit-box">
+              <h3 class="chb-h3">Probably not for</h3>
+              <ul>
+                <li>People who only want famous landmarks</li>
+                <li>Travelers looking for luxury dining or white-tablecloth restaurants</li>
+                <li>Anyone who wants a rushed checklist-style tour</li>
+                <li>Guests who do not want to walk or try unfamiliar food</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chb-section" id="guide">
+        <div class="chb-wrap">
+          <div class="chb-guide-card">
+            <!-- REPLACE: Add ./assets/images/jim-guide.jpg -->
+            <div class="chb-guide-photo" role="img" aria-label="Jim leading a food walking tour in Jackson Heights New York">Image placeholder: Jim in Jackson Heights with food or guests</div>
+
+            <div>
+              <p class="chb-eyebrow">Your local guide</p>
+              <h2 class="chb-h2">Meet Jim.</h2>
+              <p class="chb-p">Jim created Chai Bhai Tours to help visitors experience Queens through food, culture, and conversation. He knows the neighborhood, the food stops, and the stories that make Jackson Heights one of the most fascinating places in New York City.</p>
+              <p class="chb-p">You are not just following a route. You are walking with someone who can help the neighborhood come alive.</p>
+              <div style="margin-top: 30px;">
+                <a class="chb-btn" href="#book">Join Jim for a Food Walk</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chb-section" id="tours">
+        <div class="chb-wrap">
+          <p class="chb-eyebrow">Featured tours</p>
+          <h2 class="chb-h2">Choose your NYC food experience.</h2>
+          <p class="chb-p">Most visitors should start with the Jackson Heights Food &amp; Culture Walk. Private and custom tours are available for families, teams, school groups, birthdays, and custom NYC experiences.</p>
+
+          <div class="chb-tour-grid">
+            <!-- REPLACE: Add tour photos to assets/images/ and update src paths below -->
+            <article class="chb-tour-card">
+              <div class="chb-tour-photo" style="--tour-image: url('./assets/images/jackson-heights-tour.jpg');" role="img" aria-label="Jackson Heights food walking tour in Queens NYC">
+                <span>Image placeholder: Jackson Heights food walk</span>
+              </div>
+              <div class="chb-tour-copy">
+                <h3 class="chb-h3">Jackson Heights Food &amp; Culture Walk</h3>
+                <p>Taste your way through one of NYC's most diverse neighborhoods.</p>
+                <a class="chb-btn" href="#book">Book This Tour</a>
+              </div>
+            </article>
+
+            <article class="chb-tour-card">
+              <div class="chb-tour-photo" style="--tour-image: url('./assets/images/spice-chai-tour.jpg');" role="img" aria-label="Spice and chai walking tour in Queens NYC">
+                <span>Image placeholder: chai, spice, sweets, or market scene</span>
+              </div>
+              <div class="chb-tour-copy">
+                <h3 class="chb-h3">Spice &amp; Chai Walk</h3>
+                <p>Explore bold flavors, tea, sweets, and local food culture.</p>
+                <a class="chb-btn" href="#book">Ask About Dates</a>
+              </div>
+            </article>
+
+            <article class="chb-tour-card">
+              <div class="chb-tour-photo" style="--tour-image: url('./assets/images/private-group-tour.jpg');" role="img" aria-label="Private NYC food tour for groups in Queens">
+                <span>Image placeholder: private group tour or team outing</span>
+              </div>
+              <div class="chb-tour-copy">
+                <h3 class="chb-h3">Private NYC Food Tour</h3>
+                <p>Planning a birthday, team outing, family trip, or custom NYC experience?</p>
+                <a class="chb-btn" href="#custom">Request a Custom Tour</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="chb-section chb-faq" id="faq">
+        <div class="chb-wrap">
+          <p class="chb-eyebrow">FAQ: Jackson Heights Food Tour</p>
+          <h2 class="chb-h2">Quick answers for NYC visitors.</h2>
+
+          <div class="chb-faq-list">
+            <article class="chb-faq-item">
+              <h3>Is Jackson Heights easy to get to from Manhattan?</h3>
+              <p>Yes. The meeting point is accessible by subway, and exact directions are sent after booking.</p>
+            </article>
+
+            <article class="chb-faq-item">
+              <h3>Is food included in the Jackson Heights food tour?</h3>
+              <p>Yes, multiple food stops are included unless otherwise noted on your booking page.</p>
+            </article>
+
+            <article class="chb-faq-item">
+              <h3>How long is the Queens food tour?</h3>
+              <p>Expect about 2.5 hours at a relaxed walking pace through the neighborhood with food stops along the way.</p>
+            </article>
+
+            <article class="chb-faq-item">
+              <h3>Is this NYC food tour good for solo travelers?</h3>
+              <p>Yes. Solo travelers are welcome. This is a great way to experience Queens without exploring alone.</p>
+            </article>
+
+            <article class="chb-faq-item">
+              <h3>Can you handle dietary restrictions?</h3>
+              <p>Some restrictions may be possible, but not all. Message Jim before booking if you have a serious allergy or dietary need.</p>
+            </article>
+
+            <article class="chb-faq-item">
+              <h3>Do you offer private food tours in Queens?</h3>
+              <p>Yes. Private tours are available for families, teams, birthdays, school groups, and custom NYC experiences.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="chb-section chb-booking" id="book">
+        <div class="chb-wrap chb-booking-grid">
+          <div>
+            <p class="chb-eyebrow">Ready to taste the real Queens?</p>
+            <h2 class="chb-h2">Book your Jackson Heights food tour.</h2>
+            <p class="chb-p">Spend a few hours outside the usual tourist path and experience one of New York City's most flavorful neighborhoods with a local guide.</p>
+            <p class="chb-p"><strong>Small groups. Great food. Easy to reach. A totally different side of NYC.</strong></p>
+          </div>
+
+          <aside class="chb-booking-card" aria-label="Booking form">
+            <h3 class="chb-h3">Check availability</h3>
+
+            <!-- TODO: Replace this placeholder form with your real booking solution.
+                 Options: Airbnb Experiences embed, TripAdvisor widget, FareHarbor,
+                 Calendly, or a contact/inquiry form tied to your email.
+                 The form below is intentionally non-functional until you replace it. -->
+            <p class="chb-p">Replace this form with Jim's booking widget, Airbnb link, TripAdvisor link, or direct booking form.</p>
+
+            <form class="chb-form" id="booking-form" novalidate>
+              <div class="chb-field">
+                <label for="tour-date">Preferred date</label>
+                <input id="tour-date" type="date" name="tour-date" />
+              </div>
+
+              <div class="chb-field">
+                <label for="party-size">Number of guests</label>
+                <select id="party-size" name="party-size">
+                  <option>1 guest</option>
+                  <option>2 guests</option>
+                  <option>3 guests</option>
+                  <option>4 guests</option>
+                  <option>5+ guests</option>
+                </select>
+              </div>
+
+              <div class="chb-field">
+                <label for="booking-email">Email</label>
+                <input id="booking-email" type="email" name="email" placeholder="you@example.com" />
+              </div>
+
+              <button class="chb-btn" type="submit">Book Your Food Walk</button>
+              <p class="chb-form-notice" id="booking-notice" aria-live="polite"></p>
+            </form>
+          </aside>
+        </div>
+      </section>
+
+      <section class="chb-custom" id="custom">
+        <div class="chb-wrap chb-custom-grid">
+          <!-- REPLACE: Add ./assets/images/private-tour.jpg -->
+          <div class="chb-custom-photo" role="img" aria-label="Private food tour group in Queens NYC">Image placeholder: Jim with private group, family, team, or custom tour guests</div>
+
+          <div>
+            <p class="chb-eyebrow">Private NYC food tours</p>
+            <h2 class="chb-h2">Want a private food tour in Queens?</h2>
+            <p class="chb-p" style="color: rgba(255,255,255,0.9);">Planning a birthday, family outing, team event, school group, or custom NYC experience? Jim can create a private food and culture walk based on your group, schedule, and interests.</p>
+            <div style="margin-top: 30px;">
+              <!-- REPLACE: Update mailto link with your real email address if different from hello@chaibhai.net -->
+              <a class="chb-btn chb-btn-light" href="mailto:hello@chaibhai.net?subject=Private%20Tour%20Request">Request a Custom Tour</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="chb-footer">
+      <div class="chb-wrap chb-footer-grid">
+        <div>
+          <h2>Chai Bhai Tours</h2>
+          <p>Jackson Heights food tours and Queens food walking tours in New York City.</p>
+          <p>Service area: Jackson Heights, Queens, NYC</p>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <!-- REPLACE: Update email if different from hello@chaibhai.net -->
+          <p><a href="mailto:hello@chaibhai.net">hello@chaibhai.net</a></p>
+          <!-- REPLACE: Add real phone number -->
+          <p>Phone: REPLACE_WITH_PHONE</p>
+          <p>Jackson Heights, Queens, NY</p>
+        </div>
+
+        <div>
+          <h3>Find us</h3>
+          <!-- REPLACE: Swap all REPLACE_WITH_ placeholders with real profile URLs -->
+          <p><a href="REPLACE_WITH_INSTAGRAM_URL">Instagram</a></p>
+          <p><a href="REPLACE_WITH_TRIPADVISOR_URL">TripAdvisor</a></p>
+          <p><a href="REPLACE_WITH_AIRBNB_EXPERIENCE_URL">Airbnb Experiences</a></p>
+          <p><a href="REPLACE_WITH_GOOGLE_BUSINESS_PROFILE_URL">Google Business Profile</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="chb-mobile-booking-bar" aria-label="Mobile booking bar">
+      <div>
+        <strong>Jackson Heights Food Tour</strong>
+        <span>2.5 hrs · Food included · Queens NYC</span>
+      </div>
+      <a class="chb-btn" href="#book">Book</a>
     </div>
-  </section>
-
-
-  <!-- ============================================================
-       FOOTER
-  ============================================================ -->
-  <footer class="site-footer">
-    <div class="container site-footer__inner">
-      <!-- REPLACE: Business name -->
-      <span class="site-footer__brand">Chaibhai</span>
-
-      <nav class="site-footer__links" aria-label="Footer links">
-        <!-- REPLACE: Update or remove social links. Add real URLs. -->
-        <a href="<!-- REPLACE: Instagram URL -->" target="_blank" rel="noopener">Instagram</a>
-        <!-- <a href="<!-- REPLACE: Facebook URL -->">Facebook</a> -->
-        <!-- <a href="<!-- REPLACE: TikTok URL -->">TikTok</a> -->
-      </nav>
-
-      <!-- REPLACE: Your business name and founding year -->
-      <small>&copy; <span id="year"></span> Chaibhai. All rights reserved.</small>
-    </div>
-  </footer>
+  </div>
 
   <script src="./script.js"></script>
 </body>
