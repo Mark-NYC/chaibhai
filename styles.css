@@ -55,6 +55,7 @@ a {
   margin: 0 auto;
 }
 
+/* ── BUTTONS ── */
 .chb-btn {
   display: inline-flex;
   align-items: center;
@@ -65,7 +66,7 @@ a {
   border: 2px solid transparent;
   background: var(--chb-red);
   color: #fff;
-  font-weight: 850;
+  font-weight: 700;
   text-decoration: none;
   letter-spacing: -0.01em;
   box-shadow: 0 14px 28px rgba(169, 37, 22, 0.23);
@@ -104,6 +105,31 @@ a {
   border-color: #fff;
 }
 
+.chb-btn.chb-btn-outline-ink {
+  background: transparent;
+  color: var(--chb-red);
+  border-color: var(--chb-red);
+  box-shadow: none;
+}
+
+.chb-btn.chb-btn-outline-ink:hover {
+  background: var(--chb-red);
+  color: #fff;
+}
+
+.chb-btn.chb-btn-ghost {
+  background: transparent;
+  color: var(--chb-muted);
+  border-color: transparent;
+  box-shadow: none;
+  font-weight: 600;
+}
+
+.chb-btn.chb-btn-ghost:hover {
+  color: var(--chb-ink);
+  transform: none;
+}
+
 .chb-btn.chb-btn-full {
   width: 100%;
 }
@@ -120,7 +146,7 @@ a {
   margin: 0 0 12px;
   color: var(--chb-red);
   font-size: 0.84rem;
-  font-weight: 950;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.09em;
 }
@@ -129,38 +155,39 @@ a {
 .chb-h2,
 .chb-h3 {
   margin: 0;
-  line-height: 1.04;
-  letter-spacing: -0.045em;
+  line-height: 1.06;
+  letter-spacing: -0.04em;
 }
 
 .chb-h1 {
-  font-size: clamp(3rem, 6.6vw, 6.15rem);
-  max-width: 940px;
+  font-size: clamp(2.7rem, 5.8vw, 5.4rem);
+  max-width: 820px;
 }
 
 .chb-h2 {
-  font-size: clamp(2.1rem, 4vw, 4rem);
+  font-size: clamp(2.1rem, 4vw, 3.6rem);
   max-width: 820px;
 }
 
 .chb-h3 {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   letter-spacing: -0.025em;
 }
 
 .chb-lead {
   margin: 22px 0 0;
-  max-width: 720px;
-  font-size: clamp(1.14rem, 1.9vw, 1.42rem);
+  max-width: 640px;
+  font-size: clamp(1.1rem, 1.8vw, 1.32rem);
   color: rgba(255, 255, 255, 0.9);
-  line-height: 1.44;
+  line-height: 1.5;
 }
 
 .chb-p {
   margin: 18px 0 0;
-  max-width: 720px;
+  max-width: 680px;
   color: var(--chb-muted);
-  font-size: 1.08rem;
+  font-size: 1.06rem;
+  line-height: 1.65;
 }
 
 /* ── NAV ── */
@@ -174,7 +201,7 @@ a {
 }
 
 .chb-nav {
-  min-height: 74px;
+  min-height: 68px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -185,37 +212,39 @@ a {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-weight: 950;
+  font-weight: 700;
   text-decoration: none;
   letter-spacing: -0.035em;
   white-space: nowrap;
 }
 
 .chb-logo-mark {
-  width: 46px;
-  height: 46px;
-  border-radius: 15px;
+  width: 42px;
+  height: 42px;
+  border-radius: 13px;
   background:
     linear-gradient(135deg, rgba(247, 201, 72, 0.95), rgba(244, 123, 32, 0.95) 45%, rgba(215, 53, 32, 0.98));
   display: grid;
   place-items: center;
   color: #fff;
-  font-weight: 1000;
-  box-shadow: 0 12px 24px rgba(169, 37, 22, 0.18);
+  font-weight: 900;
+  font-size: 0.95rem;
+  box-shadow: 0 8px 20px rgba(169, 37, 22, 0.18);
 }
 
 .chb-nav-links {
   display: flex;
   align-items: center;
   gap: 26px;
-  font-weight: 750;
-  font-size: 0.95rem;
+  font-weight: 600;
+  font-size: 0.92rem;
 }
 
 .chb-nav-links a {
   text-decoration: none;
   color: var(--chb-ink);
-  opacity: 0.78;
+  opacity: 0.72;
+  transition: opacity 0.15s ease;
 }
 
 .chb-nav-links a:hover {
@@ -225,13 +254,13 @@ a {
 /* ── HERO ── */
 .chb-hero {
   position: relative;
-  min-height: 770px;
-  padding: 96px 0 76px;
+  min-height: 760px;
+  padding: 88px 0 72px;
   color: #fff;
   isolation: isolate;
   background:
-    linear-gradient(90deg, rgba(43, 22, 13, 0.9) 0%, rgba(147, 36, 22, 0.76) 44%, rgba(43, 22, 13, 0.26) 100%),
-    linear-gradient(135deg, rgba(215, 53, 32, 0.88), rgba(244, 123, 32, 0.58)),
+    linear-gradient(90deg, rgba(43, 22, 13, 0.88) 0%, rgba(147, 36, 22, 0.72) 44%, rgba(43, 22, 13, 0.22) 100%),
+    linear-gradient(135deg, rgba(215, 53, 32, 0.84), rgba(244, 123, 32, 0.52)),
     url("./assets/images/jackson-heights-hero.jpg") center / cover no-repeat;
 }
 
@@ -241,8 +270,8 @@ a {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(circle at 20% 20%, rgba(247, 201, 72, 0.22), transparent 30%),
-    linear-gradient(180deg, rgba(43, 22, 13, 0.08), rgba(43, 22, 13, 0.45));
+    radial-gradient(circle at 20% 20%, rgba(247, 201, 72, 0.18), transparent 30%),
+    linear-gradient(180deg, rgba(43, 22, 13, 0.06), rgba(43, 22, 13, 0.42));
   pointer-events: none;
 }
 
@@ -261,8 +290,8 @@ a {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) 390px;
-  gap: 52px;
+  grid-template-columns: minmax(0, 1.1fr) 360px;
+  gap: 48px;
   align-items: center;
 }
 
@@ -273,98 +302,128 @@ a {
 .chb-trust-line {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 26px;
+  gap: 8px;
+  margin-top: 24px;
 }
 
 .chb-pill {
   display: inline-flex;
   align-items: center;
-  min-height: 35px;
-  padding: 0 13px;
+  min-height: 33px;
+  padding: 0 12px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  color: rgba(255, 255, 255, 0.94);
-  font-weight: 800;
-  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 600;
+  font-size: 0.875rem;
   backdrop-filter: blur(6px);
 }
 
 .chb-hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 12px;
   align-items: center;
-  margin-top: 32px;
+  margin-top: 28px;
 }
 
 .chb-hero-note {
   margin-top: 16px;
-  color: rgba(255, 255, 255, 0.78);
-  font-size: 0.98rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.94rem;
+  max-width: 520px;
 }
 
 .chb-platform-proof {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 24px;
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 0.95rem;
-  font-weight: 750;
+  gap: 8px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 /* ── BOOKING MINI CARD ── */
 .chb-booking-mini {
-  background: rgba(255, 250, 240, 0.96);
+  background: rgba(255, 250, 240, 0.97);
   color: var(--chb-ink);
   border-radius: var(--chb-radius);
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.24);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.26);
   overflow: hidden;
 }
 
 .chb-mini-image {
-  min-height: 190px;
+  min-height: 185px;
   display: grid;
   place-items: center;
-  padding: 24px;
+  padding: 20px;
   background:
-    linear-gradient(180deg, rgba(43, 22, 13, 0), rgba(43, 22, 13, 0.3)),
+    linear-gradient(180deg, rgba(43, 22, 13, 0), rgba(43, 22, 13, 0.32)),
     url("./assets/images/food-closeup.jpg") center / cover no-repeat,
     linear-gradient(135deg, rgba(247, 201, 72, 0.38), rgba(215, 53, 32, 0.28));
   color: #fff;
   text-align: center;
-  font-weight: 900;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
 }
 
 .chb-mini-body {
-  padding: 24px;
+  padding: 22px;
+}
+
+.chb-mini-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0 16px;
+  font-size: 0.9rem;
+  color: var(--chb-muted);
+  font-weight: 600;
+}
+
+.chb-mini-meta span {
+  display: inline-block;
+}
+
+.chb-mini-meta .chb-meta-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--chb-border);
 }
 
 .chb-mini-body ul {
   list-style: none;
   padding: 0;
-  margin: 18px 0 22px;
+  margin: 0 0 18px;
   display: grid;
-  gap: 10px;
+  gap: 9px;
   color: var(--chb-muted);
-  font-weight: 650;
+  font-size: 0.96rem;
+}
+
+.chb-mini-body li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
 }
 
 .chb-mini-body li::before {
   content: "✓";
   color: var(--chb-red);
-  font-weight: 1000;
-  margin-right: 8px;
+  font-weight: 900;
+  flex-shrink: 0;
+  line-height: 1.5;
 }
 
 .chb-mini-proof {
   margin-top: 14px;
   color: var(--chb-muted);
-  font-size: 0.94rem;
+  font-size: 0.88rem;
   text-align: center;
 }
 
@@ -388,47 +447,53 @@ a {
 }
 
 .chb-detail-item {
-  min-height: 116px;
-  padding: 22px;
-  background: rgba(255, 250, 240, 0.96);
+  min-height: 108px;
+  padding: 20px;
+  background: rgba(255, 250, 240, 0.97);
 }
 
 .chb-detail-item span {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   color: var(--chb-red);
-  font-size: 0.77rem;
-  font-weight: 950;
+  font-size: 0.72rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.085em;
+  letter-spacing: 0.09em;
 }
 
 .chb-detail-item strong {
-  font-size: 1.01rem;
+  font-size: 0.98rem;
   letter-spacing: -0.02em;
+  line-height: 1.3;
 }
 
 /* ── MOSAIC ── */
 .chb-mosaic {
-  padding: 42px 0 24px;
+  padding: 36px 0 20px;
 }
 
 .chb-mosaic-grid {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr 0.85fr;
-  grid-template-rows: 210px 210px;
-  gap: 16px;
+  grid-template-columns: 1.2fr 0.8fr 0.8fr;
+  grid-template-rows: 220px 200px;
+  gap: 14px;
 }
 
 .chb-mosaic-item {
   position: relative;
   overflow: hidden;
-  border-radius: 24px;
+  border-radius: 20px;
   background:
-    linear-gradient(180deg, rgba(43, 22, 13, 0), rgba(43, 22, 13, 0.38)),
+    linear-gradient(180deg, rgba(43, 22, 13, 0) 40%, rgba(43, 22, 13, 0.46)),
     var(--mosaic-image, linear-gradient(135deg, rgba(247, 201, 72, 0.42), rgba(215, 53, 32, 0.16))) center / cover no-repeat;
   box-shadow: var(--chb-shadow-soft);
-  border: 1px solid rgba(43, 22, 13, 0.08);
+  border: 1px solid rgba(43, 22, 13, 0.07);
+  transition: transform 0.3s ease;
+}
+
+.chb-mosaic-item:hover {
+  transform: scale(1.015);
 }
 
 .chb-mosaic-item:first-child {
@@ -437,65 +502,66 @@ a {
 
 .chb-mosaic-caption {
   position: absolute;
-  left: 16px;
-  right: 16px;
-  bottom: 16px;
-  padding: 12px 14px;
-  border-radius: 16px;
-  background: rgba(255, 250, 240, 0.92);
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  padding: 8px 13px;
+  border-radius: 12px;
+  background: rgba(255, 250, 240, 0.93);
   color: var(--chb-ink);
-  font-weight: 850;
-  font-size: 0.94rem;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+  font-weight: 700;
+  font-size: 0.88rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.13);
+  letter-spacing: -0.01em;
 }
 
 /* ── TWO COL ── */
 .chb-two-col {
   display: grid;
-  grid-template-columns: 1fr 0.9fr;
-  gap: 58px;
+  grid-template-columns: 1fr 0.88fr;
+  gap: 60px;
   align-items: center;
 }
 
 .chb-photo-card {
   position: relative;
-  min-height: 460px;
+  min-height: 440px;
   overflow: hidden;
   border-radius: var(--chb-radius);
   box-shadow: var(--chb-shadow);
   background:
-    linear-gradient(180deg, rgba(43, 22, 13, 0), rgba(43, 22, 13, 0.48)),
+    linear-gradient(180deg, rgba(43, 22, 13, 0) 40%, rgba(43, 22, 13, 0.52)),
     url("./assets/images/jackson-heights-street.jpg") center / cover no-repeat,
     var(--chb-soft);
 }
 
-/* Shown only when the background image is missing */
 .chb-photo-card::after {
-  content: "Image placeholder: Jackson Heights street, food shops, people walking";
+  content: "Photo: Jackson Heights street — food shops, storefronts, people";
   position: absolute;
-  left: 22px;
-  right: 22px;
-  bottom: 22px;
-  padding: 16px 18px;
-  border-radius: 18px;
-  background: rgba(255, 250, 240, 0.92);
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  padding: 13px 16px;
+  border-radius: 14px;
+  background: rgba(255, 250, 240, 0.93);
   color: var(--chb-ink);
-  font-weight: 850;
-  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.18);
+  font-weight: 700;
+  font-size: 0.88rem;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
 }
 
-/* ── LOCAL SECTION ── */
+/* ── LOCAL / QUEENS SECTION ── */
 .chb-local-section {
   background: #fff;
-  border-top: 1px solid rgba(43, 22, 13, 0.08);
-  border-bottom: 1px solid rgba(43, 22, 13, 0.08);
+  border-top: 1px solid rgba(43, 22, 13, 0.07);
+  border-bottom: 1px solid rgba(43, 22, 13, 0.07);
 }
 
 .chb-route-card {
-  padding: 30px;
+  padding: 28px 30px 32px;
   border-radius: var(--chb-radius);
   background:
-    radial-gradient(circle at 85% 15%, rgba(247, 201, 72, 0.25), transparent 36%),
+    radial-gradient(circle at 90% 10%, rgba(247, 201, 72, 0.22), transparent 40%),
     var(--chb-paper);
   border: 1px solid var(--chb-border);
   box-shadow: var(--chb-shadow-soft);
@@ -503,291 +569,417 @@ a {
 
 .chb-route-list {
   list-style: none;
-  margin: 22px 0 0;
+  margin: 20px 0 0;
   padding: 0;
   display: grid;
-  gap: 13px;
+  gap: 12px;
   color: var(--chb-muted);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .chb-route-list li {
   display: flex;
   gap: 10px;
   align-items: flex-start;
+  font-size: 0.97rem;
 }
 
 .chb-route-list li::before {
-  content: "•";
+  content: "→";
   color: var(--chb-red);
-  font-size: 1.5rem;
-  line-height: 0.9;
+  font-weight: 700;
+  flex-shrink: 0;
+  line-height: 1.5;
+}
+
+.chb-route-note {
+  margin-top: 16px;
+  font-size: 0.84rem;
+  color: var(--chb-muted);
+  opacity: 0.7;
 }
 
 /* ── PROOF / REVIEWS ── */
 .chb-proof-band {
   background: #fff;
-  border-top: 1px solid rgba(43, 22, 13, 0.08);
-  border-bottom: 1px solid rgba(43, 22, 13, 0.08);
+  border-top: 1px solid rgba(43, 22, 13, 0.07);
+  border-bottom: 1px solid rgba(43, 22, 13, 0.07);
 }
 
 .chb-proof-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 18px;
   margin-top: 36px;
 }
 
 .chb-proof-card {
-  padding: 25px;
+  padding: 26px;
   background: var(--chb-paper);
   border: 1px solid var(--chb-border);
-  border-radius: 22px;
+  border-radius: 20px;
   box-shadow: var(--chb-shadow-soft);
+  display: flex;
+  flex-direction: column;
 }
 
 .chb-stars {
   color: var(--chb-orange);
-  letter-spacing: 0.08em;
-  font-weight: 1000;
-  margin-bottom: 12px;
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+.chb-proof-card h3 {
+  font-size: 1.08rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
 .chb-proof-card p {
-  margin: 12px 0 0;
+  margin: 10px 0 0;
   color: var(--chb-muted);
+  font-size: 0.96rem;
+  line-height: 1.6;
+  flex: 1;
 }
 
-.chb-proof-card small {
+.chb-review-attr {
   display: block;
   margin-top: 18px;
   color: var(--chb-red);
-  font-weight: 850;
+  font-weight: 700;
+  font-size: 0.86rem;
 }
 
-/* ── VIDEO ── */
-.chb-video-shell {
-  margin-top: 36px;
-  border-radius: var(--chb-radius);
+/* ── REELS / VIDEO SECTION ── */
+.chb-reel-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 56px;
+  align-items: center;
+  margin-top: 44px;
+}
+
+.chb-phone-frame {
+  position: relative;
+  width: 260px;
+  aspect-ratio: 9 / 16;
+  border-radius: 38px;
+  border: 8px solid var(--chb-ink);
   overflow: hidden;
-  box-shadow: var(--chb-shadow);
-  background: #111;
-  aspect-ratio: 16 / 9;
-  border: 1px solid rgba(43, 22, 13, 0.1);
+  background: var(--chb-ink);
+  box-shadow:
+    0 32px 70px rgba(43, 22, 13, 0.22),
+    inset 0 0 0 1px rgba(255,255,255,0.06);
+  flex-shrink: 0;
 }
 
-.chb-video-placeholder {
+.chb-phone-screen {
   width: 100%;
   height: 100%;
-  display: grid;
-  place-items: center;
-  color: rgba(255, 255, 255, 0.9);
   background:
-    linear-gradient(180deg, rgba(43, 22, 13, 0.2), rgba(43, 22, 13, 0.55)),
+    linear-gradient(180deg, rgba(43, 22, 13, 0.18), rgba(43, 22, 13, 0.6)),
     url("./assets/images/tour-video-poster.jpg") center / cover no-repeat,
-    radial-gradient(circle at center, rgba(244, 123, 32, 0.34), transparent 45%),
+    radial-gradient(circle at center, rgba(244, 123, 32, 0.28), transparent 50%),
     linear-gradient(135deg, #21100b, #45170e);
-  text-align: center;
-  font-weight: 950;
-  text-shadow: 0 3px 16px rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* ── CARDS GRID (included section) ── */
+.chb-phone-screen-inner {
+  text-align: center;
+  color: rgba(255,255,255,0.9);
+  padding: 20px;
+}
+
+.chb-phone-play {
+  display: block;
+  font-size: 2.4rem;
+  margin-bottom: 14px;
+  opacity: 0.85;
+}
+
+.chb-phone-screen-inner p {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  opacity: 0.9;
+}
+
+.chb-phone-notch {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 22px;
+  border-radius: 999px;
+  background: var(--chb-ink);
+  z-index: 2;
+}
+
+.chb-reel-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.chb-reel-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: grid;
+  gap: 10px;
+  color: var(--chb-muted);
+  font-size: 0.97rem;
+}
+
+.chb-reel-list li {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.chb-reel-list li::before {
+  content: "▸";
+  color: var(--chb-red);
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+/* ── CARDS GRID ── */
 .chb-cards-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 18px;
   margin-top: 36px;
 }
 
 .chb-info-card {
-  padding: 25px;
-  background: rgba(255, 255, 255, 0.78);
+  padding: 26px;
+  background: rgba(255, 255, 255, 0.8);
   border: 1px solid var(--chb-border);
-  border-radius: 22px;
+  border-radius: 20px;
   box-shadow: var(--chb-shadow-soft);
 }
 
+.chb-info-card h3 {
+  font-size: 1.08rem;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
 .chb-info-card p {
-  margin: 12px 0 0;
+  margin: 10px 0 0;
   color: var(--chb-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 /* ── FOOD SECTION ── */
 .chb-food-section {
   background:
-    linear-gradient(180deg, rgba(247, 201, 72, 0.18), rgba(255, 250, 240, 0.94)),
+    linear-gradient(180deg, rgba(247, 201, 72, 0.14), rgba(255, 250, 240, 0.92)),
     var(--chb-paper);
 }
 
-.chb-food-grid {
+.chb-food-editorial {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
+  grid-template-columns: 1.45fr 1fr;
+  gap: 16px;
   margin-top: 36px;
+}
+
+.chb-food-supporting {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
 }
 
 .chb-food-card {
   overflow: hidden;
   background: #fff;
-  border-radius: 22px;
+  border-radius: 20px;
   border: 1px solid var(--chb-border);
   box-shadow: var(--chb-shadow-soft);
 }
 
-.chb-food-photo {
-  min-height: 235px;
-  display: grid;
-  place-items: center;
-  padding: 22px;
+.chb-food-featured {
+  display: flex;
+  flex-direction: column;
+}
+
+.chb-food-photo--large {
+  flex: 1;
+  min-height: 420px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background:
-    linear-gradient(180deg, rgba(43, 22, 13, 0), rgba(43, 22, 13, 0.34)),
-    var(--food-image, linear-gradient(135deg, rgba(247, 201, 72, 0.5), rgba(215, 53, 32, 0.18))) center / cover no-repeat;
+    linear-gradient(180deg, rgba(43, 22, 13, 0) 30%, rgba(43, 22, 13, 0.72)),
+    var(--food-image, linear-gradient(135deg, rgba(247, 201, 72, 0.5), rgba(215, 53, 32, 0.28))) center / cover no-repeat;
+  padding: 0;
+}
+
+.chb-food-overlay {
+  padding: 24px 26px;
   color: #fff;
+}
+
+.chb-food-overlay h3 {
+  font-size: 1.4rem;
+  letter-spacing: -0.03em;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  margin: 0;
+}
+
+.chb-food-overlay p {
+  margin: 6px 0 0;
+  font-size: 0.96rem;
+  color: rgba(255,255,255,0.82);
+  text-shadow: 0 1px 8px rgba(0,0,0,0.35);
+}
+
+.chb-food-placeholder-label {
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: rgba(255, 250, 240, 0.9);
+  color: var(--chb-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
   text-align: center;
-  font-weight: 900;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+}
+
+.chb-food-photo {
+  min-height: 175px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(43, 22, 13, 0) 40%, rgba(43, 22, 13, 0.38)),
+    var(--food-image, linear-gradient(135deg, rgba(247, 201, 72, 0.5), rgba(215, 53, 32, 0.18))) center / cover no-repeat;
 }
 
 .chb-food-copy {
-  padding: 21px;
+  padding: 16px 18px;
+}
+
+.chb-food-copy h3 {
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
 }
 
 .chb-food-copy p {
-  margin: 8px 0 0;
+  margin: 5px 0 0;
   color: var(--chb-muted);
+  font-size: 0.9rem;
 }
 
 /* ── FIT LIST ── */
 .chb-fit-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 22px;
   margin-top: 34px;
 }
 
 .chb-fit-box {
-  padding: 29px;
+  padding: 28px;
   background: rgba(255, 255, 255, 0.76);
   border-radius: var(--chb-radius);
   border: 1px solid var(--chb-border);
   box-shadow: var(--chb-shadow-soft);
 }
 
+.chb-fit-box h3 {
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+}
+
 .chb-fit-box ul {
-  padding-left: 20px;
-  margin: 16px 0 0;
+  padding-left: 18px;
+  margin: 14px 0 0;
   color: var(--chb-muted);
+  font-size: 0.96rem;
+  line-height: 1.6;
 }
 
 .chb-fit-box li + li {
-  margin-top: 8px;
+  margin-top: 7px;
 }
 
 /* ── GUIDE ── */
 .chb-guide-card {
   display: grid;
-  grid-template-columns: 0.75fr 1fr;
-  gap: 34px;
-  padding: 34px;
+  grid-template-columns: 0.72fr 1fr;
+  gap: 38px;
+  padding: 36px;
   background: #fff;
   border: 1px solid var(--chb-border);
   border-radius: var(--chb-radius);
   box-shadow: var(--chb-shadow);
-  align-items: center;
+  align-items: start;
 }
 
 .chb-guide-photo {
-  min-height: 350px;
-  border-radius: 20px;
+  min-height: 380px;
+  border-radius: 18px;
   display: grid;
-  place-items: end start;
-  padding: 22px;
-  background:
-    linear-gradient(180deg, rgba(43, 22, 13, 0), rgba(43, 22, 13, 0.46)),
-    url("./assets/images/jim-guide.jpg") center / cover no-repeat,
-    linear-gradient(135deg, rgba(247, 201, 72, 0.34), rgba(215, 53, 32, 0.12));
-  color: #fff;
-  font-weight: 900;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
-}
-
-/* ── TOUR CARDS ── */
-.chb-tour-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-  margin-top: 36px;
-}
-
-.chb-tour-card {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  background: #fff;
-  border: 1px solid var(--chb-border);
-  border-radius: 22px;
-  box-shadow: var(--chb-shadow-soft);
-}
-
-.chb-tour-photo {
-  min-height: 215px;
-  display: grid;
-  place-items: center;
+  align-items: end;
   padding: 20px;
   background:
-    linear-gradient(180deg, rgba(43, 22, 13, 0), rgba(43, 22, 13, 0.32)),
-    var(--tour-image, linear-gradient(135deg, rgba(247, 201, 72, 0.45), rgba(215, 53, 32, 0.16))) center / cover no-repeat;
+    linear-gradient(180deg, rgba(43, 22, 13, 0) 40%, rgba(43, 22, 13, 0.5)),
+    url("./assets/images/jim-guide.jpg") center / cover no-repeat,
+    linear-gradient(135deg, rgba(247, 201, 72, 0.3), rgba(215, 53, 32, 0.1));
   color: #fff;
-  text-align: center;
-  font-weight: 900;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
-}
-
-.chb-tour-copy {
-  padding: 23px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.chb-tour-copy p {
-  color: var(--chb-muted);
-}
-
-.chb-tour-copy .chb-btn {
-  margin-top: auto;
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* ── FAQ ── */
 .chb-faq {
   background: #fff;
-  border-top: 1px solid rgba(43, 22, 13, 0.08);
-  border-bottom: 1px solid rgba(43, 22, 13, 0.08);
+  border-top: 1px solid rgba(43, 22, 13, 0.07);
+  border-bottom: 1px solid rgba(43, 22, 13, 0.07);
 }
 
 .chb-faq-list {
   margin-top: 34px;
   display: grid;
-  gap: 14px;
+  gap: 12px;
 }
 
 .chb-faq-item {
-  padding: 24px 28px;
-  border-radius: 20px;
+  padding: 22px 26px;
+  border-radius: 18px;
   background: var(--chb-paper);
   border: 1px solid var(--chb-border);
 }
 
 .chb-faq-item h3 {
   margin: 0;
-  font-size: 1.12rem;
+  font-size: 1.08rem;
   letter-spacing: -0.02em;
+  line-height: 1.3;
 }
 
 .chb-faq-item p {
-  margin: 10px 0 0;
+  margin: 9px 0 0;
   color: var(--chb-muted);
+  font-size: 0.97rem;
+  line-height: 1.65;
 }
 
 /* ── BOOKING SECTION ── */
@@ -795,7 +987,7 @@ a {
   position: relative;
   color: #fff;
   background:
-    linear-gradient(90deg, rgba(43, 22, 13, 0.9), rgba(169, 37, 22, 0.84)),
+    linear-gradient(90deg, rgba(43, 22, 13, 0.88), rgba(169, 37, 22, 0.82)),
     url("./assets/images/final-booking-bg.jpg") center / cover no-repeat,
     var(--chb-red);
   isolation: isolate;
@@ -807,13 +999,12 @@ a {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(circle at 80% 10%, rgba(247, 201, 72, 0.22), transparent 28%),
-    linear-gradient(180deg, rgba(43, 22, 13, 0.08), rgba(43, 22, 13, 0.38));
+    radial-gradient(circle at 80% 10%, rgba(247, 201, 72, 0.2), transparent 28%),
+    linear-gradient(180deg, rgba(43, 22, 13, 0.06), rgba(43, 22, 13, 0.36));
 }
 
-.chb-booking .chb-p,
-.chb-booking .chb-eyebrow {
-  color: rgba(255, 255, 255, 0.86);
+.chb-booking .chb-p {
+  color: rgba(255, 255, 255, 0.84);
 }
 
 .chb-booking .chb-eyebrow {
@@ -822,13 +1013,13 @@ a {
 
 .chb-booking-grid {
   display: grid;
-  grid-template-columns: 1fr 0.8fr;
-  gap: 44px;
+  grid-template-columns: 1fr 0.78fr;
+  gap: 48px;
   align-items: start;
 }
 
 .chb-booking-card {
-  padding: 28px;
+  padding: 30px;
   border-radius: var(--chb-radius);
   background: rgba(255, 250, 240, 0.97);
   color: var(--chb-ink);
@@ -836,107 +1027,99 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.55);
 }
 
-.chb-form {
+.chb-booking-card .chb-h3 {
+  margin-bottom: 4px;
+}
+
+.chb-book-options {
   display: grid;
-  gap: 14px;
-  margin-top: 18px;
+  gap: 12px;
+  margin-top: 20px;
 }
 
-.chb-field label {
-  display: block;
-  margin-bottom: 7px;
-  font-weight: 850;
-  font-size: 0.92rem;
+.chb-booking-card .chb-mini-proof {
+  color: var(--chb-muted);
 }
 
-.chb-field input,
-.chb-field select,
-.chb-field textarea {
-  width: 100%;
-  min-height: 48px;
-  border-radius: 14px;
-  border: 1px solid var(--chb-border);
-  padding: 0 14px;
-  font: inherit;
-  color: var(--chb-ink);
-  background: #fff;
-}
-
-.chb-field textarea {
-  min-height: 112px;
-  padding-top: 12px;
-  resize: vertical;
-}
-
-.chb-form-notice {
-  margin: 4px 0 0;
-  font-size: 0.95rem;
+.chb-booking-card .chb-mini-proof a {
   color: var(--chb-red);
-  text-align: center;
-  min-height: 1.4em;
+  text-decoration: underline;
+  text-decoration-color: rgba(215,53,32,0.3);
 }
 
 /* ── CUSTOM / PRIVATE TOUR ── */
 .chb-custom {
   padding: 78px 0;
   background:
-    radial-gradient(circle at 20% 0%, rgba(247, 201, 72, 0.28), transparent 34%),
+    radial-gradient(circle at 20% 0%, rgba(247, 201, 72, 0.26), transparent 34%),
     linear-gradient(135deg, var(--chb-orange), var(--chb-red));
   color: #fff;
 }
 
 .chb-custom-grid {
   display: grid;
-  grid-template-columns: 0.75fr 1fr;
-  gap: 42px;
+  grid-template-columns: 0.72fr 1fr;
+  gap: 44px;
   align-items: center;
 }
 
 .chb-custom-photo {
-  min-height: 310px;
+  min-height: 320px;
   border-radius: var(--chb-radius);
   display: grid;
-  place-items: end start;
+  align-items: end;
   padding: 22px;
   color: #fff;
-  font-weight: 900;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.42);
   background:
-    linear-gradient(180deg, rgba(43, 22, 13, 0), rgba(43, 22, 13, 0.4)),
+    linear-gradient(180deg, rgba(43, 22, 13, 0) 40%, rgba(43, 22, 13, 0.44)),
     url("./assets/images/private-tour.jpg") center / cover no-repeat,
-    rgba(255, 255, 255, 0.12);
-  box-shadow: 0 24px 70px rgba(43, 22, 13, 0.18);
+    rgba(255, 255, 255, 0.1);
+  box-shadow: 0 24px 64px rgba(43, 22, 13, 0.18);
 }
 
 /* ── FOOTER ── */
 .chb-footer {
-  padding: 42px 0 98px;
+  padding: 44px 0 96px;
   background: var(--chb-ink);
-  color: rgba(255, 255, 255, 0.78);
-  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.93rem;
+  line-height: 1.65;
 }
 
 .chb-footer-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr 0.8fr;
-  gap: 28px;
+  gap: 32px;
 }
 
 .chb-footer h2,
 .chb-footer h3 {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
   color: #fff;
   letter-spacing: -0.02em;
+  font-size: 1rem;
+}
+
+.chb-footer h2 {
+  font-size: 1.15rem;
 }
 
 .chb-footer p {
-  margin: 8px 0 0;
+  margin: 7px 0 0;
 }
 
 .chb-footer a {
-  color: #fff;
+  color: rgba(255,255,255,0.88);
   text-decoration: none;
-  font-weight: 750;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+.chb-footer a:hover {
+  color: #fff;
 }
 
 /* ── MOBILE STICKY BAR ── */
@@ -944,14 +1127,14 @@ a {
   display: none;
   position: fixed;
   z-index: 80;
-  left: 12px;
-  right: 12px;
-  bottom: 12px;
-  padding: 12px;
-  border-radius: 22px;
-  background: rgba(255, 250, 240, 0.96);
-  box-shadow: 0 16px 50px rgba(43, 22, 13, 0.28);
-  border: 1px solid rgba(43, 22, 13, 0.12);
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  padding: 10px 14px;
+  border-radius: 20px;
+  background: rgba(255, 250, 240, 0.97);
+  box-shadow: 0 16px 50px rgba(43, 22, 13, 0.26);
+  border: 1px solid rgba(43, 22, 13, 0.1);
   align-items: center;
   gap: 12px;
   backdrop-filter: blur(14px);
@@ -959,25 +1142,26 @@ a {
 
 .chb-mobile-booking-bar strong {
   display: block;
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   letter-spacing: -0.02em;
 }
 
 .chb-mobile-booking-bar span {
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--chb-muted);
   margin-top: 2px;
 }
 
 .chb-mobile-booking-bar .chb-btn {
-  min-height: 44px;
+  min-height: 42px;
   padding: 0 18px;
   width: auto;
   flex: 0 0 auto;
+  font-size: 0.9rem;
 }
 
-/* ── RESPONSIVE ── */
+/* ── RESPONSIVE: tablet ── */
 @media (max-width: 980px) {
   .chb-nav-links {
     display: none;
@@ -997,62 +1181,87 @@ a {
   }
 
   .chb-details-card {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .chb-proof-row,
   .chb-cards-grid,
-  .chb-food-grid,
-  .chb-tour-grid,
   .chb-fit-list {
     grid-template-columns: 1fr 1fr;
   }
 
+  .chb-food-editorial {
+    grid-template-columns: 1fr;
+  }
+
+  .chb-food-supporting {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .chb-food-photo--large {
+    min-height: 340px;
+  }
+
   .chb-mosaic-grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 250px 190px 190px;
+    grid-template-rows: 260px 200px 200px;
   }
 
   .chb-mosaic-item:first-child {
     grid-column: span 2;
     grid-row: span 1;
   }
+
+  .chb-reel-layout {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 40px;
+  }
+
+  .chb-reel-copy {
+    align-items: center;
+    text-align: center;
+  }
+
+  .chb-reel-list {
+    text-align: left;
+  }
 }
 
+/* ── RESPONSIVE: mobile ── */
 @media (max-width: 640px) {
   .chb-wrap {
     width: min(100% - 28px, var(--chb-max));
   }
 
   .chb-section {
-    padding: 64px 0;
+    padding: 60px 0;
   }
 
   .chb-section-tight {
-    padding: 44px 0;
+    padding: 40px 0;
   }
 
   .chb-hero {
-    padding: 60px 0 58px;
+    padding: 56px 0 54px;
     background:
-      linear-gradient(180deg, rgba(43, 22, 13, 0.86) 0%, rgba(147, 36, 22, 0.78) 58%, rgba(43, 22, 13, 0.4) 100%),
-      linear-gradient(135deg, rgba(215, 53, 32, 0.82), rgba(244, 123, 32, 0.52)),
+      linear-gradient(180deg, rgba(43, 22, 13, 0.84) 0%, rgba(147, 36, 22, 0.76) 58%, rgba(43, 22, 13, 0.38) 100%),
+      linear-gradient(135deg, rgba(215, 53, 32, 0.8), rgba(244, 123, 32, 0.5)),
       url("./assets/images/jackson-heights-hero.jpg") center / cover no-repeat;
   }
 
   .chb-h1 {
-    font-size: clamp(2.6rem, 12.5vw, 4.15rem);
+    font-size: clamp(2.4rem, 11vw, 3.8rem);
   }
 
   .chb-h2 {
-    font-size: clamp(2.05rem, 10vw, 3.15rem);
+    font-size: clamp(1.9rem, 9.5vw, 3rem);
   }
 
-  .chb-hero-actions,
-  .chb-booking .chb-btn,
-  .chb-custom .chb-btn,
-  .chb-btn {
-    width: 100%;
+  .chb-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .chb-topbar .chb-btn {
@@ -1060,17 +1269,24 @@ a {
   }
 
   .chb-details {
-    margin-top: -24px;
+    margin-top: -20px;
   }
 
   .chb-details-card,
   .chb-proof-row,
   .chb-cards-grid,
-  .chb-food-grid,
-  .chb-tour-grid,
   .chb-fit-list,
-  .chb-mosaic-grid {
+  .chb-mosaic-grid,
+  .chb-food-supporting {
     grid-template-columns: 1fr;
+  }
+
+  .chb-food-editorial {
+    grid-template-columns: 1fr;
+  }
+
+  .chb-food-photo--large {
+    min-height: 300px;
   }
 
   .chb-mosaic-grid {
@@ -1081,21 +1297,27 @@ a {
   .chb-mosaic-item:first-child {
     grid-column: auto;
     grid-row: auto;
-    min-height: 250px;
+    min-height: 240px;
   }
 
-  .chb-photo-card,
+  .chb-photo-card {
+    min-height: 260px;
+  }
+
   .chb-guide-photo {
-    min-height: 275px;
+    min-height: 280px;
   }
 
   .chb-mini-image {
-    min-height: 160px;
+    min-height: 155px;
   }
 
-  /* Give footer enough breathing room above the sticky bar */
+  .chb-phone-frame {
+    width: 220px;
+  }
+
   .chb-footer {
-    padding-bottom: 110px;
+    padding-bottom: 108px;
   }
 
   .chb-mobile-booking-bar {
@@ -1105,5 +1327,9 @@ a {
   .chb-mobile-booking-bar > div {
     min-width: 0;
     flex: 1;
+  }
+
+  .chb-book-options .chb-btn {
+    width: 100%;
   }
 }
