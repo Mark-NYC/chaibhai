@@ -218,18 +218,23 @@ a {
   white-space: nowrap;
 }
 
-.chb-logo-mark {
-  width: 42px;
-  height: 42px;
-  border-radius: 13px;
-  background:
-    linear-gradient(135deg, rgba(247, 201, 72, 0.95), rgba(244, 123, 32, 0.95) 45%, rgba(215, 53, 32, 0.98));
-  display: grid;
-  place-items: center;
-  color: #fff;
-  font-weight: 900;
-  font-size: 0.95rem;
-  box-shadow: 0 8px 20px rgba(169, 37, 22, 0.18);
+.chb-logo-img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .chb-logo-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .chb-logo span {
+    font-size: 0.95rem;
+  }
 }
 
 .chb-nav-links {
