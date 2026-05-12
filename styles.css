@@ -55,7 +55,7 @@ a {
   margin: 0 auto;
 }
 
-/* ── BUTTONS ── */
+/* Buttons */
 .chb-btn {
   display: inline-flex;
   align-items: center;
@@ -105,7 +105,6 @@ a {
   border-color: #fff;
 }
 
-/* On-light-background outline button */
 .chb-btn.chb-btn-outline-ink {
   background: transparent;
   color: var(--chb-red);
@@ -118,7 +117,6 @@ a {
   color: #fff;
 }
 
-/* Ghost / text-style button */
 .chb-btn.chb-btn-ghost {
   background: transparent;
   color: var(--chb-muted);
@@ -180,7 +178,7 @@ a {
   margin: 22px 0 0;
   max-width: 640px;
   font-size: clamp(1.1rem, 1.8vw, 1.32rem);
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.92);
   line-height: 1.5;
 }
 
@@ -192,7 +190,7 @@ a {
   line-height: 1.65;
 }
 
-/* ── NAV ── */
+/* Nav */
 .chb-topbar {
   position: sticky;
   top: 0;
@@ -253,7 +251,7 @@ a {
   opacity: 1;
 }
 
-/* ── HERO ── */
+/* Hero */
 .chb-hero {
   position: relative;
   min-height: 760px;
@@ -261,9 +259,8 @@ a {
   color: #fff;
   isolation: isolate;
   background:
-    linear-gradient(90deg, rgba(43, 22, 13, 0.88) 0%, rgba(147, 36, 22, 0.72) 44%, rgba(43, 22, 13, 0.22) 100%),
-    linear-gradient(135deg, rgba(215, 53, 32, 0.84), rgba(244, 123, 32, 0.52)),
-    url("./assets/images/jackson-heights.webp") center / cover no-repeat;
+    linear-gradient(90deg, rgba(43, 22, 13, 0.58) 0%, rgba(147, 36, 22, 0.38) 44%, rgba(43, 22, 13, 0.08) 100%),
+    url("assets/images/jackson-heights.webp") center / cover no-repeat;
 }
 
 .chb-hero::before {
@@ -272,8 +269,8 @@ a {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(circle at 20% 20%, rgba(247, 201, 72, 0.18), transparent 30%),
-    linear-gradient(180deg, rgba(43, 22, 13, 0.06), rgba(43, 22, 13, 0.42));
+    radial-gradient(circle at 20% 20%, rgba(247, 201, 72, 0.10), transparent 30%),
+    linear-gradient(180deg, rgba(43, 22, 13, 0.02), rgba(43, 22, 13, 0.16));
   pointer-events: none;
 }
 
@@ -332,7 +329,7 @@ a {
 
 .chb-hero-note {
   margin-top: 16px;
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.78);
   font-size: 0.94rem;
   max-width: 520px;
 }
@@ -342,12 +339,12 @@ a {
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 20px;
-  color: rgba(255, 255, 255, 0.78);
+  color: rgba(255, 255, 255, 0.82);
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-/* ── BOOKING MINI CARD (hero sidebar) ── */
+/* Booking mini card */
 .chb-booking-mini {
   background: rgba(255, 250, 240, 0.97);
   color: var(--chb-ink);
@@ -363,8 +360,8 @@ a {
   place-items: center;
   padding: 20px;
   background:
-    linear-gradient(180deg, rgba(43, 22, 13, 0), rgba(43, 22, 13, 0.32)),
-    url("./assets/images/Jim with guests.webp") center / cover no-repeat,
+    linear-gradient(180deg, rgba(43, 22, 13, 0), rgba(43, 22, 13, 0.24)),
+    url("assets/images/Jim with guests.webp") center / cover no-repeat,
     linear-gradient(135deg, rgba(247, 201, 72, 0.38), rgba(215, 53, 32, 0.28));
   color: #fff;
   text-align: center;
@@ -429,7 +426,7 @@ a {
   text-align: center;
 }
 
-/* ── DETAILS STRIP ── */
+/* Details strip */
 .chb-details {
   position: relative;
   z-index: 3;
@@ -470,7 +467,7 @@ a {
   line-height: 1.3;
 }
 
-/* ── MOSAIC ── */
+/* Mosaic */
 .chb-mosaic {
   padding: 36px 0 20px;
 }
@@ -517,7 +514,7 @@ a {
   letter-spacing: -0.01em;
 }
 
-/* ── TWO COL ── */
+/* Two column */
 .chb-two-col {
   display: grid;
   grid-template-columns: 1fr 0.88fr;
@@ -538,7 +535,7 @@ a {
 }
 
 .chb-photo-card::after {
-  content: "Photo: Jackson Heights street — food shops, storefronts, people";
+  content: "Photo: Jackson Heights street, food shops, storefronts, people";
   position: absolute;
   left: 18px;
   right: 18px;
@@ -552,7 +549,7 @@ a {
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
 }
 
-/* ── LOCAL / QUEENS SECTION ── */
+/* Local section */
 .chb-local-section {
   background: #fff;
   border-top: 1px solid rgba(43, 22, 13, 0.07);
@@ -601,7 +598,7 @@ a {
   opacity: 0.7;
 }
 
-/* ── PROOF / REVIEWS ── */
+/* Reviews */
 .chb-proof-band {
   background: #fff;
   border-top: 1px solid rgba(43, 22, 13, 0.07);
@@ -655,7 +652,7 @@ a {
   font-size: 0.86rem;
 }
 
-/* ── REELS / VIDEO SECTION ── */
+/* Reels and video */
 .chb-reel-layout {
   display: grid;
   grid-template-columns: 260px 1fr;
@@ -674,7 +671,7 @@ a {
   background: var(--chb-ink);
   box-shadow:
     0 32px 70px rgba(43, 22, 13, 0.22),
-    inset 0 0 0 1px rgba(255,255,255,0.06);
+    inset 0 0 0 1px rgba(255, 255, 255, 0.06);
   flex-shrink: 0;
 }
 
@@ -693,7 +690,7 @@ a {
 
 .chb-phone-screen-inner {
   text-align: center;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
   padding: 20px;
 }
 
@@ -709,7 +706,7 @@ a {
   font-size: 0.85rem;
   font-weight: 700;
   line-height: 1.5;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   opacity: 0.9;
 }
 
@@ -754,7 +751,7 @@ a {
   flex-shrink: 0;
 }
 
-/* ── CARDS GRID (included section) ── */
+/* Cards grid */
 .chb-cards-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -783,7 +780,7 @@ a {
   line-height: 1.6;
 }
 
-/* ── FOOD SECTION (editorial layout) ── */
+/* Food section */
 .chb-food-section {
   background:
     linear-gradient(180deg, rgba(247, 201, 72, 0.14), rgba(255, 250, 240, 0.92)),
@@ -811,7 +808,6 @@ a {
   box-shadow: var(--chb-shadow-soft);
 }
 
-/* Large featured card — full image with text overlay */
 .chb-food-featured {
   display: flex;
   flex-direction: column;
@@ -838,15 +834,15 @@ a {
 .chb-food-overlay h3 {
   font-size: 1.4rem;
   letter-spacing: -0.03em;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
   margin: 0;
 }
 
 .chb-food-overlay p {
   margin: 6px 0 0;
   font-size: 0.96rem;
-  color: rgba(255,255,255,0.82);
-  text-shadow: 0 1px 8px rgba(0,0,0,0.35);
+  color: rgba(255, 255, 255, 0.82);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
 }
 
 .chb-food-placeholder-label {
@@ -864,7 +860,6 @@ a {
   text-align: center;
 }
 
-/* Smaller supporting cards */
 .chb-food-photo {
   min-height: 175px;
   display: flex;
@@ -890,7 +885,7 @@ a {
   font-size: 0.9rem;
 }
 
-/* ── FIT LIST ── */
+/* Fit list */
 .chb-fit-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -923,7 +918,7 @@ a {
   margin-top: 7px;
 }
 
-/* ── GUIDE ── */
+/* Guide */
 .chb-guide-card {
   display: grid;
   grid-template-columns: 0.72fr 1fr;
@@ -952,7 +947,7 @@ a {
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* ── FAQ ── */
+/* FAQ */
 .chb-faq {
   background: #fff;
   border-top: 1px solid rgba(43, 22, 13, 0.07);
@@ -986,7 +981,7 @@ a {
   line-height: 1.65;
 }
 
-/* ── BOOKING SECTION ── */
+/* Booking section */
 .chb-booking {
   position: relative;
   color: #fff;
@@ -1048,10 +1043,10 @@ a {
 .chb-booking-card .chb-mini-proof a {
   color: var(--chb-red);
   text-decoration: underline;
-  text-decoration-color: rgba(215,53,32,0.3);
+  text-decoration-color: rgba(215, 53, 32, 0.3);
 }
 
-/* ── CUSTOM / PRIVATE TOUR ── */
+/* Custom private tour */
 .chb-custom {
   padding: 78px 0;
   background:
@@ -1084,7 +1079,7 @@ a {
   box-shadow: 0 24px 64px rgba(43, 22, 13, 0.18);
 }
 
-/* ── FOOTER ── */
+/* Footer */
 .chb-footer {
   padding: 44px 0 96px;
   background: var(--chb-ink);
@@ -1116,7 +1111,7 @@ a {
 }
 
 .chb-footer a {
-  color: rgba(255,255,255,0.88);
+  color: rgba(255, 255, 255, 0.88);
   text-decoration: none;
   font-weight: 600;
   transition: color 0.15s ease;
@@ -1126,7 +1121,7 @@ a {
   color: #fff;
 }
 
-/* ── MOBILE STICKY BAR ── */
+/* Mobile sticky bar */
 .chb-mobile-booking-bar {
   display: none;
   position: fixed;
@@ -1165,7 +1160,7 @@ a {
   font-size: 0.9rem;
 }
 
-/* ── RESPONSIVE: tablet ── */
+/* Tablet */
 @media (max-width: 980px) {
   .chb-nav-links {
     display: none;
@@ -1233,7 +1228,7 @@ a {
   }
 }
 
-/* ── RESPONSIVE: mobile ── */
+/* Mobile */
 @media (max-width: 640px) {
   .chb-wrap {
     width: min(100% - 28px, var(--chb-max));
@@ -1250,9 +1245,8 @@ a {
   .chb-hero {
     padding: 56px 0 54px;
     background:
-      linear-gradient(180deg, rgba(43, 22, 13, 0.84) 0%, rgba(147, 36, 22, 0.76) 58%, rgba(43, 22, 13, 0.38) 100%),
-      linear-gradient(135deg, rgba(215, 53, 32, 0.8), rgba(244, 123, 32, 0.5)),
-      url("./assets/images/jackson-heights.webp") center / cover no-repeat;
+      linear-gradient(180deg, rgba(43, 22, 13, 0.58) 0%, rgba(147, 36, 22, 0.42) 58%, rgba(43, 22, 13, 0.18) 100%),
+      url("assets/images/jackson-heights.webp") center / cover no-repeat;
   }
 
   .chb-h1 {
@@ -1333,7 +1327,6 @@ a {
     flex: 1;
   }
 
-  /* On mobile, all full-width buttons stack cleanly */
   .chb-book-options .chb-btn {
     width: 100%;
   }
