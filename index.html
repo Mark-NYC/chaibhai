@@ -164,66 +164,6 @@
   </script>
 
   <link rel="stylesheet" href="./styles.css" />
-
-  <style>
-    #benefits,
-    #benefits .chb-wrap,
-    #benefits .chb-cards-grid {
-      overflow: visible;
-    }
-
-    .chb-benefit-grid {
-      align-items: stretch;
-      margin-top: 72px;
-    }
-
-    .chb-benefit-card {
-      position: relative;
-      overflow: visible;
-      padding-top: 78px;
-    }
-
-    .chb-benefit-icon {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      width: 112px;
-      height: 112px;
-      transform: translate(-50%, -50%);
-      border-radius: 999px;
-      background: #fff;
-      box-shadow: 0 18px 45px rgba(43, 22, 13, 0.18);
-      border: 6px solid #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 2;
-    }
-
-    .chb-benefit-icon img {
-      width: 100%;
-      height: 100%;
-      display: block;
-      object-fit: cover;
-      border-radius: 999px;
-    }
-
-    @media (max-width: 760px) {
-      .chb-benefit-grid {
-        gap: 72px;
-        margin-top: 64px;
-      }
-
-      .chb-benefit-card {
-        padding-top: 70px;
-      }
-
-      .chb-benefit-icon {
-        width: 96px;
-        height: 96px;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -333,22 +273,34 @@
 
       <section class="chb-mosaic" aria-label="Jackson Heights walking tour photos">
         <div class="chb-wrap">
-          <div class="chb-mosaic-grid">
+          <div class="chb-mosaic-grid" id="chbMosaicSlider">
             <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/see-the-neighborhood-through-local-eyes.webp');">
               <figcaption class="chb-mosaic-caption">See the neighborhood through local eyes</figcaption>
             </figure>
+
             <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/taste-spots-you-would-never-find-alone.webp');">
               <figcaption class="chb-mosaic-caption">Taste spots you would never find alone</figcaption>
             </figure>
+
             <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/slow-down-with-a-proper-cup-of-chai.webp');">
               <figcaption class="chb-mosaic-caption">Slow down with a proper cup of chai</figcaption>
             </figure>
+
             <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/feel-the-energy-of-jackson-heights.webp');">
               <figcaption class="chb-mosaic-caption">Feel the energy of Jackson Heights</figcaption>
             </figure>
+
             <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/come-home-with-stories-not-just-photos.webp');">
               <figcaption class="chb-mosaic-caption">Come home with stories, not just photos</figcaption>
             </figure>
+          </div>
+
+          <div class="chb-mosaic-dots" aria-label="Gallery controls">
+            <button class="is-active" type="button" aria-label="Show gallery image 1" data-slide="0"></button>
+            <button type="button" aria-label="Show gallery image 2" data-slide="1"></button>
+            <button type="button" aria-label="Show gallery image 3" data-slide="2"></button>
+            <button type="button" aria-label="Show gallery image 4" data-slide="3"></button>
+            <button type="button" aria-label="Show gallery image 5" data-slide="4"></button>
           </div>
         </div>
       </section>
@@ -964,5 +916,33 @@
   </div>
 
   <script src="./script.js"></script>
+
+  <script>
+    const chbMosaicSlider = document.querySelector("#chbMosaicSlider");
+    const chbMosaicDots = document.querySelectorAll(".chb-mosaic-dots button");
+
+    if (chbMosaicSlider && chbMosaicDots.length) {
+      chbMosaicDots.forEach((dot) => {
+        dot.addEventListener("click", () => {
+          const slideIndex = Number(dot.dataset.slide);
+          const slideWidth = chbMosaicSlider.clientWidth;
+
+          chbMosaicSlider.scrollTo({
+            left: slideIndex * slideWidth,
+            behavior: "smooth"
+          });
+        });
+      });
+
+      chbMosaicSlider.addEventListener("scroll", () => {
+        const slideWidth = chbMosaicSlider.clientWidth;
+        const activeIndex = Math.round(chbMosaicSlider.scrollLeft / slideWidth);
+
+        chbMosaicDots.forEach((dot, index) => {
+          dot.classList.toggle("is-active", index === activeIndex);
+        });
+      });
+    }
+  </script>
 </body>
 </html>
