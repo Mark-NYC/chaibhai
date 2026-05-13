@@ -181,9 +181,17 @@
       white-space: nowrap;
     }
 
+    .chb-mosaic-inside-section {
+      padding: 42px 0 0;
+    }
+
     @media (max-width: 640px) {
       .chb-announcement {
         display: none;
+      }
+
+      .chb-mosaic-inside-section {
+        padding: 34px 0 0;
       }
     }
   </style>
@@ -387,21 +395,36 @@
           <p class="chb-p">Jackson Heights is where cultures overlap block by block. A few minutes of walking can take you past sari shops, momo counters, chai spots, fruit stands, bakeries, jewelry stores, old apartment buildings, busy plazas, and food you will not find on a typical Midtown itinerary.</p>
           <p class="chb-p">It is not polished for tourists. That is the point. It still feels like a neighborhood.</p>
 
-          <div class="chb-cards-grid">
-            <article class="chb-info-card">
-              <h3 class="chb-h3">Food everywhere</h3>
-              <p>Chai, fuchka, momos, kebabs, sweets, bakeries, and small spots locals actually use.</p>
-            </article>
+          <div class="chb-mosaic chb-mosaic-inside-section" aria-label="Jackson Heights walking tour photos">
+            <div class="chb-mosaic-grid" id="chbMosaicSlider">
+              <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/see-the-neighborhood-through-local-eyes.webp');">
+                <figcaption class="chb-mosaic-caption">See the neighborhood through local eyes</figcaption>
+              </figure>
 
-            <article class="chb-info-card">
-              <h3 class="chb-h3">Stories behind the streets</h3>
-              <p>Jim points out what you would miss if you came alone.</p>
-            </article>
+              <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/taste-spots-you-would-never-find-alone.webp');">
+                <figcaption class="chb-mosaic-caption">Taste spots you would never find alone</figcaption>
+              </figure>
 
-            <article class="chb-info-card">
-              <h3 class="chb-h3">A different New York</h3>
-              <p>Still NYC, but not the version everyone else is posting.</p>
-            </article>
+              <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/slow-down-with-a-proper-cup-of-chai.webp');">
+                <figcaption class="chb-mosaic-caption">Slow down with a proper cup of chai</figcaption>
+              </figure>
+
+              <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/feel-the-energy-of-jackson-heights.webp');">
+                <figcaption class="chb-mosaic-caption">Feel the energy of Jackson Heights</figcaption>
+              </figure>
+
+              <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/come-home-with-stories-not-just-photos.webp');">
+                <figcaption class="chb-mosaic-caption">Come home with stories, not just photos</figcaption>
+              </figure>
+            </div>
+
+            <div class="chb-mosaic-dots" aria-label="Gallery controls">
+              <button class="is-active" type="button" aria-label="Show gallery image 1" data-slide="0"></button>
+              <button type="button" aria-label="Show gallery image 2" data-slide="1"></button>
+              <button type="button" aria-label="Show gallery image 3" data-slide="2"></button>
+              <button type="button" aria-label="Show gallery image 4" data-slide="3"></button>
+              <button type="button" aria-label="Show gallery image 5" data-slide="4"></button>
+            </div>
           </div>
         </div>
       </section>
@@ -851,5 +874,33 @@
   </div>
 
   <script src="./script.js"></script>
+
+  <script>
+    const chbMosaicSlider = document.querySelector("#chbMosaicSlider");
+    const chbMosaicDots = document.querySelectorAll(".chb-mosaic-dots button");
+
+    if (chbMosaicSlider && chbMosaicDots.length) {
+      chbMosaicDots.forEach((dot) => {
+        dot.addEventListener("click", () => {
+          const slideIndex = Number(dot.dataset.slide);
+          const slideWidth = chbMosaicSlider.clientWidth;
+
+          chbMosaicSlider.scrollTo({
+            left: slideIndex * slideWidth,
+            behavior: "smooth"
+          });
+        });
+      });
+
+      chbMosaicSlider.addEventListener("scroll", () => {
+        const slideWidth = chbMosaicSlider.clientWidth;
+        const activeIndex = Math.round(chbMosaicSlider.scrollLeft / slideWidth);
+
+        chbMosaicDots.forEach((dot, index) => {
+          dot.classList.toggle("is-active", index === activeIndex);
+        });
+      });
+    }
+  </script>
 </body>
 </html>
