@@ -487,6 +487,7 @@ a {
   overflow: hidden;
   min-height: 0;
   height: 100%;
+  margin: 0;
   border-radius: 24px;
   background:
     linear-gradient(180deg, rgba(43, 22, 13, 0) 48%, rgba(43, 22, 13, 0.44)),
@@ -519,6 +520,10 @@ a {
   line-height: 1.15;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
   letter-spacing: -0.01em;
+}
+
+.chb-mosaic-dots {
+  display: none;
 }
 
 /* Two column */
@@ -1373,7 +1378,6 @@ a {
   .chb-cards-grid,
   .chb-details-card,
   .chb-fit-list,
-  .chb-mosaic-grid,
   .chb-food-supporting {
     grid-template-columns: 1fr;
   }
@@ -1386,28 +1390,80 @@ a {
     min-height: 300px;
   }
 
+  /* Mobile mosaic slider */
   .chb-mosaic {
-    padding: 36px 0 20px;
+    padding: 34px 0 24px;
+  }
+
+  .chb-mosaic .chb-wrap {
+    width: min(100% - 32px, var(--chb-max));
   }
 
   .chb-mosaic-grid {
-    grid-template-rows: none;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    border-radius: 24px;
+  }
+
+  .chb-mosaic-grid::-webkit-scrollbar {
+    display: none;
   }
 
   .chb-mosaic-item,
   .chb-mosaic-item:first-child {
+    flex: 0 0 100%;
+    width: 100%;
+    min-height: 295px;
+    height: 295px;
     grid-column: auto;
     grid-row: auto;
-    min-height: 240px;
+    scroll-snap-align: center;
+    border-radius: 24px;
+    box-shadow: var(--chb-shadow-soft);
+  }
+
+  .chb-mosaic-item:hover {
+    transform: none;
   }
 
   .chb-mosaic-caption {
-    left: 14px;
-    right: 14px;
-    bottom: 14px;
-    padding: 8px 13px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    max-width: calc(100% - 24px);
+    padding: 8px 11px;
     font-size: 0.88rem;
-    line-height: 1.2;
+    line-height: 1.18;
+    border-radius: 12px;
+  }
+
+  .chb-mosaic-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .chb-mosaic-dots button {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: 0;
+    border-radius: 999px;
+    background: rgba(43, 22, 13, 0.24);
+    cursor: pointer;
+    transition: width 0.18s ease, background 0.18s ease;
+  }
+
+  .chb-mosaic-dots button.is-active {
+    width: 22px;
+    background: var(--chb-red);
   }
 
   .chb-photo-card {
