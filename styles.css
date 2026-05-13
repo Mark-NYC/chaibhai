@@ -1353,4 +1353,56 @@ background:
     width: 100%;
   }
 }
- 
+
+/* Benefit cards with floating circle icons */
+.chb-benefit-grid {
+  align-items: stretch;
+  margin-top: 72px;
+}
+
+.chb-benefit-card {
+  position: relative;
+  overflow: visible;
+  padding-top: 78px;
+}
+
+.chb-benefit-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 112px;
+  height: 112px;
+  transform: translate(-50%, -50%);
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 18px 45px rgba(43, 22, 13, 0.18);
+  border: 6px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.chb-benefit-icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 999px;
+}
+
+@media (max-width: 760px) {
+  .chb-benefit-grid {
+    gap: 72px;
+    margin-top: 64px;
+  }
+
+  .chb-benefit-card {
+    padding-top: 70px;
+  }
+
+  .chb-benefit-icon {
+    width: 96px;
+    height: 96px;
+  }
+}
