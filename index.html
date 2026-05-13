@@ -164,6 +164,66 @@
   </script>
 
   <link rel="stylesheet" href="./styles.css" />
+
+  <style>
+    #benefits,
+    #benefits .chb-wrap,
+    #benefits .chb-cards-grid {
+      overflow: visible;
+    }
+
+    .chb-benefit-grid {
+      align-items: stretch;
+      margin-top: 72px;
+    }
+
+    .chb-benefit-card {
+      position: relative;
+      overflow: visible;
+      padding-top: 78px;
+    }
+
+    .chb-benefit-icon {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 112px;
+      height: 112px;
+      transform: translate(-50%, -50%);
+      border-radius: 999px;
+      background: #fff;
+      box-shadow: 0 18px 45px rgba(43, 22, 13, 0.18);
+      border: 6px solid #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+    }
+
+    .chb-benefit-icon img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      border-radius: 999px;
+    }
+
+    @media (max-width: 760px) {
+      .chb-benefit-grid {
+        gap: 72px;
+        margin-top: 64px;
+      }
+
+      .chb-benefit-card {
+        padding-top: 70px;
+      }
+
+      .chb-benefit-icon {
+        width: 96px;
+        height: 96px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -353,18 +413,30 @@
           <p class="chb-eyebrow">Why walk with Jim?</p>
           <h2 class="chb-h2">A better way to experience New York.</h2>
 
-          <div class="chb-cards-grid">
-            <article class="chb-info-card">
+          <div class="chb-cards-grid chb-benefit-grid">
+            <article class="chb-info-card chb-benefit-card">
+              <div class="chb-benefit-icon" aria-hidden="true">
+                <img src="assets/images/see-a-side-of-NYC-most-tourists-miss.webp" alt="">
+              </div>
+
               <h3 class="chb-h3">See a side of NYC most tourists miss</h3>
               <p>Manhattan is great. But it is not the whole city. Jackson Heights gives you a different New York: local, layered, alive, and full of flavor.</p>
             </article>
 
-            <article class="chb-info-card">
+            <article class="chb-info-card chb-benefit-card">
+              <div class="chb-benefit-icon" aria-hidden="true">
+                <img src="assets/images/know-what-to-notice.webp" alt="">
+              </div>
+
               <h3 class="chb-h3">Know what to notice</h3>
               <p>The best parts of Jackson Heights are not always obvious. Jim points out the food spots, storefronts, streets, parks, and neighborhood details you would probably miss on your own.</p>
             </article>
 
-            <article class="chb-info-card">
+            <article class="chb-info-card chb-benefit-card">
+              <div class="chb-benefit-icon" aria-hidden="true">
+                <img src="assets/images/choose-the-tour-that-fits-your-day.webp" alt="">
+              </div>
+
               <h3 class="chb-h3">Choose the tour that fits your day</h3>
               <p>Only have an hour? Take the quick walk. Want the best all-around intro? Choose the 2-hour experience. Want to go deeper? Book the 3-hour immersion.</p>
             </article>
