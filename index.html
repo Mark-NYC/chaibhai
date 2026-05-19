@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -151,13 +150,6 @@
 
 <body>
   <div class="chb-page">
-    <div class="chb-announcement" aria-label="Tour announcement">
-      <div class="chb-wrap chb-announcement-inner">
-        <span>Private Jackson Heights tours for visitors who want real NYC, not another Times Square checklist.</span>
-        <a href="#tours">Choose your tour</a>
-      </div>
-    </div>
-
     <header class="chb-topbar">
       <div class="chb-wrap chb-nav">
         <a class="chb-logo" href="#top" aria-label="Chai Bhai Walking Tours home">
@@ -626,16 +618,12 @@
       </div>
     </footer>
 
-    <div class="chb-mobile-booking-bar" aria-label="Mobile booking bar">
+    <div class="chb-mobile-booking-bar" aria-label="Mobile booking bar" data-show-after="queens">
       <div>
-        <strong>Jackson Heights Walking Tours</strong>
-        <span>From $25 &middot; Private &middot; Easy from Manhattan</span>
+        <strong>Best first tour</strong>
+        <span>2-hour Food + Culture Walk &middot; $45</span>
       </div>
-
-      <div class="chb-mobile-booking-actions">
-        <a class="chb-btn chb-btn-outline-ink" href="mailto:info@chaibhai.net?subject=Jackson%20Heights%20Tour%20Question">Ask</a>
-        <a class="chb-btn" href="#tours">Book 2-Hour</a>
-      </div>
+      <a class="chb-btn" href="REPLACE_WITH_ACUITY_2_HOUR_URL" target="_blank" rel="noopener">Book Now</a>
     </div>
   </div>
 
@@ -667,6 +655,24 @@
         });
       });
     }
+
+    const chbMobileBookingBar = document.querySelector(".chb-mobile-booking-bar");
+    const chbMobileBookingTrigger = document.querySelector("#queens");
+
+    function updateChbMobileBookingBar() {
+      if (!chbMobileBookingBar || !chbMobileBookingTrigger) return;
+
+      const isMobile = window.matchMedia("(max-width: 640px)").matches;
+      const triggerTop = chbMobileBookingTrigger.getBoundingClientRect().top;
+      const shouldShow = isMobile && triggerTop <= 24;
+
+      chbMobileBookingBar.classList.toggle("is-visible", shouldShow);
+    }
+
+    updateChbMobileBookingBar();
+    window.addEventListener("scroll", updateChbMobileBookingBar, { passive: true });
+    window.addEventListener("resize", updateChbMobileBookingBar);
+
   </script>
 </body>
 </html>
