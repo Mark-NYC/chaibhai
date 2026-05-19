@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -146,526 +147,6 @@
   </script>
 
   <link rel="stylesheet" href="./styles.css" />
-
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    .chb-announcement {
-      display: block;
-      background: var(--chb-ink);
-      color: #fff;
-      border-bottom: 1px solid rgba(255,255,255,0.12);
-    }
-
-    .chb-announcement-inner {
-      min-height: 44px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 18px;
-      text-align: center;
-      font-size: 0.92rem;
-      font-weight: 800;
-      letter-spacing: -0.01em;
-    }
-
-    .chb-announcement a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 30px;
-      padding: 0 14px;
-      border-radius: 999px;
-      background: var(--chb-gold);
-      color: var(--chb-ink);
-      text-decoration: none;
-      font-size: 0.82rem;
-      font-weight: 900;
-      white-space: nowrap;
-    }
-
-    .chb-nav .chb-btn {
-      white-space: nowrap;
-    }
-
-    .chb-logo span {
-      font-weight: 900;
-    }
-
-    .chb-hero {
-      position: relative;
-      clip-path: none !important;
-      overflow: hidden;
-      padding-bottom: clamp(70px, 8vw, 116px) !important;
-      margin-bottom: 0 !important;
-    }
-
-    .chb-hero::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -1px;
-      height: clamp(52px, 7vw, 96px);
-      background: linear-gradient(180deg, rgba(248, 241, 225, 0) 0%, var(--chb-cream, #f8f1e1) 92%);
-      z-index: 1;
-      pointer-events: none;
-    }
-
-    .chb-hero .chb-wrap {
-      position: relative;
-      z-index: 2;
-    }
-
-    #tours {
-      margin-top: 0 !important;
-    }
-
-    .chb-hero-proof {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin: 18px 0 24px;
-      color: #fff;
-      font-size: 0.98rem;
-      font-weight: 850;
-      line-height: 1.35;
-      text-shadow: 0 1px 12px rgba(0,0,0,0.24);
-    }
-
-    .chb-google-review-icon {
-      width: 54px;
-      height: auto;
-      flex: 0 0 auto;
-      display: block;
-      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.20));
-    }
-
-    .chb-proof-copy {
-      color: #fff;
-      letter-spacing: -0.01em;
-      white-space: nowrap;
-    }
-
-    .chb-proof-copy strong {
-      color: #fff;
-      font-weight: 950;
-    }
-
-    .chb-proof-mobile {
-      display: none;
-    }
-
-    .chb-proof-under-cta {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 18px;
-      color: #fff;
-      font-weight: 800;
-    }
-
-    .chb-proof-under-cta span:first-child {
-      color: var(--chb-gold);
-      letter-spacing: 0.08em;
-    }
-
-    .chb-proof-under-cta em {
-      font-style: normal;
-      opacity: 0.92;
-    }
-
-    .chb-platform-proof {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin-top: 18px;
-      padding: 10px 13px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.13);
-      color: #fff;
-      backdrop-filter: blur(14px);
-      font-weight: 800;
-      line-height: 1.2;
-    }
-
-    .chb-platform-proof span:first-child {
-      color: var(--chb-gold);
-      letter-spacing: 0.08em;
-    }
-
-    .chb-mini-kicker,
-    .chb-card-kicker {
-      display: inline-flex;
-      align-items: center;
-      min-height: 28px;
-      padding: 0 11px;
-      border-radius: 999px;
-      background: rgba(215,53,32,0.10);
-      color: var(--chb-red);
-      font-weight: 900;
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
-    .chb-mini-body .chb-mini-kicker {
-      margin-bottom: 12px;
-    }
-
-    .chb-mini-price {
-      display: flex;
-      align-items: baseline;
-      gap: 8px;
-      margin: 16px 0 8px;
-      color: var(--chb-ink);
-      font-weight: 900;
-    }
-
-    .chb-mini-price strong {
-      font-size: 1.65rem;
-      letter-spacing: -0.04em;
-    }
-
-    .chb-mini-price span {
-      color: var(--chb-muted);
-      font-size: 0.92rem;
-      font-weight: 800;
-    }
-
-    .chb-tour-card {
-      position: relative;
-    }
-
-    .chb-tour-card--featured {
-      border: 2px solid rgba(147, 36, 22, 0.44) !important;
-      box-shadow: 0 26px 76px rgba(43, 22, 13, 0.18) !important;
-      transform: translateY(-7px);
-      background: linear-gradient(180deg, rgba(255,248,235,0.96), #fff) !important;
-    }
-
-    .chb-tour-card--featured .chb-h3 {
-      margin-top: 10px;
-    }
-
-    .chb-tour-price {
-      display: flex;
-      align-items: baseline;
-      gap: 8px;
-      margin: 12px 0 14px;
-      font-weight: 900;
-      color: var(--chb-ink);
-    }
-
-    .chb-tour-price strong {
-      font-size: 1.55rem;
-      letter-spacing: -0.04em;
-    }
-
-    .chb-tour-price span {
-      color: var(--chb-muted);
-      font-weight: 800;
-      font-size: 0.92rem;
-    }
-
-    .chb-choice-note {
-      margin-top: 24px;
-      padding: 16px 18px;
-      border-radius: 18px;
-      background: rgba(255,255,255,0.72);
-      border: 1px solid rgba(43, 22, 13, 0.08);
-      color: var(--chb-muted);
-      line-height: 1.55;
-    }
-
-    .chb-mosaic-inside-section {
-      padding: 38px 0 0;
-    }
-
-    .chb-mobile-facts {
-      display: none;
-    }
-
-    .chb-section-intro {
-      max-width: 790px;
-    }
-
-    .chb-guide-intro {
-      font-size: 1.05rem;
-      line-height: 1.72;
-      color: var(--chb-muted);
-    }
-
-    .chb-guide-intro strong {
-      color: var(--chb-ink);
-    }
-
-    .chb-benefit-card .chb-h3 {
-      font-size: 1rem;
-      line-height: 1.2;
-    }
-
-    .chb-benefit-card p {
-      line-height: 1.55;
-    }
-
-    .chb-review-source {
-      display: inline-flex;
-      align-items: center;
-      margin-top: 12px;
-      padding: 5px 9px;
-      border-radius: 999px;
-      background: rgba(43, 22, 13, 0.06);
-      color: var(--chb-muted);
-      font-size: 0.78rem;
-      font-weight: 900;
-    }
-
-    .chb-detail-card p {
-      line-height: 1.58;
-    }
-
-    .chb-faq-item {
-      border: 1px solid rgba(43, 22, 13, 0.10);
-      border-radius: 14px;
-      background: rgba(255,255,255,0.72);
-      box-shadow: 0 10px 30px rgba(43, 22, 13, 0.06);
-      overflow: hidden;
-    }
-
-    .chb-faq-item summary {
-      cursor: pointer;
-      list-style: none;
-      padding: 18px 20px;
-      font-weight: 900;
-      color: var(--chb-ink);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-    }
-
-    .chb-faq-item summary::-webkit-details-marker {
-      display: none;
-    }
-
-    .chb-faq-item summary::after {
-      content: "+";
-      flex: 0 0 auto;
-      width: 24px;
-      height: 24px;
-      border-radius: 999px;
-      display: grid;
-      place-items: center;
-      background: rgba(147, 36, 22, 0.10);
-      color: var(--chb-red);
-      font-weight: 900;
-    }
-
-    .chb-faq-item[open] summary::after {
-      content: "−";
-    }
-
-    .chb-faq-item p {
-      margin: 0;
-      padding: 0 20px 18px;
-      color: var(--chb-muted);
-      line-height: 1.65;
-    }
-
-    .chb-final-helper {
-      margin-top: 16px;
-      font-size: 0.93rem;
-      color: var(--chb-muted);
-      line-height: 1.55;
-    }
-
-    .chb-booking-card-top {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 12px;
-    }
-
-    .chb-seo-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 16px;
-    }
-
-    .chb-seo-links a {
-      color: rgba(255,255,255,0.82);
-      border: 1px solid rgba(255,255,255,0.16);
-      border-radius: 999px;
-      padding: 6px 10px;
-      text-decoration: none;
-      font-size: 0.82rem;
-      font-weight: 800;
-    }
-
-    .chb-mobile-booking-bar {
-      gap: 10px;
-    }
-
-    .chb-mobile-booking-actions {
-      display: flex;
-      gap: 8px;
-      flex: 0 0 auto;
-    }
-
-    .chb-mobile-booking-actions .chb-btn {
-      min-height: 40px;
-      padding-inline: 14px;
-    }
-
-    .chb-mobile-booking-actions .chb-btn-outline-ink {
-      background: #fff;
-    }
-
-    @media (max-width: 900px) {
-      .chb-nav-links {
-        display: none;
-      }
-    }
-
-    @media (max-width: 760px) {
-      .chb-booking-mini {
-        display: none;
-      }
-
-      .chb-trust-line {
-        display: none;
-      }
-
-      .chb-mobile-facts {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 6px;
-        margin: 18px 0 20px;
-      }
-
-      .chb-mobile-facts span {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 34px;
-        padding: 6px 8px;
-        border-radius: 999px;
-        background: rgba(255,255,255,0.14);
-        color: #fff;
-        font-size: 0.78rem;
-        font-weight: 900;
-        text-align: center;
-        backdrop-filter: blur(10px);
-      }
-
-      .chb-hero-actions {
-        gap: 10px;
-      }
-
-      .chb-hero-actions .chb-btn {
-        width: 100%;
-      }
-
-      .chb-hero-actions .chb-btn-outline {
-        background: transparent;
-        border: 0;
-        padding: 4px 0;
-        min-height: auto;
-        text-decoration: underline;
-        color: #fff;
-      }
-
-      .chb-tour-card--quick {
-        order: 2;
-      }
-
-      .chb-tour-card--featured {
-        order: 1;
-        transform: none;
-      }
-
-      .chb-tour-card--deep {
-        order: 3;
-      }
-
-      .chb-guide-card .chb-cards-grid {
-        grid-template-columns: 1fr !important;
-      }
-
-      .chb-mobile-booking-bar {
-        align-items: center;
-      }
-
-      .chb-mobile-booking-actions {
-        flex-direction: row;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .chb-announcement {
-        display: none;
-      }
-
-      .chb-mosaic-inside-section {
-        padding: 28px 0 0;
-      }
-
-      .chb-hero-proof {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        margin: 16px 0 22px;
-        font-size: 0.92rem;
-      }
-
-      .chb-google-review-icon {
-        width: 38px;
-      }
-
-      .chb-proof-desktop {
-        display: none;
-      }
-
-      .chb-proof-mobile {
-        display: inline;
-      }
-
-      .chb-proof-copy {
-        white-space: normal;
-      }
-
-      .chb-platform-proof {
-        align-items: flex-start;
-        border-radius: 18px;
-        line-height: 1.4;
-      }
-
-      .chb-faq-item summary {
-        padding: 16px;
-        font-size: 0.96rem;
-      }
-
-      .chb-faq-item p {
-        padding: 0 16px 16px;
-        font-size: 0.94rem;
-      }
-
-      .chb-mobile-booking-bar > div {
-        min-width: 0;
-      }
-
-      .chb-mobile-booking-actions .chb-btn {
-        font-size: 0.82rem;
-        padding-inline: 10px;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -723,19 +204,13 @@
 
           <aside class="chb-booking-mini" aria-label="Most popular tour summary">
             <div
-              class="chb-mini-image"
+              class="chb-mini-image chb-mini-image--guests"
               role="img"
               aria-label="Jim with guests on a Jackson Heights walking tour in Queens NYC"
-              style="
-                background-image: url('assets/images/Jim with guests.webp');
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-              "
             ></div>
 
             <div class="chb-mini-body">
-              <span class="chb-mini-kicker">Most popular</span>
+              <span class="chb-mini-kicker">Best first tour</span>
               <h2 class="chb-h3">2-Hour Food + Culture Walk</h2>
               <div class="chb-mini-meta">
                 Best first tour for visitors who want food, stories, and a real feel for Jackson Heights.
@@ -752,7 +227,7 @@
                 <li>Food and neighborhood stops</li>
               </ul>
 
-              <a class="chb-btn chb-btn-full" href="REPLACE_WITH_ACUITY_2_HOUR_URL" target="_blank" rel="noopener">Book the Most Popular Tour</a>
+              <a class="chb-btn chb-btn-full" href="REPLACE_WITH_ACUITY_2_HOUR_URL" target="_blank" rel="noopener">Book the Best First Tour</a>
             </div>
           </aside>
         </div>
@@ -764,7 +239,11 @@
           <h2 class="chb-h2">Pick the Jackson Heights tour that fits your trip.</h2>
           <p class="chb-p">Short on time? Go quick. First time in Queens? Choose the 2-hour walk. Want the full experience? Go deeper.</p>
 
-          <div class="chb-cards-grid">
+          <p class="chb-tour-helper">
+            Not sure what to pick? Most first-time visitors should choose the <strong>2-Hour Food + Culture Walk</strong>.
+          </p>
+
+          <div class="chb-cards-grid chb-tour-grid">
             <article class="chb-info-card chb-tour-card chb-tour-card--quick">
               <h3 class="chb-h3">1-Hour Neighborhood Walk</h3>
               <p><strong>Best if you are short on time.</strong></p>
@@ -781,15 +260,16 @@
                 <li>Good before dinner or another plan</li>
               </ul>
 
-              <div style="margin-top: 22px;">
+              <div class="chb-card-action">
                 <a class="chb-btn chb-btn-outline-ink" href="REPLACE_WITH_ACUITY_1_HOUR_URL" target="_blank" rel="noopener">Book the 1-Hour Walk</a>
               </div>
             </article>
 
             <article class="chb-info-card chb-tour-card chb-tour-card--featured">
-              <span class="chb-card-kicker">Most popular</span>
+              <span class="chb-card-kicker chb-featured-kicker">Best first tour</span>
               <h3 class="chb-h3">2-Hour Food + Culture Walk</h3>
               <p><strong>Best first tour for most visitors.</strong></p>
+              <p class="chb-featured-tour-note">Pick this if it is your first time in Jackson Heights.</p>
 
               <div class="chb-tour-price">
                 <strong>$45</strong>
@@ -803,8 +283,8 @@
                 <li>Best all-around experience</li>
               </ul>
 
-              <div style="margin-top: 22px;">
-                <a class="chb-btn" href="REPLACE_WITH_ACUITY_2_HOUR_URL" target="_blank" rel="noopener">Book the Most Popular Tour</a>
+              <div class="chb-card-action">
+                <a class="chb-btn" href="REPLACE_WITH_ACUITY_2_HOUR_URL" target="_blank" rel="noopener">Book the Best First Tour</a>
               </div>
             </article>
 
@@ -824,14 +304,14 @@
                 <li>Great for food lovers and repeat visitors</li>
               </ul>
 
-              <div style="margin-top: 22px;">
+              <div class="chb-card-action">
                 <a class="chb-btn chb-btn-outline-ink" href="REPLACE_WITH_ACUITY_3_HOUR_URL" target="_blank" rel="noopener">Book the 3-Hour Walk</a>
               </div>
             </article>
           </div>
 
           <div class="chb-choice-note">
-            Not sure which one to choose? Most first-time visitors should book the <strong>2-Hour Food + Culture Walk</strong>. Need a time you do not see? Email <a href="mailto:info@chaibhai.net">info@chaibhai.net</a> and ask Jim.
+            Need a time you do not see? Email <a href="mailto:info@chaibhai.net">info@chaibhai.net</a> and ask Jim before booking.
           </div>
         </div>
       </section>
@@ -847,23 +327,23 @@
 
           <div class="chb-mosaic chb-mosaic-inside-section" aria-label="Jackson Heights walking tour photos">
             <div class="chb-mosaic-grid" id="chbMosaicSlider">
-              <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/taste-spots-you-would-never-find-alone.webp');">
+              <figure class="chb-mosaic-item chb-mosaic-item--taste">
                 <figcaption class="chb-mosaic-caption">Taste momos, chai, snacks, and shops you would probably miss alone</figcaption>
               </figure>
 
-              <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/slow-down-with-a-proper-cup-of-chai.webp');">
+              <figure class="chb-mosaic-item chb-mosaic-item--chai">
                 <figcaption class="chb-mosaic-caption">Slow down with a proper cup of chai</figcaption>
               </figure>
 
-              <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/see-the-neighborhood-through-local-eyes.webp');">
+              <figure class="chb-mosaic-item chb-mosaic-item--local-eyes">
                 <figcaption class="chb-mosaic-caption">See the neighborhood through local eyes</figcaption>
               </figure>
 
-              <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/feel-the-energy-of-jackson-heights.webp');">
+              <figure class="chb-mosaic-item chb-mosaic-item--energy">
                 <figcaption class="chb-mosaic-caption">Feel the energy of Jackson Heights street life</figcaption>
               </figure>
 
-              <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/come-home-with-stories-not-just-photos.webp');">
+              <figure class="chb-mosaic-item chb-mosaic-item--stories">
                 <figcaption class="chb-mosaic-caption">Come home with stories, not just photos</figcaption>
               </figure>
             </div>
@@ -896,7 +376,7 @@
               <p class="chb-guide-intro">I’m Jim. I guide private walks through Jackson Heights because this neighborhood is one of the best ways to understand New York. We’ll move at your pace, stop for food, talk about culture and migration, and notice details most people walk right past.</p>
               <p class="chb-guide-intro"><strong>No megaphone. No big group shuffle. Just a local walk with space to ask real questions.</strong></p>
 
-              <div class="chb-cards-grid" style="grid-template-columns: repeat(2, 1fr); margin-top: 28px;">
+              <div class="chb-cards-grid chb-guide-benefit-grid">
                 <article class="chb-info-card chb-benefit-card">
                   <h3 class="chb-h3">You won’t feel herded.</h3>
                   <p>Private walks for individuals, couples, families, and small groups.</p>
@@ -918,7 +398,7 @@
                 </article>
               </div>
 
-              <div style="margin-top: 30px;">
+              <div class="chb-section-action">
                 <a class="chb-btn" href="mailto:info@chaibhai.net?subject=Question%20about%20a%20Jackson%20Heights%20walking%20tour">Ask Jim a Question</a>
               </div>
             </div>
@@ -957,7 +437,7 @@
             </article>
           </div>
 
-          <div style="margin-top: 34px;">
+          <div class="chb-section-action chb-section-action--large">
             <a class="chb-btn" href="#tours">Choose Your Tour</a>
           </div>
         </div>
@@ -1078,9 +558,9 @@
             <div class="chb-booking-card-top">
               <div>
                 <h3 class="chb-h3">Jackson Heights Food + Culture Walk</h3>
-                <p class="chb-p" style="color:var(--chb-muted);">Private tour with local guide Jim.</p>
+                <p class="chb-p chb-booking-muted">Private tour with local guide Jim.</p>
               </div>
-              <span class="chb-card-kicker">Most visitors choose 2 hours</span>
+              <span class="chb-card-kicker">Best first tour</span>
             </div>
 
             <div class="chb-book-options">
@@ -1088,8 +568,8 @@
                 Book 1-Hour Neighborhood Walk
               </a>
 
-              <a class="chb-btn chb-btn-full" href="REPLACE_WITH_ACUITY_2_HOUR_URL" target="_blank" rel="noopener">
-                Book 2-Hour Food + Culture Walk
+              <a class="chb-btn chb-btn-full chb-book-option-featured" href="REPLACE_WITH_ACUITY_2_HOUR_URL" target="_blank" rel="noopener">
+                Book Best First Tour
               </a>
 
               <a class="chb-btn chb-btn-outline-ink chb-btn-full" href="REPLACE_WITH_ACUITY_3_HOUR_URL" target="_blank" rel="noopener">
@@ -1101,7 +581,7 @@
               </a>
             </div>
 
-            <ul style="margin: 20px 0 0; color: var(--chb-muted); line-height: 1.7;">
+            <ul class="chb-booking-bullets">
               <li>Private tour</li>
               <li>1, 2, or 3 hours</li>
               <li>Food stops available</li>
@@ -1154,7 +634,7 @@
 
       <div class="chb-mobile-booking-actions">
         <a class="chb-btn chb-btn-outline-ink" href="mailto:info@chaibhai.net?subject=Jackson%20Heights%20Tour%20Question">Ask</a>
-        <a class="chb-btn" href="#tours">Book</a>
+        <a class="chb-btn" href="#tours">Book 2-Hour</a>
       </div>
     </div>
   </div>
