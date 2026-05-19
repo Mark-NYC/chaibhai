@@ -415,7 +415,7 @@ a {
 }
 
 .chb-mini-body li::before {
-  content: "✓";
+  content: "âœ“";
   color: var(--chb-red);
   font-weight: 900;
   flex-shrink: 0;
@@ -596,7 +596,7 @@ a {
 }
 
 .chb-route-list li::before {
-  content: "→";
+  content: "â†’";
   color: var(--chb-red);
   font-weight: 700;
   flex-shrink: 0;
@@ -757,7 +757,7 @@ a {
 }
 
 .chb-reel-list li::before {
-  content: "▸";
+  content: "â–¸";
   color: var(--chb-red);
   font-size: 0.8rem;
   flex-shrink: 0;
@@ -1562,7 +1562,7 @@ a {
 }
 
 .chb-faq-item[open] summary::after {
-  content: "−";
+  content: "âˆ’";
 }
 
 .chb-faq-item p {
@@ -1582,4 +1582,677 @@ a {
     padding: 0 16px 16px;
     font-size: 0.94rem;
   }
+}
+
+/* Moved from HTML: compact hero, Google proof, and page-specific utilities */
+html {
+      scroll-behavior: smooth;
+    }
+
+    .chb-announcement {
+      display: block;
+      background: var(--chb-ink);
+      color: #fff;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .chb-announcement-inner {
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      text-align: center;
+      font-size: 0.92rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+    }
+
+    .chb-announcement a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 30px;
+      padding: 0 14px;
+      border-radius: 999px;
+      background: var(--chb-gold);
+      color: var(--chb-ink);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .chb-nav .chb-btn {
+      white-space: nowrap;
+    }
+
+    .chb-logo span {
+      font-weight: 900;
+    }
+
+    .chb-hero {
+      position: relative;
+      clip-path: none !important;
+      overflow: hidden;
+      min-height: calc(100svh - 112px) !important;
+      padding-top: clamp(46px, 5.4vw, 68px) !important;
+      padding-bottom: clamp(56px, 6vw, 82px) !important;
+      margin-bottom: 0 !important;
+      display: flex;
+      align-items: center;
+    }
+
+    .chb-hero .chb-h1 {
+      font-size: clamp(2.55rem, 4.65vw, 4.55rem);
+      line-height: 1.01;
+      max-width: 740px;
+      letter-spacing: -0.045em;
+    }
+
+    .chb-hero .chb-lead {
+      margin-top: 16px;
+      max-width: 590px;
+      font-size: clamp(1.02rem, 1.45vw, 1.18rem);
+      line-height: 1.43;
+    }
+
+    .chb-hero::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      height: clamp(52px, 7vw, 96px);
+      background: linear-gradient(180deg, rgba(248, 241, 225, 0) 0%, var(--chb-cream, #f8f1e1) 92%);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .chb-hero .chb-wrap {
+      position: relative;
+      z-index: 2;
+    }
+
+    #tours {
+      margin-top: 0 !important;
+    }
+
+    .chb-hero-proof {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 14px 0 18px;
+      color: #fff;
+      font-size: 0.96rem;
+      font-weight: 850;
+      line-height: 1.3;
+      text-shadow: 0 1px 12px rgba(0,0,0,0.24);
+    }
+
+    .chb-google-review-icon {
+      width: 54px;
+      height: auto;
+      flex: 0 0 auto;
+      display: block;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.20));
+    }
+
+    .chb-proof-copy {
+      color: #fff;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+
+    .chb-proof-copy strong {
+      color: #fff;
+      font-weight: 950;
+    }
+
+    .chb-proof-mobile {
+      display: none;
+    }
+
+    .chb-proof-under-cta {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+      color: #fff;
+      font-weight: 800;
+    }
+
+    .chb-proof-under-cta span:first-child {
+      color: var(--chb-gold);
+      letter-spacing: 0.08em;
+    }
+
+    .chb-proof-under-cta em {
+      font-style: normal;
+      opacity: 0.92;
+    }
+
+    .chb-platform-proof {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 18px;
+      padding: 10px 13px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.13);
+      color: #fff;
+      backdrop-filter: blur(14px);
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .chb-platform-proof span:first-child {
+      color: var(--chb-gold);
+      letter-spacing: 0.08em;
+    }
+
+    .chb-mini-kicker,
+    .chb-card-kicker {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 0 11px;
+      border-radius: 999px;
+      background: rgba(215,53,32,0.10);
+      color: var(--chb-red);
+      font-weight: 900;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .chb-mini-body .chb-mini-kicker {
+      margin-bottom: 12px;
+    }
+
+    .chb-mini-price {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin: 16px 0 8px;
+      color: var(--chb-ink);
+      font-weight: 900;
+    }
+
+    .chb-mini-price strong {
+      font-size: 1.65rem;
+      letter-spacing: -0.04em;
+    }
+
+    .chb-mini-price span {
+      color: var(--chb-muted);
+      font-size: 0.92rem;
+      font-weight: 800;
+    }
+
+    .chb-tour-card {
+      position: relative;
+    }
+
+    .chb-tour-card--featured {
+      border: 2px solid rgba(147, 36, 22, 0.44) !important;
+      box-shadow: 0 26px 76px rgba(43, 22, 13, 0.18) !important;
+      transform: translateY(-7px);
+      background: linear-gradient(180deg, rgba(255,248,235,0.96), #fff) !important;
+    }
+
+    .chb-tour-card--featured .chb-h3 {
+      margin-top: 10px;
+    }
+
+    .chb-tour-price {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin: 12px 0 14px;
+      font-weight: 900;
+      color: var(--chb-ink);
+    }
+
+    .chb-tour-price strong {
+      font-size: 1.55rem;
+      letter-spacing: -0.04em;
+    }
+
+    .chb-tour-price span {
+      color: var(--chb-muted);
+      font-weight: 800;
+      font-size: 0.92rem;
+    }
+
+    .chb-choice-note {
+      margin-top: 24px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.72);
+      border: 1px solid rgba(43, 22, 13, 0.08);
+      color: var(--chb-muted);
+      line-height: 1.55;
+    }
+
+    .chb-mosaic-inside-section {
+      padding: 38px 0 0;
+    }
+
+    .chb-mobile-facts {
+      display: none;
+    }
+
+    .chb-section-intro {
+      max-width: 790px;
+    }
+
+    .chb-guide-intro {
+      font-size: 1.05rem;
+      line-height: 1.72;
+      color: var(--chb-muted);
+    }
+
+    .chb-guide-intro strong {
+      color: var(--chb-ink);
+    }
+
+    .chb-benefit-card .chb-h3 {
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+
+    .chb-benefit-card p {
+      line-height: 1.55;
+    }
+
+    .chb-review-source {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 12px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: rgba(43, 22, 13, 0.06);
+      color: var(--chb-muted);
+      font-size: 0.78rem;
+      font-weight: 900;
+    }
+
+    .chb-detail-card p {
+      line-height: 1.58;
+    }
+
+    .chb-faq-item {
+      border: 1px solid rgba(43, 22, 13, 0.10);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.72);
+      box-shadow: 0 10px 30px rgba(43, 22, 13, 0.06);
+      overflow: hidden;
+    }
+
+    .chb-faq-item summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 18px 20px;
+      font-weight: 900;
+      color: var(--chb-ink);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .chb-faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .chb-faq-item summary::after {
+      content: "+";
+      flex: 0 0 auto;
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: rgba(147, 36, 22, 0.10);
+      color: var(--chb-red);
+      font-weight: 900;
+    }
+
+    .chb-faq-item[open] summary::after {
+      content: "âˆ’";
+    }
+
+    .chb-faq-item p {
+      margin: 0;
+      padding: 0 20px 18px;
+      color: var(--chb-muted);
+      line-height: 1.65;
+    }
+
+    .chb-final-helper {
+      margin-top: 16px;
+      font-size: 0.93rem;
+      color: var(--chb-muted);
+      line-height: 1.55;
+    }
+
+    .chb-booking-card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .chb-seo-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .chb-seo-links a {
+      color: rgba(255,255,255,0.82);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 999px;
+      padding: 6px 10px;
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .chb-mobile-booking-bar {
+      gap: 10px;
+    }
+
+    .chb-mobile-booking-actions {
+      display: flex;
+      gap: 8px;
+      flex: 0 0 auto;
+    }
+
+    .chb-mobile-booking-actions .chb-btn {
+      min-height: 40px;
+      padding-inline: 14px;
+    }
+
+    .chb-hero .chb-hero-actions {
+      margin-top: 20px;
+    }
+
+    .chb-hero .chb-btn {
+      min-height: 48px;
+      padding-inline: 23px;
+    }
+
+    .chb-booking-mini .chb-mini-image {
+      min-height: 150px;
+    }
+
+    .chb-booking-mini .chb-mini-body {
+      padding: 18px;
+    }
+
+    .chb-booking-mini .chb-mini-price {
+      margin: 12px 0;
+    }
+
+    .chb-booking-mini .chb-mini-body ul {
+      gap: 6px;
+      margin-bottom: 14px;
+      font-size: 0.92rem;
+    }
+
+    .chb-booking-mini .chb-btn {
+      min-height: 46px;
+      font-size: 0.94rem;
+    }
+
+    .chb-mobile-booking-actions .chb-btn-outline-ink {
+      background: #fff;
+    }
+
+    @media (max-width: 900px) {
+      .chb-nav-links {
+        display: none;
+      }
+
+      .chb-booking-mini {
+        display: none;
+      }
+
+      .chb-hero {
+        min-height: calc(100svh - 68px) !important;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .chb-booking-mini {
+        display: none;
+      }
+
+      .chb-trust-line {
+        display: none;
+      }
+
+      .chb-mobile-facts {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+        margin: 18px 0 20px;
+      }
+
+      .chb-mobile-facts span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 34px;
+        padding: 6px 8px;
+        border-radius: 999px;
+        background: rgba(255,255,255,0.14);
+        color: #fff;
+        font-size: 0.78rem;
+        font-weight: 900;
+        text-align: center;
+        backdrop-filter: blur(10px);
+      }
+
+      .chb-hero-actions {
+        gap: 10px;
+      }
+
+      .chb-hero-actions .chb-btn {
+        width: 100%;
+      }
+
+      .chb-hero-actions .chb-btn-outline {
+        background: transparent;
+        border: 0;
+        padding: 4px 0;
+        min-height: auto;
+        text-decoration: underline;
+        color: #fff;
+      }
+
+      .chb-tour-card--quick {
+        order: 2;
+      }
+
+      .chb-tour-card--featured {
+        order: 1;
+        transform: none;
+      }
+
+      .chb-tour-card--deep {
+        order: 3;
+      }
+
+      .chb-guide-card .chb-cards-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      .chb-mobile-booking-bar {
+        align-items: center;
+      }
+
+      .chb-mobile-booking-actions {
+        flex-direction: row;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .chb-announcement {
+        display: none;
+      }
+
+      .chb-mosaic-inside-section {
+        padding: 28px 0 0;
+      }
+
+      .chb-hero {
+        min-height: calc(100svh - 58px) !important;
+        padding-top: 34px !important;
+        padding-bottom: 44px !important;
+        align-items: center;
+      }
+
+      .chb-hero .chb-h1 {
+        font-size: clamp(2.05rem, 9.1vw, 3rem);
+        line-height: 1.02;
+        max-width: 10.5em;
+      }
+
+      .chb-hero .chb-lead {
+        margin-top: 13px;
+        font-size: 0.98rem;
+        line-height: 1.42;
+        max-width: 34ch;
+      }
+
+      .chb-hero-proof {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 12px 0 16px;
+        font-size: 0.88rem;
+      }
+
+      .chb-google-review-icon {
+        width: 34px;
+      }
+
+      .chb-hero .chb-hero-actions {
+        margin-top: 16px;
+      }
+
+      .chb-hero .chb-btn {
+        min-height: 46px;
+      }
+
+      .chb-proof-desktop {
+        display: none;
+      }
+
+      .chb-proof-mobile {
+        display: inline;
+      }
+
+      .chb-proof-copy {
+        white-space: normal;
+      }
+
+      .chb-platform-proof {
+        align-items: flex-start;
+        border-radius: 18px;
+        line-height: 1.4;
+      }
+
+      .chb-faq-item summary {
+        padding: 16px;
+        font-size: 0.96rem;
+      }
+
+      .chb-faq-item p {
+        padding: 0 16px 16px;
+        font-size: 0.94rem;
+      }
+
+      .chb-mobile-booking-bar > div {
+        min-width: 0;
+      }
+
+      .chb-mobile-booking-actions .chb-btn {
+        font-size: 0.82rem;
+        padding-inline: 10px;
+      }
+    }
+
+/* No-inline-style utilities */
+.chb-mini-image--guests {
+  background-image: url('assets/images/Jim with guests.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.chb-card-action {
+  margin-top: 22px;
+}
+
+.chb-section-action {
+  margin-top: 30px;
+}
+
+.chb-section-action--large {
+  margin-top: 34px;
+}
+
+.chb-mosaic-item--taste {
+  --mosaic-image: url('./assets/images/taste-spots-you-would-never-find-alone.webp');
+}
+
+.chb-mosaic-item--chai {
+  --mosaic-image: url('./assets/images/slow-down-with-a-proper-cup-of-chai.webp');
+}
+
+.chb-mosaic-item--local-eyes {
+  --mosaic-image: url('./assets/images/see-the-neighborhood-through-local-eyes.webp');
+}
+
+.chb-mosaic-item--energy {
+  --mosaic-image: url('./assets/images/feel-the-energy-of-jackson-heights.webp');
+}
+
+.chb-mosaic-item--stories {
+  --mosaic-image: url('./assets/images/come-home-with-stories-not-just-photos.webp');
+}
+
+.chb-guide-benefit-grid {
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 28px;
+}
+
+.chb-booking-muted {
+  color: var(--chb-muted) !important;
+}
+
+.chb-booking-bullets {
+  margin: 20px 0 0;
+  color: var(--chb-muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  .chb-guide-benefit-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Final hero edge override: smooth fade, no jagged polygon */
+.chb-hero::after {
+  clip-path: none !important;
+  background: linear-gradient(180deg, rgba(255, 247, 223, 0) 0%, var(--chb-cream) 92%) !important;
 }
