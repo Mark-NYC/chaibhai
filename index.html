@@ -1,16 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Private Jackson Heights Walking Tours in Queens NYC | Chai Bhai Walking Tours</title>
-  <meta name="description" content="Book a private Jackson Heights food and culture walking tour in Queens, NYC with Jim. Choose a 1-hour neighborhood walk, 2-hour food and culture walk, or 3-hour deep dive." />
+  <title>Private Jackson Heights Food & Culture Walking Tours in Queens NYC | Chai Bhai Walking Tours</title>
+  <meta name="description" content="Book a private Jackson Heights food and culture walking tour in Queens, NYC with Jim. Choose a quick 1-hour neighborhood walk, the most popular 2-hour food and culture walk, or a 3-hour deep dive." />
 
   <link rel="canonical" href="https://mark-nyc.github.io/chaibhai/" />
 
-  <meta property="og:title" content="Private Jackson Heights Walking Tours in Queens NYC | Chai Bhai Walking Tours" />
-  <meta property="og:description" content="Eat your way through the New York most tourists miss with Jim’s private Jackson Heights food and culture walks." />
+  <meta property="og:title" content="Private Jackson Heights Food & Culture Walking Tours in Queens NYC" />
+  <meta property="og:description" content="Eat your way through the New York most tourists miss on a private Jackson Heights food and culture walk with Jim." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mark-nyc.github.io/chaibhai/" />
   <meta property="og:image" content="https://mark-nyc.github.io/chaibhai/assets/images/jackson-heights-walking-tour-og.jpg" />
@@ -85,18 +86,26 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Where is the tour?",
+            "name": "Where is the Jackson Heights walking tour?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The tour takes place in Jackson Heights, Queens."
+              "text": "The tour takes place in Jackson Heights, Queens. Exact meeting details are sent after booking."
             }
           },
           {
             "@type": "Question",
-            "name": "How do I get there?",
+            "name": "How do I get to Jackson Heights from Manhattan?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Jackson Heights is easy to reach by subway from Manhattan. Meeting details are sent after booking."
+              "text": "Jackson Heights is easy to reach by subway from Manhattan. Jim sends clear meeting details after booking."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Jackson Heights safe for visitors?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Jackson Heights is a busy, lived-in Queens neighborhood. The tour follows public streets, food stops, shops, and neighborhood landmarks."
             }
           },
           {
@@ -140,6 +149,10 @@
   <link rel="stylesheet" href="./styles.css" />
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     .chb-announcement {
       display: block;
       background: var(--chb-ink);
@@ -148,14 +161,15 @@
     }
 
     .chb-announcement-inner {
-      min-height: 46px;
+      min-height: 44px;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 18px;
       text-align: center;
       font-size: 0.92rem;
-      font-weight: 700;
+      font-weight: 800;
+      letter-spacing: -0.01em;
     }
 
     .chb-announcement a {
@@ -169,8 +183,143 @@
       color: var(--chb-ink);
       text-decoration: none;
       font-size: 0.82rem;
-      font-weight: 800;
+      font-weight: 900;
       white-space: nowrap;
+    }
+
+    .chb-nav .chb-btn {
+      white-space: nowrap;
+    }
+
+    .chb-logo span {
+      font-weight: 900;
+    }
+
+    .chb-hero {
+      position: relative;
+    }
+
+    .chb-proof-under-cta {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+      color: #fff;
+      font-weight: 800;
+    }
+
+    .chb-proof-under-cta span:first-child {
+      color: var(--chb-gold);
+      letter-spacing: 0.08em;
+    }
+
+    .chb-proof-under-cta em {
+      font-style: normal;
+      opacity: 0.92;
+    }
+
+    .chb-platform-proof {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 18px;
+      padding: 10px 13px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.13);
+      color: #fff;
+      backdrop-filter: blur(14px);
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .chb-platform-proof span:first-child {
+      color: var(--chb-gold);
+      letter-spacing: 0.08em;
+    }
+
+    .chb-mini-kicker,
+    .chb-card-kicker {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 0 11px;
+      border-radius: 999px;
+      background: rgba(215,53,32,0.10);
+      color: var(--chb-red);
+      font-weight: 900;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .chb-mini-body .chb-mini-kicker {
+      margin-bottom: 12px;
+    }
+
+    .chb-mini-price {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin: 16px 0 8px;
+      color: var(--chb-ink);
+      font-weight: 900;
+    }
+
+    .chb-mini-price strong {
+      font-size: 1.65rem;
+      letter-spacing: -0.04em;
+    }
+
+    .chb-mini-price span {
+      color: var(--chb-muted);
+      font-size: 0.92rem;
+      font-weight: 800;
+    }
+
+    .chb-tour-card {
+      position: relative;
+    }
+
+    .chb-tour-card--featured {
+      border: 2px solid rgba(147, 36, 22, 0.44) !important;
+      box-shadow: 0 26px 76px rgba(43, 22, 13, 0.18) !important;
+      transform: translateY(-7px);
+      background: linear-gradient(180deg, rgba(255,248,235,0.96), #fff) !important;
+    }
+
+    .chb-tour-card--featured .chb-h3 {
+      margin-top: 10px;
+    }
+
+    .chb-tour-price {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin: 12px 0 14px;
+      font-weight: 900;
+      color: var(--chb-ink);
+    }
+
+    .chb-tour-price strong {
+      font-size: 1.55rem;
+      letter-spacing: -0.04em;
+    }
+
+    .chb-tour-price span {
+      color: var(--chb-muted);
+      font-weight: 800;
+      font-size: 0.92rem;
+    }
+
+    .chb-choice-note {
+      margin-top: 24px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.72);
+      border: 1px solid rgba(43, 22, 13, 0.08);
+      color: var(--chb-muted);
+      line-height: 1.55;
     }
 
     .chb-mosaic-inside-section {
@@ -179,6 +328,45 @@
 
     .chb-mobile-facts {
       display: none;
+    }
+
+    .chb-section-intro {
+      max-width: 790px;
+    }
+
+    .chb-guide-intro {
+      font-size: 1.05rem;
+      line-height: 1.72;
+      color: var(--chb-muted);
+    }
+
+    .chb-guide-intro strong {
+      color: var(--chb-ink);
+    }
+
+    .chb-benefit-card .chb-h3 {
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+
+    .chb-benefit-card p {
+      line-height: 1.55;
+    }
+
+    .chb-review-source {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 12px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: rgba(43, 22, 13, 0.06);
+      color: var(--chb-muted);
+      font-size: 0.78rem;
+      font-weight: 900;
+    }
+
+    .chb-detail-card p {
+      line-height: 1.58;
     }
 
     .chb-faq-item {
@@ -229,6 +417,63 @@
       line-height: 1.65;
     }
 
+    .chb-final-helper {
+      margin-top: 16px;
+      font-size: 0.93rem;
+      color: var(--chb-muted);
+      line-height: 1.55;
+    }
+
+    .chb-booking-card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .chb-seo-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .chb-seo-links a {
+      color: rgba(255,255,255,0.82);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 999px;
+      padding: 6px 10px;
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .chb-mobile-booking-bar {
+      gap: 10px;
+    }
+
+    .chb-mobile-booking-actions {
+      display: flex;
+      gap: 8px;
+      flex: 0 0 auto;
+    }
+
+    .chb-mobile-booking-actions .chb-btn {
+      min-height: 40px;
+      padding-inline: 14px;
+    }
+
+    .chb-mobile-booking-actions .chb-btn-outline-ink {
+      background: #fff;
+    }
+
+    @media (max-width: 900px) {
+      .chb-nav-links {
+        display: none;
+      }
+    }
+
     @media (max-width: 760px) {
       .chb-booking-mini {
         display: none;
@@ -255,7 +500,7 @@
         background: rgba(255,255,255,0.14);
         color: #fff;
         font-size: 0.78rem;
-        font-weight: 800;
+        font-weight: 900;
         text-align: center;
         backdrop-filter: blur(10px);
       }
@@ -276,6 +521,31 @@
         text-decoration: underline;
         color: #fff;
       }
+
+      .chb-tour-card--quick {
+        order: 2;
+      }
+
+      .chb-tour-card--featured {
+        order: 1;
+        transform: none;
+      }
+
+      .chb-tour-card--deep {
+        order: 3;
+      }
+
+      .chb-guide-card .chb-cards-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      .chb-mobile-booking-bar {
+        align-items: center;
+      }
+
+      .chb-mobile-booking-actions {
+        flex-direction: row;
+      }
     }
 
     @media (max-width: 640px) {
@@ -287,6 +557,12 @@
         padding: 28px 0 0;
       }
 
+      .chb-platform-proof {
+        align-items: flex-start;
+        border-radius: 18px;
+        line-height: 1.4;
+      }
+
       .chb-faq-item summary {
         padding: 16px;
         font-size: 0.96rem;
@@ -296,6 +572,15 @@
         padding: 0 16px 16px;
         font-size: 0.94rem;
       }
+
+      .chb-mobile-booking-bar > div {
+        min-width: 0;
+      }
+
+      .chb-mobile-booking-actions .chb-btn {
+        font-size: 0.82rem;
+        padding-inline: 10px;
+      }
     }
   </style>
 </head>
@@ -304,7 +589,7 @@
   <div class="chb-page">
     <div class="chb-announcement" aria-label="Tour announcement">
       <div class="chb-wrap chb-announcement-inner">
-        <span>Private Jackson Heights walking tours with local guide Jim. 1, 2, and 3-hour options available.</span>
+        <span>Private Jackson Heights tours for visitors who want real NYC, not another Times Square checklist.</span>
         <a href="#tours">Choose your tour</a>
       </div>
     </div>
@@ -317,13 +602,13 @@
         </a>
 
         <nav class="chb-nav-links" aria-label="Main navigation">
-          <a href="#tours">Tours</a>
-          <a href="#guide">About Jim</a>
+          <a href="#tours">Choose a Tour</a>
+          <a href="#guide">Meet Jim</a>
           <a href="#reviews">Reviews</a>
-          <a href="#faq">FAQ</a>
+          <a href="#faq">Questions</a>
         </nav>
 
-        <a class="chb-btn" href="#book">Book now</a>
+        <a class="chb-btn" href="#book">Book a Tour</a>
       </div>
     </header>
 
@@ -331,13 +616,13 @@
       <section class="chb-hero">
         <div class="chb-wrap chb-hero-grid">
           <div>
-            <p class="chb-eyebrow">Private walking tours in Jackson Heights, Queens</p>
+            <p class="chb-eyebrow">Private food and culture walks in Jackson Heights, Queens</p>
             <h1 class="chb-h1">Eat your way through the New York most tourists miss.</h1>
-            <p class="chb-lead">Walk with Jim through chai spots, momos, fuchka, local shops, and stories you would probably miss alone.</p>
+            <p class="chb-lead">Walk with Jim through chai spots, momo counters, local shops, and neighborhood stories that are easy to miss when you are exploring Queens alone.</p>
 
             <div class="chb-trust-line" aria-label="Tour highlights">
+              <span class="chb-pill">★★★★★ Guest-loved walks</span>
               <span class="chb-pill">Private tours</span>
-              <span class="chb-pill">1, 2, or 3 hours</span>
               <span class="chb-pill">Easy from Manhattan</span>
               <span class="chb-pill">From $25</span>
             </div>
@@ -350,17 +635,17 @@
             </div>
 
             <div class="chb-hero-actions">
-              <a class="chb-btn chb-btn-light" href="#tours">Choose your tour</a>
-              <a class="chb-btn chb-btn-outline" href="mailto:info@chaibhai.net?subject=Question%20about%20a%20Jackson%20Heights%20walking%20tour">Ask Jim a question</a>
+              <a class="chb-btn chb-btn-light" href="#tours">Choose Your Tour</a>
+              <a class="chb-btn chb-btn-outline" href="mailto:info@chaibhai.net?subject=Question%20about%20a%20Jackson%20Heights%20walking%20tour">Ask Jim a Question</a>
             </div>
 
             <div class="chb-platform-proof" aria-label="Guest review">
               <span>★★★★★</span>
-              <span>“The most memorable thing we did in New York.”</span>
+              <span>“The most memorable thing we did in New York.” <em>Recent guest</em></span>
             </div>
           </div>
 
-          <aside class="chb-booking-mini" aria-label="Tour summary">
+          <aside class="chb-booking-mini" aria-label="Most popular tour summary">
             <div
               class="chb-mini-image"
               role="img"
@@ -374,16 +659,24 @@
             ></div>
 
             <div class="chb-mini-body">
-              <h2 class="chb-h3">Jackson Heights Food + Culture Walk</h2>
+              <span class="chb-mini-kicker">Most popular</span>
+              <h2 class="chb-h3">2-Hour Food + Culture Walk</h2>
               <div class="chb-mini-meta">
-                Private tour with local guide Jim
+                Best first tour for visitors who want food, stories, and a real feel for Jackson Heights.
               </div>
+
+              <div class="chb-mini-price">
+                <strong>$45</strong>
+                <span>starting price</span>
+              </div>
+
               <ul>
-                <li>1, 2, or 3 hours</li>
-                <li>Jackson Heights, Queens</li>
-                <li>Food stops available</li>
+                <li>Private walk with Jim</li>
+                <li>Kerala Chaya included</li>
+                <li>Food and neighborhood stops</li>
               </ul>
-              <a class="chb-btn chb-btn-full" href="#tours">See tour options</a>
+
+              <a class="chb-btn chb-btn-full" href="REPLACE_WITH_ACUITY_2_HOUR_URL" target="_blank" rel="noopener">Book the Most Popular Tour</a>
             </div>
           </aside>
         </div>
@@ -393,80 +686,105 @@
         <div class="chb-wrap">
           <p class="chb-eyebrow">Choose your walk</p>
           <h2 class="chb-h2">Pick the Jackson Heights tour that fits your trip.</h2>
-          <p class="chb-p">Short on time, hungry for the full experience, or ready to go deeper? Pick your length.</p>
+          <p class="chb-p">Short on time? Go quick. First time in Queens? Choose the 2-hour walk. Want the full experience? Go deeper.</p>
 
           <div class="chb-cards-grid">
-            <article class="chb-info-card">
+            <article class="chb-info-card chb-tour-card chb-tour-card--quick">
               <h3 class="chb-h3">1-Hour Neighborhood Walk</h3>
-              <p><strong>Best for:</strong> a quick local intro</p>
-              <p><strong>From $25</strong></p>
+              <p><strong>Best if you are short on time.</strong></p>
+
+              <div class="chb-tour-price">
+                <strong>$25</strong>
+                <span>starting price</span>
+              </div>
+
               <ul>
-                <li>Light walk</li>
+                <li>Quick local intro</li>
                 <li>Neighborhood highlights</li>
-                <li>Great if your schedule is packed</li>
+                <li>Light walking pace</li>
+                <li>Good before dinner or another plan</li>
               </ul>
+
               <div style="margin-top: 22px;">
-                <a class="chb-btn chb-btn-outline-ink" href="REPLACE_WITH_ACUITY_1_HOUR_URL" target="_blank" rel="noopener">Book 1 hour</a>
+                <a class="chb-btn chb-btn-outline-ink" href="REPLACE_WITH_ACUITY_1_HOUR_URL" target="_blank" rel="noopener">Book the 1-Hour Walk</a>
               </div>
             </article>
 
-            <article class="chb-info-card" style="border: 2px solid rgba(147, 36, 22, 0.38); box-shadow: 0 24px 70px rgba(43, 22, 13, 0.16); transform: translateY(-6px);">
-              <div style="display:inline-flex; margin-bottom:14px; min-height:30px; align-items:center; padding:0 12px; border-radius:999px; background:rgba(215,53,32,0.1); color:var(--chb-red); font-weight:800; font-size:0.82rem;">Most popular</div>
+            <article class="chb-info-card chb-tour-card chb-tour-card--featured">
+              <span class="chb-card-kicker">Most popular</span>
               <h3 class="chb-h3">2-Hour Food + Culture Walk</h3>
-              <p><strong>Best for:</strong> most visitors</p>
-              <p><strong>From $45</strong></p>
+              <p><strong>Best first tour for most visitors.</strong></p>
+
+              <div class="chb-tour-price">
+                <strong>$45</strong>
+                <span>starting price</span>
+              </div>
+
               <ul>
                 <li>Kerala Chaya included</li>
                 <li>Food and neighborhood stops</li>
+                <li>Local stories and cultural context</li>
                 <li>Best all-around experience</li>
               </ul>
+
               <div style="margin-top: 22px;">
-                <a class="chb-btn" href="REPLACE_WITH_ACUITY_2_HOUR_URL" target="_blank" rel="noopener">Book 2 hours</a>
+                <a class="chb-btn" href="REPLACE_WITH_ACUITY_2_HOUR_URL" target="_blank" rel="noopener">Book the Most Popular Tour</a>
               </div>
             </article>
 
-            <article class="chb-info-card">
+            <article class="chb-info-card chb-tour-card chb-tour-card--deep">
               <h3 class="chb-h3">3-Hour Deep Dive</h3>
-              <p><strong>Best for:</strong> food lovers and repeat visitors</p>
-              <p><strong>From $75</strong></p>
+              <p><strong>Best if you want the full Queens experience.</strong></p>
+
+              <div class="chb-tour-price">
+                <strong>$75</strong>
+                <span>starting price</span>
+              </div>
+
               <ul>
                 <li>Chaya and snacks included</li>
-                <li>More food, stories, and time</li>
-                <li>Slower pace</li>
+                <li>More food stops and more stories</li>
+                <li>Slower pace with more time to explore</li>
+                <li>Great for food lovers and repeat visitors</li>
               </ul>
+
               <div style="margin-top: 22px;">
-                <a class="chb-btn chb-btn-outline-ink" href="REPLACE_WITH_ACUITY_3_HOUR_URL" target="_blank" rel="noopener">Book 3 hours</a>
+                <a class="chb-btn chb-btn-outline-ink" href="REPLACE_WITH_ACUITY_3_HOUR_URL" target="_blank" rel="noopener">Book the 3-Hour Walk</a>
               </div>
             </article>
           </div>
 
-          <p class="chb-p" style="margin-top:28px;">Need a time you do not see? Email <a href="mailto:info@chaibhai.net">info@chaibhai.net</a> and ask Jim.</p>
+          <div class="chb-choice-note">
+            Not sure which one to choose? Most first-time visitors should book the <strong>2-Hour Food + Culture Walk</strong>. Need a time you do not see? Email <a href="mailto:info@chaibhai.net">info@chaibhai.net</a> and ask Jim.
+          </div>
         </div>
       </section>
 
       <section class="chb-section chb-local-section" id="queens">
         <div class="chb-wrap">
-          <p class="chb-eyebrow">Why Jackson Heights</p>
-          <h2 class="chb-h2">A more local, flavorful side of New York.</h2>
-          <p class="chb-p">Jackson Heights is packed with sari shops, momo counters, chai spots, bakeries, street vendors, and neighborhood life most visitors never reach.</p>
-          <p class="chb-p">It is not polished for tourists. That is the point.</p>
+          <div class="chb-section-intro">
+            <p class="chb-eyebrow">Why Jackson Heights</p>
+            <h2 class="chb-h2">Jackson Heights is one of NYC’s best food neighborhoods. Most tourists miss it.</h2>
+            <p class="chb-p">This is where sari shops, momo counters, chai spots, bakeries, street vendors, parks, and everyday Queens life collide in a few walkable blocks.</p>
+            <p class="chb-p">It is not polished for tourists. That is exactly why it is worth seeing with someone who knows what to notice.</p>
+          </div>
 
           <div class="chb-mosaic chb-mosaic-inside-section" aria-label="Jackson Heights walking tour photos">
             <div class="chb-mosaic-grid" id="chbMosaicSlider">
-              <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/see-the-neighborhood-through-local-eyes.webp');">
-                <figcaption class="chb-mosaic-caption">See the neighborhood through local eyes</figcaption>
-              </figure>
-
               <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/taste-spots-you-would-never-find-alone.webp');">
-                <figcaption class="chb-mosaic-caption">Taste spots you would miss alone</figcaption>
+                <figcaption class="chb-mosaic-caption">Taste momos, chai, snacks, and shops you would probably miss alone</figcaption>
               </figure>
 
               <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/slow-down-with-a-proper-cup-of-chai.webp');">
                 <figcaption class="chb-mosaic-caption">Slow down with a proper cup of chai</figcaption>
               </figure>
 
+              <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/see-the-neighborhood-through-local-eyes.webp');">
+                <figcaption class="chb-mosaic-caption">See the neighborhood through local eyes</figcaption>
+              </figure>
+
               <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/feel-the-energy-of-jackson-heights.webp');">
-                <figcaption class="chb-mosaic-caption">Feel the energy of Jackson Heights</figcaption>
+                <figcaption class="chb-mosaic-caption">Feel the energy of Jackson Heights street life</figcaption>
               </figure>
 
               <figure class="chb-mosaic-item" style="--mosaic-image: url('./assets/images/come-home-with-stories-not-just-photos.webp');">
@@ -498,30 +816,34 @@
             <div>
               <p class="chb-eyebrow">Meet your guide</p>
               <h2 class="chb-h2">See Jackson Heights with Jim, not a script.</h2>
-              <p class="chb-p">Jim helps you know where to pause, what to taste, what to notice, and how the neighborhood fits together.</p>
-              <p class="chb-p"><strong>Friendly pace. Local feel. No megaphone energy.</strong></p>
+
+              <p class="chb-guide-intro">I’m Jim. I guide private walks through Jackson Heights because this neighborhood is one of the best ways to understand New York. We’ll move at your pace, stop for food, talk about culture and migration, and notice details most people walk right past.</p>
+              <p class="chb-guide-intro"><strong>No megaphone. No big group shuffle. Just a local walk with space to ask real questions.</strong></p>
 
               <div class="chb-cards-grid" style="grid-template-columns: repeat(2, 1fr); margin-top: 28px;">
-                <article class="chb-info-card">
-                  <h3 class="chb-h3">Local guide</h3>
-                  <p>In Jackson Heights</p>
+                <article class="chb-info-card chb-benefit-card">
+                  <h3 class="chb-h3">You won’t feel herded.</h3>
+                  <p>Private walks for individuals, couples, families, and small groups.</p>
                 </article>
-                <article class="chb-info-card">
-                  <h3 class="chb-h3">Private walks</h3>
-                  <p>For visitors and small groups</p>
+
+                <article class="chb-info-card chb-benefit-card">
+                  <h3 class="chb-h3">You’ll know what to order.</h3>
+                  <p>Jim helps you pick approachable local bites instead of guessing at the counter.</p>
                 </article>
-                <article class="chb-info-card">
-                  <h3 class="chb-h3">Food + culture</h3>
-                  <p>Taste the neighborhood with context</p>
+
+                <article class="chb-info-card chb-benefit-card">
+                  <h3 class="chb-h3">You’ll understand what you’re seeing.</h3>
+                  <p>Food, storefronts, worship spaces, parks, and daily life make more sense with context.</p>
                 </article>
-                <article class="chb-info-card">
-                  <h3 class="chb-h3">Flexible pace</h3>
-                  <p>Easy, human, and relaxed</p>
+
+                <article class="chb-info-card chb-benefit-card">
+                  <h3 class="chb-h3">You can ask real questions.</h3>
+                  <p>The pace is relaxed, human, and flexible enough for curiosity.</p>
                 </article>
               </div>
 
               <div style="margin-top: 30px;">
-                <a class="chb-btn" href="mailto:info@chaibhai.net?subject=Question%20about%20a%20Jackson%20Heights%20walking%20tour">Ask Jim a question</a>
+                <a class="chb-btn" href="mailto:info@chaibhai.net?subject=Question%20about%20a%20Jackson%20Heights%20walking%20tour">Ask Jim a Question</a>
               </div>
             </div>
           </div>
@@ -536,28 +858,31 @@
           <div class="chb-proof-row">
             <article class="chb-proof-card">
               <div class="chb-stars">★★★★★</div>
-              <h3 class="chb-h3">“The best thing we did in NYC.”</h3>
-              <p>Jim showed us places we never would have found on our own.</p>
-              <small class="chb-review-attr">Sarah, Airbnb guest</small>
+              <h3 class="chb-h3">“We never would have found these places on our own.”</h3>
+              <p>Jim made Jackson Heights feel easy, welcoming, and delicious.</p>
+              <small class="chb-review-attr">Recent guest</small>
+              <span class="chb-review-source">Replace with Airbnb or TripAdvisor source</span>
             </article>
 
             <article class="chb-proof-card">
               <div class="chb-stars">★★★★★</div>
-              <h3 class="chb-h3">“Not a cookie-cutter tour.”</h3>
-              <p>Food, stories, neighborhood life, and a guide who clearly loves the area.</p>
-              <small class="chb-review-attr">Michael, Tripadvisor guest</small>
+              <h3 class="chb-h3">“The highlight of our NYC trip.”</h3>
+              <p>It felt personal, local, and completely different from the usual tourist stops.</p>
+              <small class="chb-review-attr">Recent guest</small>
+              <span class="chb-review-source">Replace with real guest source</span>
             </article>
 
             <article class="chb-proof-card">
               <div class="chb-stars">★★★★★</div>
-              <h3 class="chb-h3">“Like walking with a local friend.”</h3>
-              <p>Relaxed, personal, and completely different from Midtown.</p>
-              <small class="chb-review-attr">Priya, visitor from London</small>
+              <h3 class="chb-h3">“We came for food and left understanding the neighborhood.”</h3>
+              <p>Relaxed, thoughtful, and full of little details we would have walked right past.</p>
+              <small class="chb-review-attr">Recent guest</small>
+              <span class="chb-review-source">Replace with real guest source</span>
             </article>
           </div>
 
           <div style="margin-top: 34px;">
-            <a class="chb-btn" href="#tours">Choose your tour</a>
+            <a class="chb-btn" href="#tours">Choose Your Tour</a>
           </div>
         </div>
       </section>
@@ -568,34 +893,34 @@
           <h2 class="chb-h2">Simple to book. Easy to join.</h2>
 
           <div class="chb-cards-grid">
-            <article class="chb-info-card">
+            <article class="chb-info-card chb-detail-card">
               <h3 class="chb-h3">Where</h3>
-              <p>Jackson Heights, Queens.</p>
+              <p>Jackson Heights, Queens. Exact meeting point is sent after booking.</p>
             </article>
 
-            <article class="chb-info-card">
+            <article class="chb-info-card chb-detail-card">
               <h3 class="chb-h3">Getting there</h3>
-              <p>Easy subway ride from Manhattan.</p>
+              <p>Easy subway access from Manhattan. Jim sends clear directions.</p>
             </article>
 
-            <article class="chb-info-card">
+            <article class="chb-info-card chb-detail-card">
               <h3 class="chb-h3">Group size</h3>
-              <p>Private walks for individuals, couples, families, and small groups.</p>
+              <p>Private walks for individuals, couples, families, friends, and small groups.</p>
             </article>
 
-            <article class="chb-info-card">
+            <article class="chb-info-card chb-detail-card">
               <h3 class="chb-h3">Food</h3>
-              <p>2-hour includes Kerala Chaya. 3-hour includes chaya and snacks.</p>
+              <p>The 2-hour tour includes Kerala Chaya. The 3-hour tour includes chaya and snacks. Bring appetite and curiosity.</p>
             </article>
 
-            <article class="chb-info-card">
+            <article class="chb-info-card chb-detail-card">
               <h3 class="chb-h3">Pace</h3>
-              <p>Relaxed and flexible.</p>
+              <p>Relaxed walking pace with time for questions, photos, food stops, and breaks.</p>
             </article>
 
-            <article class="chb-info-card">
+            <article class="chb-info-card chb-detail-card">
               <h3 class="chb-h3">Weather</h3>
-              <p>Light rain usually works. Jim will coordinate if conditions are bad.</p>
+              <p>Tours can work in light rain. Jim will coordinate if conditions are unsafe or miserable.</p>
             </article>
           </div>
         </div>
@@ -607,29 +932,49 @@
           <h2 class="chb-h2">Quick answers before you book.</h2>
 
           <div class="chb-faq-list">
-            <details class="chb-faq-item">
+            <details class="chb-faq-item" open>
               <summary>Where is the tour?</summary>
-              <p>Jackson Heights, Queens.</p>
+              <p>The tour takes place in Jackson Heights, Queens. Exact meeting details are sent after booking.</p>
+            </details>
+
+            <details class="chb-faq-item" open>
+              <summary>How do I get there from Manhattan?</summary>
+              <p>Jackson Heights is easy to reach by subway from Manhattan. Jim sends clear directions and the meeting point after booking.</p>
             </details>
 
             <details class="chb-faq-item">
-              <summary>How do I get there?</summary>
-              <p>By subway from Manhattan. Exact meeting details are sent after booking.</p>
+              <summary>Is Jackson Heights safe for visitors?</summary>
+              <p>Yes. Jackson Heights is a busy, lived-in Queens neighborhood. The walk stays on public streets, food corridors, shops, parks, and neighborhood areas Jim knows well.</p>
             </details>
 
             <details class="chb-faq-item">
               <summary>Is food included?</summary>
-              <p>The 2-hour tour includes Kerala Chaya. The 3-hour tour includes chaya and snacks.</p>
+              <p>The 2-hour tour includes Kerala Chaya. The 3-hour tour includes chaya and snacks. Other food stops may vary by route, timing, and preference.</p>
             </details>
 
             <details class="chb-faq-item">
               <summary>Which tour should I choose?</summary>
-              <p>1 hour for a quick intro. 2 hours for most visitors. 3 hours for the deeper food and culture experience.</p>
+              <p>Choose 1 hour if you are short on time. Choose 2 hours if this is your first Jackson Heights visit. Choose 3 hours if you want the deeper food and culture experience.</p>
+            </details>
+
+            <details class="chb-faq-item">
+              <summary>How much walking is involved?</summary>
+              <p>The pace is relaxed and flexible. Expect an easy neighborhood walk with stops along the way rather than a rushed march.</p>
             </details>
 
             <details class="chb-faq-item">
               <summary>Can kids come?</summary>
               <p>Yes. Families are welcome, and the pace can be adjusted.</p>
+            </details>
+
+            <details class="chb-faq-item">
+              <summary>Can you handle dietary restrictions?</summary>
+              <p>Email Jim before booking if you have a dietary restriction. He can tell you what is realistic for the route and help you choose the best option.</p>
+            </details>
+
+            <details class="chb-faq-item">
+              <summary>What happens if it rains?</summary>
+              <p>Light rain usually works. If weather creates a real problem, Jim will coordinate with you.</p>
             </details>
 
             <details class="chb-faq-item">
@@ -643,32 +988,40 @@
       <section class="chb-section chb-booking" id="book">
         <div class="chb-wrap chb-booking-grid">
           <div>
-            <p class="chb-eyebrow">Ready for the more local side of New York?</p>
+            <p class="chb-eyebrow">Ready to see the NYC most tourists miss?</p>
             <h2 class="chb-h2">Choose your Jackson Heights walking tour.</h2>
-            <p class="chb-p">Skip the tourist checklist. Spend a few hours walking, tasting, and noticing one of New York’s most alive neighborhoods with Jim.</p>
+            <p class="chb-p">Choose the 2-hour Food + Culture Walk if it is your first time. Pick the 1-hour walk if your schedule is tight. Go deeper if you want more food, stories, and time in the neighborhood.</p>
 
             <div class="chb-hero-actions">
-              <a class="chb-btn chb-btn-light" href="#tours">Choose your tour</a>
-              <a class="chb-btn chb-btn-outline" href="mailto:info@chaibhai.net?subject=Question%20about%20a%20Jackson%20Heights%20walking%20tour">Ask Jim a question</a>
+              <a class="chb-btn chb-btn-light" href="#tours">Choose Your Tour</a>
+              <a class="chb-btn chb-btn-outline" href="mailto:info@chaibhai.net?subject=Question%20about%20a%20Jackson%20Heights%20walking%20tour">Ask Jim a Question</a>
             </div>
           </div>
 
           <aside class="chb-booking-card" aria-label="Final booking summary">
-            <h3 class="chb-h3">Jackson Heights Food + Culture Walk</h3>
-            <p class="chb-p" style="color:var(--chb-muted);">Private tour with local guide Jim.</p>
+            <div class="chb-booking-card-top">
+              <div>
+                <h3 class="chb-h3">Jackson Heights Food + Culture Walk</h3>
+                <p class="chb-p" style="color:var(--chb-muted);">Private tour with local guide Jim.</p>
+              </div>
+              <span class="chb-card-kicker">Most visitors choose 2 hours</span>
+            </div>
 
             <div class="chb-book-options">
               <a class="chb-btn chb-btn-outline-ink chb-btn-full" href="REPLACE_WITH_ACUITY_1_HOUR_URL" target="_blank" rel="noopener">
                 Book 1-Hour Neighborhood Walk
               </a>
+
               <a class="chb-btn chb-btn-full" href="REPLACE_WITH_ACUITY_2_HOUR_URL" target="_blank" rel="noopener">
                 Book 2-Hour Food + Culture Walk
               </a>
+
               <a class="chb-btn chb-btn-outline-ink chb-btn-full" href="REPLACE_WITH_ACUITY_3_HOUR_URL" target="_blank" rel="noopener">
                 Book 3-Hour Deep Dive
               </a>
+
               <a class="chb-btn chb-btn-ghost chb-btn-full" href="mailto:info@chaibhai.net?subject=Jackson%20Heights%20Tour%20Question">
-                Questions? Email Jim &rarr;
+                Not sure? Ask Jim before booking &rarr;
               </a>
             </div>
 
@@ -678,6 +1031,8 @@
               <li>Food stops available</li>
               <li>Easy from Manhattan</li>
             </ul>
+
+            <p class="chb-final-helper">No idea which to pick? The 2-hour walk is the safest choice for first-time visitors.</p>
           </aside>
         </div>
       </section>
@@ -687,8 +1042,15 @@
       <div class="chb-wrap chb-footer-grid">
         <div>
           <h2>Chai Bhai Walking Tours</h2>
-          <p>Private Jackson Heights walking tours, food walks, and neighborhood experiences in Queens, New York City.</p>
+          <p>Private Jackson Heights walking tours, Queens food walks, and neighborhood experiences in New York City.</p>
           <p>Service area: Jackson Heights, Queens, NYC</p>
+
+          <div class="chb-seo-links" aria-label="Tour categories">
+            <a href="#tours">Jackson Heights Walking Tour</a>
+            <a href="#tours">Queens Food Tour</a>
+            <a href="#tours">Private NYC Walking Tour</a>
+            <a href="#tours">NYC Food and Culture Tour</a>
+          </div>
         </div>
 
         <div>
@@ -711,9 +1073,13 @@
     <div class="chb-mobile-booking-bar" aria-label="Mobile booking bar">
       <div>
         <strong>Jackson Heights Walking Tours</strong>
-        <span>From $25 &middot; 1, 2, or 3 hrs &middot; Queens NYC</span>
+        <span>From $25 &middot; Private &middot; Easy from Manhattan</span>
       </div>
-      <a class="chb-btn" href="#tours">Book</a>
+
+      <div class="chb-mobile-booking-actions">
+        <a class="chb-btn chb-btn-outline-ink" href="mailto:info@chaibhai.net?subject=Jackson%20Heights%20Tour%20Question">Ask</a>
+        <a class="chb-btn" href="#tours">Book</a>
+      </div>
     </div>
   </div>
 
