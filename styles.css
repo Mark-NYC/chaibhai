@@ -415,11 +415,17 @@ a {
 }
 
 .chb-mini-body li::before {
-  content: "âœ“";
-  color: var(--chb-red);
-  font-weight: 900;
-  flex-shrink: 0;
-  line-height: 1.5;
+  content: "";
+  width: 17px;
+  height: 17px;
+  margin-top: 2px;
+  flex: 0 0 17px;
+  border-radius: 999px;
+  background-color: rgba(215, 53, 32, 0.12);
+  background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.15 8.55 7.05 11.35 12.85 5.55' fill='none' stroke='%23d73520' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 17px 17px;
 }
 
 .chb-mini-proof {
@@ -2456,5 +2462,47 @@ html {
 
   .chb-book-option-featured::before {
     right: 14px;
+  }
+}
+
+
+/* Final CRO fixes: no announcement bar, reliable SVG checks, delayed mobile booking bar */
+.chb-announcement {
+  display: none !important;
+}
+
+.chb-mobile-booking-bar {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(calc(100% + 24px));
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.chb-mobile-booking-bar.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.chb-mobile-booking-bar > .chb-btn {
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .chb-mobile-booking-bar {
+    display: flex;
+  }
+
+  .chb-mobile-booking-bar .chb-btn {
+    min-height: 44px;
+    padding: 0 18px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 641px) {
+  .chb-mobile-booking-bar,
+  .chb-mobile-booking-bar.is-visible {
+    display: none !important;
   }
 }
