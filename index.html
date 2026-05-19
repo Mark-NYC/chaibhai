@@ -230,15 +230,32 @@
       margin: 18px 0 24px;
       color: #fff;
       font-size: 0.98rem;
-      font-weight: 900;
+      font-weight: 850;
       line-height: 1.35;
       text-shadow: 0 1px 12px rgba(0,0,0,0.24);
     }
 
-    .chb-hero-proof span {
-      color: var(--chb-gold);
-      letter-spacing: 0.08em;
+    .chb-google-review-icon {
+      width: 54px;
+      height: auto;
+      flex: 0 0 auto;
+      display: block;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.20));
+    }
+
+    .chb-proof-copy {
+      color: #fff;
+      letter-spacing: -0.01em;
       white-space: nowrap;
+    }
+
+    .chb-proof-copy strong {
+      color: #fff;
+      font-weight: 950;
+    }
+
+    .chb-proof-mobile {
+      display: none;
     }
 
     .chb-proof-under-cta {
@@ -601,9 +618,26 @@
 
       .chb-hero-proof {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
+        gap: 8px;
         margin: 16px 0 22px;
-        font-size: 0.94rem;
+        font-size: 0.92rem;
+      }
+
+      .chb-google-review-icon {
+        width: 38px;
+      }
+
+      .chb-proof-desktop {
+        display: none;
+      }
+
+      .chb-proof-mobile {
+        display: inline;
+      }
+
+      .chb-proof-copy {
+        white-space: normal;
       }
 
       .chb-platform-proof {
@@ -669,9 +703,16 @@
             <h1 class="chb-h1">Eat your way through the New York most tourists miss.</h1>
             <p class="chb-lead">Walk with Jim through chai spots, momo counters, local shops, and neighborhood stories that are easy to miss when you are exploring Queens alone.</p>
 
-            <p class="chb-hero-proof" aria-label="Guest-loved private walks that are easy from Manhattan">
-              <span>★★★★★</span>
-              Guest-loved private walks · Easy from Manhattan
+            <p class="chb-hero-proof" aria-label="5.0 on Google with 10 reviews, easy from Manhattan">
+              <img
+                class="chb-google-review-icon"
+                src="assets/images/Google Review Mobile.webp"
+                alt="Google reviews"
+              >
+              <span class="chb-proof-copy">
+                <span class="chb-proof-desktop"><strong>5.0 on Google</strong> · 10 reviews · Easy from Manhattan</span>
+                <span class="chb-proof-mobile"><strong>5.0</strong> · 10 reviews · Easy from Manhattan</span>
+              </span>
             </p>
 
             <div class="chb-hero-actions">
