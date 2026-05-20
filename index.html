@@ -686,6 +686,7 @@
       chbAcuityModal.classList.add("is-open");
       chbAcuityModal.setAttribute("aria-hidden", "false");
       document.body.classList.add("chb-modal-open");
+      document.documentElement.classList.add("chb-modal-open");
     }
 
     function closeChbAcuityModal() {
@@ -693,6 +694,7 @@
       chbAcuityModal.classList.remove("is-open");
       chbAcuityModal.setAttribute("aria-hidden", "true");
       document.body.classList.remove("chb-modal-open");
+      document.documentElement.classList.remove("chb-modal-open");
     }
 
     chbAcuityOpeners.forEach((button) => button.addEventListener("click", openChbAcuityModal));
