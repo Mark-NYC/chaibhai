@@ -2558,6 +2558,45 @@ html {
 }
 
 
+
+/* Mobile hero text swaps */
+.chb-eyebrow-mobile,
+.chb-lead-mobile {
+  display: none;
+}
+
+.chb-eyebrow-desktop,
+.chb-lead-desktop {
+  display: inline;
+}
+
+.chb-lead-desktop {
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .chb-eyebrow-desktop,
+  .chb-lead-desktop {
+    display: none !important;
+  }
+
+  .chb-eyebrow-mobile {
+    display: inline !important;
+  }
+
+  .chb-lead-mobile {
+    display: block !important;
+  }
+
+  .chb-hero-proof,
+  .chb-hero-proof span,
+  .chb-hero-proof strong,
+  .chb-proof-copy,
+  .chb-proof-mobile {
+    color: var(--chb-ink) !important;
+  }
+}
+
 /* Mobile-specific hero rebuild: clean copy first, real tour photo below */
 .chb-mobile-hero-photo {
   display: none;
