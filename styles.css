@@ -191,9 +191,9 @@ a {
   padding: 70px 0 72px;
   isolation: isolate;
   background:
-    linear-gradient(90deg, rgba(37, 22, 14, 0.9) 0%, rgba(37, 22, 14, 0.74) 42%, rgba(37, 22, 14, 0.28) 100%),
-    linear-gradient(135deg, rgba(200, 79, 33, 0.35), rgba(242, 177, 61, 0.12)),
-    url("./assets/images/chaibhaitour-mobile.webp") center / cover no-repeat;
+    linear-gradient(90deg, rgba(8, 18, 19, 0.88) 0%, rgba(8, 18, 19, 0.72) 42%, rgba(8, 18, 19, 0.26) 100%),
+    linear-gradient(180deg, rgba(4, 9, 10, 0.08), rgba(4, 9, 10, 0.24)),
+    url("assets/images/jackson-heights.webp") center / cover no-repeat;
   color: #fffaf1;
 }
 
@@ -203,8 +203,8 @@ a {
   inset: 0;
   z-index: 0;
   background:
-    radial-gradient(circle at 18% 16%, rgba(242, 177, 61, 0.2), transparent 30%),
-    linear-gradient(180deg, rgba(37, 22, 14, 0.02), rgba(37, 22, 14, 0.26));
+    radial-gradient(circle at 22% 18%, rgba(242, 177, 61, 0.16), transparent 32%),
+    linear-gradient(90deg, rgba(4, 9, 10, 0.18) 0%, transparent 58%, rgba(4, 9, 10, 0.18) 100%);
   pointer-events: none;
 }
 
@@ -1227,6 +1227,14 @@ a {
     grid-column: auto;
     grid-row: auto;
   }
+}
+
+
+/* Hero image update: cooler overlay over Jackson Heights background */
+.chb-hero .chb-h1,
+.chb-hero .chb-lead,
+.chb-hero .chb-eyebrow {
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.22);
 }
 
 /* Hero compression pass: smaller proof, tighter headline, tighter hero booking card */
