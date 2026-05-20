@@ -23,7 +23,8 @@ html {
 }
 
 html.chb-modal-open,
-html.chb-modal-open body {
+html.chb-modal-open body,
+body.chb-modal-open {
   overflow: hidden;
 }
 
@@ -876,7 +877,8 @@ a {
   padding-inline: 18px;
 }
 
-.chb-acuity-modal[hidden] {
+.chb-acuity-modal[hidden],
+.chb-acuity-modal[aria-hidden="true"] {
   display: none;
 }
 
@@ -884,9 +886,14 @@ a {
   position: fixed;
   inset: 0;
   z-index: 100;
-  display: grid;
+  display: none;
   place-items: center;
   padding: 28px;
+}
+
+.chb-acuity-modal.is-open,
+.chb-acuity-modal[aria-hidden="false"] {
+  display: grid;
 }
 
 .chb-acuity-backdrop {
