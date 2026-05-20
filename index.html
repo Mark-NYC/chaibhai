@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -199,6 +201,7 @@
   </script>
 
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./acuity-popup.css" />
 </head>
 
 <body>
@@ -272,7 +275,7 @@
                 <li>Food and neighborhood stops</li>
               </ul>
 
-              <a class="chb-btn chb-btn-full" href="#book" data-acuity-open data-tour-label="2-Hour Food + Culture Walk">Check Times & Book</a>
+              <a class="chb-btn chb-btn-full" href="#acuity-booking" data-acuity-open>Book the 2-Hour Walk</a>
             </div>
           </aside>
         </div>
@@ -285,7 +288,7 @@
           <p class="chb-p">Short on time? Go quick. First time in Queens? Choose the 2-hour walk. Want the full experience? Go deeper.</p>
 
           <p class="chb-tour-helper">Not sure what to pick? Most first-time visitors should choose the <strong>2-Hour Food + Culture Walk</strong>.</p>
-          <p class="chb-tour-helper">Tap any tour below to open Jim’s Acuity calendar and choose a time.</p>
+          <p class="chb-tour-helper">Prefer to book through a travel platform? Use <a href="https://www.tripadvisor.com/AttractionProductReview-g47960-d33965400-Jackson_Heights_Walking_Tour_Street_Eats_with_a_Queens_Local-Jackson_Heights_Queens.html" target="_blank" rel="noopener noreferrer">TripAdvisor</a> or <a href="https://www.airbnb.com/experiences/6739540" target="_blank" rel="noopener noreferrer">Airbnb Experiences</a>.</p>
 
           <div class="chb-cards-grid chb-tour-grid">
             <article class="chb-info-card chb-tour-card chb-tour-card--quick">
@@ -305,7 +308,7 @@
               </ul>
 
               <div class="chb-card-action">
-                <a class="chb-btn chb-btn-outline-ink" href="#book" data-acuity-open data-tour-label="1-Hour Neighborhood Walk">Check Times & Book This Walk</a>
+                <a class="chb-btn chb-btn-outline-ink" href="#acuity-booking" data-acuity-open>Book the 1-Hour Walk</a>
               </div>
             </article>
 
@@ -328,7 +331,7 @@
               </ul>
 
               <div class="chb-card-action">
-                <a class="chb-btn" href="#book" data-acuity-open data-tour-label="2-Hour Food + Culture Walk">Check Times & Book This Walk</a>
+                <a class="chb-btn" href="#acuity-booking" data-acuity-open>Book the 2-Hour Walk</a>
               </div>
             </article>
 
@@ -349,12 +352,12 @@
               </ul>
 
               <div class="chb-card-action">
-                <a class="chb-btn chb-btn-outline-ink" href="#book" data-acuity-open data-tour-label="3-Hour Deep Dive">Check Times & Book This Walk</a>
+                <a class="chb-btn chb-btn-outline-ink" href="#acuity-booking" data-acuity-open>Book the 3-Hour Deep Dive</a>
               </div>
             </article>
           </div>
 
-          <div class="chb-choice-note">Need a time you do not see? Email <a href="mailto:info@chaibhai.net">info@chaibhai.net</a> or call <a href="tel:+13474940331">(347) 494-0331</a> and ask Jim before booking.</div>
+          <div class="chb-choice-note">Need a time you do not see? Email <a href="mailto:info@chaibhai.net">Info@chaibhai.net</a> or call <a href="tel:+13474940331">(347) 494-0331</a> and ask Jim before booking.</div>
         </div>
       </section>
 
@@ -369,23 +372,23 @@
 
           <div class="chb-mosaic chb-mosaic-inside-section" aria-label="Jackson Heights walking tour photos">
             <div class="chb-mosaic-grid" id="chbMosaicSlider">
-              <figure class="chb-mosaic-item chb-mosaic-item--taste" style="--mosaic-image: url('./assets/images/taste-spots-you-would-never-find-alone.webp');">
+              <figure class="chb-mosaic-item chb-mosaic-item--taste">
                 <figcaption class="chb-mosaic-caption">Taste momos, chai, snacks, and shops you would probably miss alone</figcaption>
               </figure>
 
-              <figure class="chb-mosaic-item chb-mosaic-item--chai" style="--mosaic-image: url('./assets/images/slow-down-with-a-proper-cup-of-chai.webp');">
+              <figure class="chb-mosaic-item chb-mosaic-item--chai">
                 <figcaption class="chb-mosaic-caption">Slow down with a proper cup of chai</figcaption>
               </figure>
 
-              <figure class="chb-mosaic-item chb-mosaic-item--local-eyes" style="--mosaic-image: url('./assets/images/see-the-neighborhood-through-local-eyes.webp');">
+              <figure class="chb-mosaic-item chb-mosaic-item--local-eyes">
                 <figcaption class="chb-mosaic-caption">See the neighborhood through local eyes</figcaption>
               </figure>
 
-              <figure class="chb-mosaic-item chb-mosaic-item--energy" style="--mosaic-image: url('./assets/images/feel-the-energy-of-jackson-heights.webp');">
+              <figure class="chb-mosaic-item chb-mosaic-item--energy">
                 <figcaption class="chb-mosaic-caption">Feel the energy of Jackson Heights street life</figcaption>
               </figure>
 
-              <figure class="chb-mosaic-item chb-mosaic-item--stories" style="--mosaic-image: url('./assets/images/come-home-with-stories-not-just-photos.webp');">
+              <figure class="chb-mosaic-item chb-mosaic-item--stories">
                 <figcaption class="chb-mosaic-caption">Come home with stories, not just photos</figcaption>
               </figure>
             </div>
@@ -566,7 +569,7 @@
 
             <details class="chb-faq-item">
               <summary><span>Can I ask a question before booking?</span><span class="chb-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path class="chb-faq-line-h" d="M6 12h12" /><path class="chb-faq-line-v" d="M12 6v12" /></svg></span></summary>
-              <p>Yes. Email Jim at <a href="mailto:info@chaibhai.net">info@chaibhai.net</a>.</p>
+              <p>Yes. Email Jim at <a href="mailto:info@chaibhai.net">Info@chaibhai.net</a>.</p>
             </details>
           </div>
         </div>
@@ -590,10 +593,10 @@
             <p class="chb-p chb-booking-muted">Private tour with local guide Jim.</p>
 
             <div class="chb-book-options">
-              <a class="chb-btn chb-btn-outline-ink chb-btn-full" href="#book" data-acuity-open data-tour-label="1-Hour Neighborhood Walk">Book 1-Hr Neighborhood Walk</a>
-              <a class="chb-btn chb-btn-full chb-book-option-featured" href="#book" data-acuity-open data-tour-label="2-Hour Food + Culture Walk">Book 2-Hr Food + Culture Walk</a>
-              <a class="chb-btn chb-btn-outline-ink chb-btn-full" href="#book" data-acuity-open data-tour-label="3-Hour Deep Dive">Book 3-Hr Deep Dive</a>
-              <a class="chb-btn chb-btn-ghost chb-btn-full" href="mailto:info@chaibhai.net?subject=Jackson%20Heights%20Tour%20Question">Questions? Email Jim</a>
+              <a class="chb-btn chb-btn-full chb-book-option-featured" href="https://www.tripadvisor.com/AttractionProductReview-g47960-d33965400-Jackson_Heights_Walking_Tour_Street_Eats_with_a_Queens_Local-Jackson_Heights_Queens.html" target="_blank" rel="noopener noreferrer">Book on TripAdvisor</a>
+              <a class="chb-btn chb-btn-outline-ink chb-btn-full" href="https://www.airbnb.com/experiences/6739540" target="_blank" rel="noopener noreferrer">Book on Airbnb Experiences</a>
+              <a class="chb-btn chb-btn-ghost chb-btn-full" href="mailto:info@chaibhai.net?subject=Jackson%20Heights%20Tour%20Question">Questions? Email Jim →</a>
+              <a class="chb-btn chb-btn-ghost chb-btn-full" href="tel:+13474940331">Call Jim: (347) 494-0331</a>
             </div>
 
             <ul class="chb-booking-bullets">
@@ -613,13 +616,13 @@
           <h2>Chai Bhai Walking Tours</h2>
           <p>Taste the neighborhood. Hear its stories.</p>
           <p>Private Jackson Heights food walks and neighborhood experiences in Queens, New York City.</p>
-          <p><a href="https://www.tripadvisor.com/AttractionProductReview-g47960-d33965400-Jackson_Heights_Walking_Tour_Street_Eats_with_a_Queens_Local-Jackson_Heights_Queens.html" target="_blank" rel="noopener noreferrer">TripAdvisor reviews</a> · <a href="https://www.airbnb.com/experiences/6739540" target="_blank" rel="noopener noreferrer">Airbnb Experience</a></p>
+          <p><a href="https://www.tripadvisor.com/AttractionProductReview-g47960-d33965400-Jackson_Heights_Walking_Tour_Street_Eats_with_a_Queens_Local-Jackson_Heights_Queens.html" target="_blank" rel="noopener noreferrer">Book on TripAdvisor</a> · <a href="https://www.airbnb.com/experiences/6739540" target="_blank" rel="noopener noreferrer">Book on Airbnb</a></p>
         </div>
 
         <div>
           <h3>Contact</h3>
-          <p><a href="mailto:info@chaibhai.net">info@chaibhai.net</a></p>
-          <p>Phone: <a href="tel:+13474940331">(347) 494-0331</a></p>
+          <p><a href="mailto:info@chaibhai.net">Info@chaibhai.net</a></p>
+          <p>Phone: REPLACE_WITH_PHONE</p>
           <p>Jackson Heights, Queens, NY</p>
         </div>
 
@@ -639,46 +642,67 @@
         <strong>2-hour Food + Culture Walk</strong>
         <span>$45 · private tour with Jim</span>
       </div>
-      <a class="chb-btn" href="#book" data-acuity-open data-tour-label="2-Hour Food + Culture Walk">Book</a>
+      <a class="chb-btn" href="#acuity-booking" data-acuity-open>Book Now</a>
     </div>
-  </div>
 
-
-    <div class="chb-acuity-modal" id="chbAcuityModal" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="chbAcuityModalTitle">
+    <div class="chb-acuity-modal" id="acuity-booking" aria-hidden="true">
       <div class="chb-acuity-backdrop" data-acuity-close></div>
-      <div class="chb-acuity-dialog" role="document">
-        <button class="chb-acuity-close" type="button" data-acuity-close aria-label="Close booking calendar">
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" /></svg>
-        </button>
-
+      <div class="chb-acuity-dialog" role="dialog" aria-modal="true" aria-labelledby="chbAcuityTitle">
+        <button class="chb-acuity-close" type="button" aria-label="Close booking popup" data-acuity-close>&times;</button>
         <div class="chb-acuity-header">
-          <p class="chb-eyebrow">Book directly</p>
-          <h2 class="chb-h2" id="chbAcuityModalTitle">Choose a time with Jim.</h2>
-          <p class="chb-p" id="chbAcuityTourContext">Select your date and time below.</p>
+          <p class="chb-eyebrow">Book your walk</p>
+          <h2 class="chb-h3" id="chbAcuityTitle">Check availability with Jim</h2>
         </div>
 
-        <div class="chb-acuity-frame">
-          <!-- Acuity Scheduling Embed -->
-          <div class="acuity-block-wrapper"
-               data-user-id="36760206"
-               data-calendar-id="10397995"
-               data-appointment-type-id="56407645"
-               data-scheduling-page-group="all"
-               data-acuity-url="https://blueprintcatalogen.as.me/">
-            
-            <iframe title="Schedule Appointment"
-                    src="https://blueprintcatalogen.as.me/schedule.php?owner=36760206&calendarID=10397995&appointmentType=56407645"
-                    width="100%"
-                    height="800"
-                    frameborder="0"
-                    allow="payment">
-            </iframe>
-          </div>
+        <!-- Acuity Scheduling Embed -->
+        <div class="acuity-block-wrapper"
+             data-user-id="36760206"
+             data-calendar-id="10397995"
+             data-appointment-type-id="56407645"
+             data-scheduling-page-group="all"
+             data-acuity-url="https://blueprintcatalogen.as.me/">
+          <iframe title="Schedule Appointment"
+                  width="100%"
+                  height="800"
+                  frameborder="0"
+                  allow="payment">
+          </iframe>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
+  <script src="./script.js"></script>
+
+  <script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
+
+  <script>
+    const chbAcuityModal = document.querySelector("#acuity-booking");
+    const chbAcuityOpeners = document.querySelectorAll("[data-acuity-open]");
+    const chbAcuityClosers = document.querySelectorAll("[data-acuity-close]");
+
+    function openChbAcuityModal(event) {
+      if (event) event.preventDefault();
+      if (!chbAcuityModal) return;
+      chbAcuityModal.classList.add("is-open");
+      chbAcuityModal.setAttribute("aria-hidden", "false");
+      document.body.classList.add("chb-modal-open");
+    }
+
+    function closeChbAcuityModal() {
+      if (!chbAcuityModal) return;
+      chbAcuityModal.classList.remove("is-open");
+      chbAcuityModal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("chb-modal-open");
+    }
+
+    chbAcuityOpeners.forEach((button) => button.addEventListener("click", openChbAcuityModal));
+    chbAcuityClosers.forEach((button) => button.addEventListener("click", closeChbAcuityModal));
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeChbAcuityModal();
+    });
+  </script>
 
   <script>
     const chbMosaicSlider = document.querySelector("#chbMosaicSlider");
@@ -723,58 +747,6 @@
     updateChbMobileBookingBar();
     window.addEventListener("scroll", updateChbMobileBookingBar, { passive: true });
     window.addEventListener("resize", updateChbMobileBookingBar);
-
-    const chbAcuityModal = document.querySelector("#chbAcuityModal");
-    const chbAcuityOpeners = document.querySelectorAll("[data-acuity-open]");
-    const chbAcuityClosers = document.querySelectorAll("[data-acuity-close]");
-    const chbAcuityContext = document.querySelector("#chbAcuityTourContext");
-    let chbLastFocusedElement = null;
-
-    function openChbAcuityModal(event) {
-      if (event) event.preventDefault();
-      if (!chbAcuityModal) return;
-
-      const opener = event?.currentTarget;
-      const tourLabel = opener?.dataset?.tourLabel || "Jackson Heights Food + Culture Walk";
-      chbLastFocusedElement = document.activeElement;
-
-      if (chbAcuityContext) {
-        chbAcuityContext.textContent = `Booking: ${tourLabel}. Select your date and time below.`;
-      }
-
-      chbAcuityModal.removeAttribute("hidden");
-      chbAcuityModal.setAttribute("aria-hidden", "false");
-      document.documentElement.classList.add("chb-modal-open");
-
-      const closeButton = chbAcuityModal.querySelector(".chb-acuity-close");
-      if (closeButton) closeButton.focus();
-    }
-
-    function closeChbAcuityModal() {
-      if (!chbAcuityModal) return;
-
-      chbAcuityModal.setAttribute("aria-hidden", "true");
-      chbAcuityModal.setAttribute("hidden", "");
-      document.documentElement.classList.remove("chb-modal-open");
-
-      if (chbLastFocusedElement && typeof chbLastFocusedElement.focus === "function") {
-        chbLastFocusedElement.focus();
-      }
-    }
-
-    chbAcuityOpeners.forEach((opener) => {
-      opener.addEventListener("click", openChbAcuityModal);
-    });
-
-    chbAcuityClosers.forEach((closer) => {
-      closer.addEventListener("click", closeChbAcuityModal);
-    });
-
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && chbAcuityModal?.getAttribute("aria-hidden") === "false") {
-        closeChbAcuityModal();
-      }
-    });
   </script>
 </body>
 </html>
