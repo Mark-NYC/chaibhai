@@ -1020,8 +1020,8 @@ a {
   .chb-hero {
     padding: 42px 0 54px;
     background:
-      linear-gradient(180deg, rgba(37, 22, 14, 0.9), rgba(37, 22, 14, 0.72)),
-      url("./assets/images/chaibhaitour-mobile.webp") center / cover no-repeat;
+      linear-gradient(180deg, rgba(8, 18, 19, 0.86), rgba(8, 18, 19, 0.68)),
+      url("assets/images/jackson-heights.webp") center / cover no-repeat;
   }
 
   .chb-h1 {
@@ -1369,5 +1369,86 @@ a {
 
   .chb-proof-copy {
     font-size: 0.76rem;
+  }
+}
+
+/* Requested cleanup pass: mobile cream hero, taller desktop card image, fixed mosaic placement */
+@media (min-width: 761px) {
+  .chb-mini-image {
+    min-height: 245px;
+    background-position: center 30%;
+  }
+
+  .chb-mosaic-item--stories {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .chb-hero {
+    padding: 34px 0 0;
+    color: var(--chb-ink);
+    background: linear-gradient(180deg, #fff8eb 0%, #fffaf1 100%);
+    border-bottom: 2px solid rgba(77, 47, 26, 0.16);
+  }
+
+  .chb-hero::before,
+  .chb-hero::after {
+    display: none;
+  }
+
+  .chb-hero .chb-h1,
+  .chb-hero .chb-lead,
+  .chb-hero .chb-eyebrow {
+    text-shadow: none;
+  }
+
+  .chb-hero .chb-eyebrow {
+    color: var(--chb-spice);
+  }
+
+  .chb-hero .chb-lead {
+    color: var(--chb-ink-soft);
+  }
+
+  .chb-hero-proof {
+    border-color: rgba(77, 47, 26, 0.18);
+    background: rgba(255, 253, 247, 0.88);
+    color: var(--chb-ink);
+    box-shadow: 0 12px 32px rgba(41, 24, 12, 0.08);
+    backdrop-filter: none;
+  }
+
+  .chb-hero-actions .chb-btn-light {
+    background: var(--chb-spice);
+    color: #fffaf1;
+    box-shadow: 0 16px 34px rgba(200, 79, 33, 0.22);
+  }
+
+  .chb-hero-actions .chb-btn-outline {
+    border-color: rgba(77, 47, 26, 0.22);
+    color: var(--chb-ink);
+    background: rgba(255, 253, 247, 0.72);
+  }
+
+  .chb-mobile-hero-photo {
+    margin: 28px -14px 0;
+    border-radius: 0;
+    box-shadow: none;
+    border-top: 1px solid rgba(77, 47, 26, 0.16);
+  }
+
+  .chb-mobile-hero-photo img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media (max-width: 430px) {
+  .chb-mobile-hero-photo img {
+    height: 235px;
   }
 }
