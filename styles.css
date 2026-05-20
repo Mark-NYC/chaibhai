@@ -258,22 +258,22 @@ a {
 
 .chb-h1 {
   max-width: 760px;
-  font-size: clamp(3rem, 6vw, 5.75rem);
+  font-size: clamp(2.4rem, 4.8vw, 4.6rem);
 }
 
 .chb-h2 {
   max-width: 820px;
-  font-size: clamp(2.1rem, 4vw, 4rem);
+  font-size: clamp(1.9rem, 3.2vw, 3.05rem);
 }
 
 .chb-h3 {
-  font-size: 1.28rem;
+  font-size: 1.16rem;
   letter-spacing: -0.025em;
 }
 
 .chb-lead,
 .chb-p {
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: var(--chb-ink-soft);
 }
 
@@ -281,7 +281,7 @@ a {
   max-width: 680px;
   margin: 24px 0 0;
   color: rgba(255, 250, 241, 0.88);
-  font-size: clamp(1.08rem, 1.6vw, 1.28rem);
+  font-size: clamp(1.02rem, 1.25vw, 1.14rem);
 }
 
 .chb-lead-mobile,
@@ -372,7 +372,7 @@ a {
 
 .chb-mini-price strong,
 .chb-tour-price strong {
-  font-size: 2.25rem;
+  font-size: 2rem;
   letter-spacing: -0.06em;
 }
 
@@ -508,8 +508,9 @@ a {
 }
 
 .chb-featured-tour-note {
-  font-family: "Caveat", cursive;
-  font-size: 1.45rem;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.015em;
   color: var(--chb-spice-dark) !important;
 }
 
@@ -537,24 +538,29 @@ a {
 }
 
 .chb-mosaic-item--taste {
+  --mosaic-image: url("./assets/images/taste-spots-you-would-never-find-alone.webp");
   grid-row: span 2;
   background-position: center center;
 }
 
 .chb-mosaic-item--chai {
+  --mosaic-image: url("./assets/images/slow-down-with-a-proper-cup-of-chai.webp");
   background-position: 45% center;
 }
 
 .chb-mosaic-item--stories {
+  --mosaic-image: url("./assets/images/come-home-with-stories-not-just-photos.webp");
   grid-column: span 2;
   background-position: center center;
 }
 
 .chb-mosaic-item--local-eyes {
+  --mosaic-image: url("./assets/images/see-the-neighborhood-through-local-eyes.webp");
   background-position: center center;
 }
 
 .chb-mosaic-item--energy {
+  --mosaic-image: url("./assets/images/feel-the-energy-of-jackson-heights.webp");
   background-position: center center;
 }
 
@@ -933,7 +939,7 @@ a {
 }
 
 .chb-acuity-header .chb-h2 {
-  font-size: clamp(1.8rem, 3vw, 3rem);
+  font-size: clamp(1.6rem, 2.4vw, 2.3rem);
 }
 
 .chb-acuity-header .chb-p {
@@ -1012,11 +1018,11 @@ a {
   }
 
   .chb-h1 {
-    font-size: clamp(2.55rem, 14vw, 4rem);
+    font-size: clamp(2.05rem, 10.5vw, 3rem);
   }
 
   .chb-h2 {
-    font-size: clamp(2rem, 10vw, 3rem);
+    font-size: clamp(1.65rem, 8vw, 2.25rem);
   }
 
   .chb-lead-desktop,
@@ -1170,7 +1176,7 @@ a {
   }
 
   .chb-h1 {
-    font-size: 2.75rem;
+    font-size: 2.3rem;
   }
 
   .chb-google-review-icon {
