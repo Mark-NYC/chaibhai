@@ -2757,3 +2757,58 @@ html {
     height: 260px;
   }
 }
+
+/* Device-specific hero copy hard fix
+   Keeps desktop and mobile hero text from rendering at the same time. */
+.chb-eyebrow-mobile,
+.chb-lead-mobile,
+.chb-proof-mobile {
+  display: none !important;
+}
+
+.chb-eyebrow-desktop {
+  display: inline !important;
+}
+
+.chb-lead-desktop {
+  display: block !important;
+}
+
+.chb-proof-desktop {
+  display: inline !important;
+}
+
+@media (max-width: 640px) {
+  .chb-eyebrow-desktop,
+  .chb-lead-desktop,
+  .chb-proof-desktop {
+    display: none !important;
+  }
+
+  .chb-eyebrow-mobile {
+    display: inline !important;
+  }
+
+  .chb-lead-mobile {
+    display: block !important;
+  }
+
+  .chb-proof-mobile {
+    display: inline !important;
+    color: var(--chb-ink) !important;
+  }
+
+  .chb-hero-proof,
+  .chb-hero-proof span,
+  .chb-hero-proof strong {
+    color: var(--chb-ink) !important;
+  }
+}
+
+@media (min-width: 641px) {
+  .chb-eyebrow-mobile,
+  .chb-lead-mobile,
+  .chb-proof-mobile {
+    display: none !important;
+  }
+}
