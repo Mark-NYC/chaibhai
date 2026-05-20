@@ -1228,3 +1228,138 @@ a {
     grid-row: auto;
   }
 }
+
+/* Hero compression pass: smaller proof, tighter headline, tighter hero booking card */
+@media (min-width: 761px) {
+  .chb-hero {
+    padding: 56px 0 54px;
+  }
+
+  .chb-hero-grid {
+    grid-template-columns: minmax(0, 1.02fr) 410px;
+    gap: 48px;
+  }
+
+  .chb-h1 {
+    max-width: 690px;
+    font-size: clamp(2.35rem, 4vw, 3.85rem);
+    line-height: 0.98;
+    letter-spacing: -0.048em;
+  }
+
+  .chb-lead {
+    max-width: 650px;
+    margin-top: 20px;
+    font-size: clamp(0.98rem, 1.05vw, 1.05rem);
+    line-height: 1.45;
+  }
+
+  .chb-hero-proof {
+    margin-top: 18px;
+    gap: 9px;
+    padding: 7px 12px;
+  }
+
+  .chb-google-review-icon {
+    width: 68px;
+  }
+
+  .chb-proof-copy {
+    font-size: 0.78rem;
+    line-height: 1.2;
+  }
+
+  .chb-hero-actions {
+    margin-top: 24px;
+  }
+
+  .chb-booking-mini {
+    align-self: center;
+  }
+
+  .chb-mini-image {
+    min-height: 205px;
+  }
+
+  .chb-mini-body {
+    padding: 20px 22px 22px;
+  }
+
+  .chb-mini-body .chb-h3 {
+    font-size: 1.05rem;
+    line-height: 1.12;
+  }
+
+  .chb-mini-meta {
+    margin-top: 7px;
+    font-size: 0.9rem;
+    line-height: 1.38;
+  }
+
+  .chb-mini-price {
+    margin-top: 12px;
+  }
+
+  .chb-mini-price strong {
+    font-size: 1.72rem;
+  }
+
+  .chb-mini-price span {
+    font-size: 0.82rem;
+  }
+
+  .chb-booking-mini ul {
+    margin: 12px 0 18px;
+    gap: 7px;
+  }
+
+  .chb-booking-mini li {
+    padding-left: 22px;
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+
+  .chb-booking-mini li::before {
+    width: 11px;
+    height: 11px;
+    top: 0.44em;
+  }
+
+  .chb-booking-mini .chb-btn {
+    min-height: 44px;
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .chb-h1 {
+    font-size: clamp(1.95rem, 9.6vw, 2.72rem);
+  }
+
+  .chb-hero-proof {
+    padding: 8px 11px;
+    gap: 8px;
+  }
+
+  .chb-google-review-icon {
+    width: 68px;
+  }
+
+  .chb-proof-copy {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .chb-h1 {
+    font-size: 2.08rem;
+  }
+
+  .chb-google-review-icon {
+    width: 64px;
+  }
+
+  .chb-proof-copy {
+    font-size: 0.76rem;
+  }
+}
