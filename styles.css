@@ -1492,7 +1492,7 @@ div[id*="cal"] iframe {
     touch-action: manipulation;
   }
 }
-/* Simplified Chai PayPal landing page */
+/* Chai product landing page */
 .chb-chai-page {
   min-height: 100vh;
   overflow: clip;
@@ -1520,122 +1520,25 @@ div[id*="cal"] iframe {
   font-size: 0.92rem;
 }
 
-.chb-chai-hero {
-  padding: 52px 0 58px;
+.chb-product-hero {
+  padding: 46px 0 52px;
   color: var(--chb-ink);
   border-bottom: 1px solid var(--chb-border);
 }
 
-.chb-chai-hero-grid {
+.chb-product-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.94fr) minmax(360px, 0.72fr);
-  gap: 50px;
+  grid-template-columns: minmax(360px, 0.86fr) minmax(0, 1fr);
+  gap: 54px;
   align-items: center;
 }
 
-@media (min-width: 981px) {
-  .chb-chai-copy {
-    order: 1;
-  }
-
-  .chb-chai-slider-card {
-    order: 2;
-  }
-}
-
-.chb-chai-hero .chb-eyebrow {
-  color: var(--chb-spice);
-}
-
-.chb-chai-hero .chb-h1 {
-  max-width: 720px;
-  color: var(--chb-ink);
-  text-shadow: none;
-  font-size: clamp(2.25rem, 4.25vw, 4rem);
-  line-height: 0.98;
-}
-
-.chb-chai-hero .chb-lead {
-  max-width: 610px;
-  margin-top: 18px;
-  color: var(--chb-ink-soft);
-  text-shadow: none;
-  font-size: clamp(1rem, 1.15vw, 1.12rem);
-  line-height: 1.42;
-  font-weight: 650;
-}
-
-.chb-chai-price-line {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 10px;
-  margin-top: 22px;
-}
-
-.chb-chai-price-line strong {
-  font-size: 2.55rem;
-  line-height: 1;
-  letter-spacing: -0.07em;
-}
-
-.chb-chai-price-line span {
-  color: var(--chb-ink-soft);
-  font-weight: 900;
-}
-
-.chb-chai-paypal-note {
-  max-width: 560px;
-  margin: 10px 0 0;
-  color: var(--chb-ink-soft);
-  font-size: 0.92rem;
-  font-weight: 750;
-}
-
-.chb-chai-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 13px;
-  margin-top: 24px;
-}
-
-.chb-chai-actions .chb-btn {
-  min-height: 54px;
-  min-width: 170px;
-  padding-inline: 28px;
-}
-
-.chb-chai-microproof {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 22px;
-}
-
-.chb-chai-proof-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 11px;
-  border: 1px solid var(--chb-border);
-  border-radius: 999px;
-  background: rgba(255, 253, 247, 0.82);
-  color: var(--chb-ink-soft);
-  font-size: 0.84rem;
-  font-weight: 850;
-  box-shadow: 0 10px 28px rgba(41, 24, 12, 0.06);
-}
-
-.chb-chai-proof-pill strong {
-  color: var(--chb-ink);
-}
-
-.chb-chai-slider-card {
+.chb-product-gallery {
+  overflow: hidden;
   border: 1px solid var(--chb-border);
   border-radius: 32px;
   background: rgba(255, 253, 247, 0.94);
   box-shadow: var(--chb-shadow);
-  overflow: hidden;
 }
 
 .chb-chai-slider {
@@ -1723,20 +1626,113 @@ div[id*="cal"] iframe {
   box-shadow: none;
 }
 
-.chb-chai-card-body {
-  padding: 20px 22px 22px;
+.chb-product-info {
+  max-width: 620px;
 }
 
-.chb-chai-card-body h2 {
-  margin: 0;
-  font-size: 1.05rem;
-  letter-spacing: -0.025em;
+.chb-product-info .chb-eyebrow,
+.chb-chai-centered .chb-eyebrow {
+  color: var(--chb-spice);
 }
 
-.chb-chai-card-body p {
-  margin: 8px 0 0;
+.chb-product-info .chb-h1 {
+  max-width: 620px;
+  color: var(--chb-ink);
+  text-shadow: none;
+  font-size: clamp(2.25rem, 4.2vw, 4rem);
+  line-height: 0.98;
+}
+
+.chb-product-tagline {
+  width: fit-content;
+  margin: 16px 0 0;
+  padding: 8px 12px;
+  border: 1px solid var(--chb-border);
+  border-radius: 999px;
+  background: rgba(255, 253, 247, 0.82);
+  color: var(--chb-ink);
+  font-size: 0.9rem;
+  font-weight: 900;
+  box-shadow: 0 10px 28px rgba(41, 24, 12, 0.06);
+}
+
+.chb-product-price-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(77, 47, 26, 0.12);
+}
+
+.chb-product-price-row strong {
+  font-size: 2.7rem;
+  line-height: 1;
+  letter-spacing: -0.075em;
+}
+
+.chb-product-price-row span {
   color: var(--chb-ink-soft);
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.chb-product-description {
+  max-width: 570px;
+  margin: 18px 0 0;
+  color: var(--chb-ink-soft);
+  font-size: 1.04rem;
+  line-height: 1.5;
+  font-weight: 650;
+}
+
+.chb-product-bullets {
+  display: grid;
+  gap: 10px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chb-product-bullets li {
+  position: relative;
+  padding-left: 28px;
+  color: var(--chb-ink-soft);
+  font-weight: 780;
+}
+
+.chb-product-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.38em;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--chb-gold);
+  box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.58);
+}
+
+.chb-product-action-stack {
+  display: grid;
+  gap: 9px;
+  width: fit-content;
+  margin-top: 26px;
+}
+
+.chb-product-action-stack .chb-btn {
+  min-height: 56px;
+  min-width: 220px;
+  padding-inline: 32px;
+  font-size: 1.02rem;
+}
+
+.chb-product-action-stack p {
+  margin: 0;
+  color: var(--chb-ink-soft);
+  font-size: 0.86rem;
+  font-weight: 750;
 }
 
 .chb-chai-short-section {
@@ -1830,13 +1826,6 @@ div[id*="cal"] iframe {
   max-width: 760px;
 }
 
-.chb-chai-buy-panel p {
-  max-width: 660px;
-  margin: 14px 0 0;
-  color: rgba(255, 250, 241, 0.82);
-  font-weight: 650;
-}
-
 .chb-chai-buy-panel .chb-btn-light {
   min-width: 190px;
   color: var(--chb-ink);
@@ -1895,19 +1884,19 @@ div[id*="cal"] iframe {
 }
 
 @media (max-width: 980px) {
-  .chb-chai-hero-grid,
+  .chb-product-grid,
   .chb-chai-buy-panel {
     grid-template-columns: 1fr;
   }
 
-  .chb-chai-slider-card {
-    order: 1;
+  .chb-product-gallery {
     width: min(100%, 560px);
     margin-inline: auto;
   }
 
-  .chb-chai-copy {
-    order: 2;
+  .chb-product-info {
+    max-width: 660px;
+    margin-inline: auto;
   }
 
   .chb-chai-grid-3 {
@@ -1947,50 +1936,15 @@ div[id*="cal"] iframe {
     font-size: 0.84rem;
   }
 
-  .chb-chai-hero {
-    padding: 24px 0 38px;
+  .chb-product-hero {
+    padding: 22px 0 38px;
   }
 
-  .chb-chai-hero-grid {
+  .chb-product-grid {
     gap: 24px;
   }
 
-  .chb-chai-hero .chb-h1 {
-    font-size: clamp(2.02rem, 9.8vw, 2.7rem);
-  }
-
-  .chb-chai-hero .chb-lead {
-    margin-top: 13px;
-    font-size: 0.98rem;
-  }
-
-  .chb-chai-price-line {
-    margin-top: 18px;
-  }
-
-  .chb-chai-price-line strong {
-    font-size: 2.15rem;
-  }
-
-  .chb-chai-actions {
-    margin-top: 18px;
-  }
-
-  .chb-chai-actions .chb-btn {
-    width: 100%;
-  }
-
-  .chb-chai-microproof {
-    gap: 7px;
-    margin-top: 17px;
-  }
-
-  .chb-chai-proof-pill {
-    padding: 7px 9px;
-    font-size: 0.76rem;
-  }
-
-  .chb-chai-slider-card {
+  .chb-product-gallery {
     border-radius: 24px;
     box-shadow: 0 14px 34px rgba(41, 24, 12, 0.09);
   }
@@ -2000,8 +1954,64 @@ div[id*="cal"] iframe {
     height: 38px;
   }
 
-  .chb-chai-card-body {
-    padding: 16px;
+  .chb-product-info .chb-eyebrow {
+    margin-bottom: 9px;
+    font-size: 0.7rem;
+  }
+
+  .chb-product-info .chb-h1 {
+    font-size: clamp(2.02rem, 9.8vw, 2.72rem);
+  }
+
+  .chb-product-tagline {
+    margin-top: 13px;
+    padding: 7px 10px;
+    font-size: 0.82rem;
+  }
+
+  .chb-product-price-row {
+    margin-top: 18px;
+    padding-top: 15px;
+  }
+
+  .chb-product-price-row strong {
+    font-size: 2.15rem;
+  }
+
+  .chb-product-description {
+    margin-top: 14px;
+    font-size: 0.98rem;
+    line-height: 1.42;
+  }
+
+  .chb-product-bullets {
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .chb-product-bullets li {
+    padding-left: 25px;
+    font-size: 0.93rem;
+  }
+
+  .chb-product-bullets li::before {
+    width: 13px;
+    height: 13px;
+    top: 0.43em;
+  }
+
+  .chb-product-action-stack {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .chb-product-action-stack .chb-btn {
+    width: 100%;
+    min-height: 54px;
+  }
+
+  .chb-product-action-stack p {
+    font-size: 0.8rem;
   }
 
   .chb-chai-short-section {
@@ -2063,11 +2073,11 @@ div[id*="cal"] iframe {
     padding-inline: 13px;
   }
 
-  .chb-chai-hero .chb-h1 {
+  .chb-product-info .chb-h1 {
     font-size: 2.06rem;
   }
 
-  .chb-chai-price-line strong {
+  .chb-product-price-row strong {
     font-size: 2.02rem;
   }
 
