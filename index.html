@@ -274,7 +274,7 @@
                 <li>Food and neighborhood stops</li>
               </ul>
 
-              <a class="chb-btn chb-btn-full" href="javascript:void(0)" data-cal-link="chaibhaitours/2-hour" data-cal-namespace="2-hour" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book the 2-Hour Walk</a>
+              <button class="chb-btn chb-btn-full" type="button" data-cal-link="chaibhaitours/2-hour" data-cal-namespace="2-hour" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book the 2-Hour Walk</button>
             </div>
           </aside>
         </div>
@@ -305,7 +305,7 @@
               </ul>
 
               <div class="chb-card-action">
-                <a class="chb-btn chb-btn-outline-ink" href="javascript:void(0)" data-cal-link="chaibhaitours/1-hour-tour" data-cal-namespace="1-hour-tour" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book the 1-Hour Walk</a>
+                <button class="chb-btn chb-btn-outline-ink" type="button" data-cal-link="chaibhaitours/1-hour-tour" data-cal-namespace="1-hour-tour" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book the 1-Hour Walk</button>
               </div>
             </article>
 
@@ -328,7 +328,7 @@
               </ul>
 
               <div class="chb-card-action">
-                <a class="chb-btn" href="javascript:void(0)" data-cal-link="chaibhaitours/2-hour" data-cal-namespace="2-hour" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book the 2-Hour Walk</a>
+                <button class="chb-btn" type="button" data-cal-link="chaibhaitours/2-hour" data-cal-namespace="2-hour" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book the 2-Hour Walk</button>
               </div>
             </article>
 
@@ -349,7 +349,7 @@
               </ul>
 
               <div class="chb-card-action">
-                <a class="chb-btn chb-btn-outline-ink" href="javascript:void(0)" data-cal-link="chaibhaitours/3-hour" data-cal-namespace="3-hour" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book the 3-Hour Deep Dive</a>
+                <button class="chb-btn chb-btn-outline-ink" type="button" data-cal-link="chaibhaitours/3-hour" data-cal-namespace="3-hour" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book the 3-Hour Deep Dive</button>
               </div>
             </article>
           </div>
@@ -639,14 +639,56 @@
         <strong>2-hour Food + Culture Walk</strong>
         <span>$45 · private tour with Jim</span>
       </div>
-      <a class="chb-btn" href="javascript:void(0)" data-cal-link="chaibhaitours/2-hour" data-cal-namespace="2-hour" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book Now</a>
+      <button class="chb-btn" type="button" data-cal-link="chaibhaitours/2-hour" data-cal-namespace="2-hour" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book Now</button>
     </div>
 
   </div>
 
   <script src="./script.js"></script>
 
+  <script type="text/javascript">
+    (function (C, A, L) {
+      let p = function (a, ar) { a.q.push(ar); };
+      let d = C.document;
+      C.Cal = C.Cal || function () {
+        let cal = C.Cal;
+        let ar = arguments;
 
+        if (!cal.loaded) {
+          cal.ns = {};
+          cal.q = cal.q || [];
+          d.head.appendChild(d.createElement("script")).src = A;
+          cal.loaded = true;
+        }
+
+        if (ar[0] === L) {
+          const api = function () { p(api, arguments); };
+          const namespace = ar[1];
+          api.q = api.q || [];
+
+          if (typeof namespace === "string") {
+            cal.ns[namespace] = cal.ns[namespace] || api;
+            p(cal.ns[namespace], ar);
+            p(cal, ["initNamespace", namespace]);
+          } else {
+            p(cal, ar);
+          }
+
+          return;
+        }
+
+        p(cal, ar);
+      };
+    })(window, "https://app.cal.com/embed/embed.js", "init");
+
+    Cal("init", "1-hour-tour", { origin: "https://app.cal.com" });
+    Cal("init", "2-hour", { origin: "https://app.cal.com" });
+    Cal("init", "3-hour", { origin: "https://app.cal.com" });
+
+    Cal.ns["1-hour-tour"]("ui", { hideEventTypeDetails: false, layout: "month_view" });
+    Cal.ns["2-hour"]("ui", { hideEventTypeDetails: false, layout: "month_view" });
+    Cal.ns["3-hour"]("ui", { hideEventTypeDetails: false, layout: "month_view" });
+  </script>
 
   <script>
     const chbMosaicSlider = document.querySelector("#chbMosaicSlider");
