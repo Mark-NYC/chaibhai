@@ -1452,3 +1452,43 @@ a {
     height: 235px;
   }
 }
+
+/* Cal.com popup integration */
+[data-cal-link] {
+  cursor: pointer;
+}
+
+[data-cal-link]:focus-visible {
+  outline: 3px solid rgba(242, 177, 61, 0.85);
+  outline-offset: 4px;
+}
+
+[data-cal-link].chb-btn {
+  user-select: none;
+}
+
+/* Keep the mobile sticky booking bar beneath the Cal popup */
+.chb-mobile-booking-bar {
+  z-index: 40;
+}
+
+/* Cal injects its own popup/iframe. This keeps any Cal iframe visually clean if it appears inside the DOM. */
+iframe[src*="cal.com"],
+iframe[src*="app.cal.com"] {
+  color-scheme: light;
+  border: 0;
+}
+
+/* Optional safety: if Cal renders an inline frame for any reason, don't let it look broken */
+.cal-embed,
+.cal-embed iframe,
+div[id*="cal"] iframe {
+  max-width: 100%;
+}
+
+/* Mobile tap behavior for Cal booking buttons */
+@media (max-width: 760px) {
+  [data-cal-link].chb-btn {
+    touch-action: manipulation;
+  }
+}
