@@ -1,15 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Chai Bhai Masala Tea Bags | Real Queens Chai</title>
-  <meta name="description" content="Buy Chai Bhai Masala Tea Bags, a small-batch Assam tea blend with cardamom, clove, cinnamon, ginger, and peppercorn. Ships from Jackson Heights, Queens." />
+  <title>Chai Bhai Masala Tea Bags | Real Masala Chai</title>
+  <meta name="description" content="Buy Chai Bhai Masala Tea Bags. Bold Assam tea with cardamom, clove, cinnamon, ginger, and peppercorn. Six tea bags. Ships from New York." />
   <link rel="canonical" href="https://mark-nyc.github.io/chaibhai/chai.html" />
 
-  <meta property="og:title" content="Chai Bhai Masala Tea Bags" />
-  <meta property="og:description" content="Small-batch Assam tea with whole spices. Inspired by Jackson Heights, Queens." />
+  <meta property="og:title" content="Real Masala Chai. Easy Tea Bags." />
+  <meta property="og:description" content="Bold Assam tea blended with whole spices. Six tea bags. Ships from New York." />
   <meta property="og:type" content="product" />
   <meta property="og:url" content="https://mark-nyc.github.io/chaibhai/chai.html" />
   <meta property="og:image" content="https://mark-nyc.github.io/chaibhai/assets/images/chai-1.webp" />
@@ -17,6 +18,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+
+  <style>
+    @media (min-width: 981px) {
+      .chb-chai-copy { order: 1; }
+      .chb-chai-slider-card { order: 2; }
+    }
+
+    @media (max-width: 980px) {
+      .chb-chai-slider-card { order: 1; }
+      .chb-chai-copy { order: 2; }
+    }
+  </style>
 
   <script type="application/ld+json">
   {
@@ -48,7 +62,7 @@
           "https://mark-nyc.github.io/chaibhai/assets/images/chai-2.webp",
           "https://mark-nyc.github.io/chaibhai/assets/images/chai-3.webp"
         ],
-        "description": "Small-batch Assam tea blended with cardamom, clove, cinnamon, ginger, white peppercorn, and green peppercorn.",
+        "description": "Bold Assam tea blended with cardamom, clove, cinnamon, ginger, white peppercorn, and green peppercorn.",
         "brand": {
           "@type": "Brand",
           "name": "Chai Bhai"
@@ -81,26 +95,18 @@
           },
           {
             "@type": "Question",
-            "name": "What is in the chai?",
+            "name": "Can I pay without PayPal?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The blend uses Assam black tea with cardamom, clove, cinnamon, ginger, white peppercorn, and green peppercorn."
+              "text": "PayPal checkout usually lets buyers pay with a card, depending on checkout options."
             }
           },
           {
             "@type": "Question",
-            "name": "Can I make it with milk?",
+            "name": "What does it taste like?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. It works hot, iced, with milk, or as a chai latte."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Where does it ship from?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Orders ship from Jackson Heights, Queens, New York."
+              "text": "Bold black tea with warm spice. Malty, smooth, and good with milk."
             }
           }
         ]
@@ -109,447 +115,7 @@
   }
   </script>
 
-  <link rel="stylesheet" href="./styles.css" />
-
-  <!--
-    PAYPAL SETUP:
-    Replace every occurrence of this placeholder URL with Jim's live PayPal Payment Link or hosted Buy Button URL:
-    https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID
-  -->
-
-  <style>
-    .chb-chai-page {
-      background:
-        radial-gradient(circle at 8% 4%, rgba(242, 177, 61, 0.24), transparent 28rem),
-        radial-gradient(circle at 92% 10%, rgba(200, 79, 33, 0.12), transparent 30rem),
-        linear-gradient(180deg, #fff8eb 0%, #fffaf1 48%, #f8ead3 100%);
-    }
-
-    .chb-chai-nav {
-      justify-content: space-between;
-    }
-
-    .chb-chai-nav .chb-logo {
-      cursor: default;
-    }
-
-    .chb-chai-nav .chb-nav-links {
-      display: none;
-    }
-
-    .chb-chai-hero {
-      padding: 56px 0 64px;
-      color: var(--chb-ink);
-      border-bottom: 1px solid var(--chb-border);
-      background: transparent;
-    }
-
-    .chb-chai-hero-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 0.92fr) minmax(360px, 0.72fr);
-      gap: 50px;
-      align-items: center;
-    }
-
-    .chb-chai-hero .chb-eyebrow {
-      color: var(--chb-spice);
-    }
-
-    .chb-chai-hero .chb-h1 {
-      max-width: 720px;
-      color: var(--chb-ink);
-      text-shadow: none;
-      font-size: clamp(2.2rem, 4.4vw, 4.05rem);
-    }
-
-    .chb-chai-hero .chb-lead {
-      max-width: 620px;
-      margin-top: 20px;
-      color: var(--chb-ink-soft);
-      text-shadow: none;
-      font-size: clamp(1rem, 1.2vw, 1.13rem);
-    }
-
-    .chb-chai-price-line {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      gap: 10px;
-      margin-top: 22px;
-    }
-
-    .chb-chai-price-line strong {
-      font-size: 2.55rem;
-      line-height: 1;
-      letter-spacing: -0.07em;
-    }
-
-    .chb-chai-price-line span {
-      color: var(--chb-ink-soft);
-      font-weight: 850;
-    }
-
-    .chb-chai-paypal-note {
-      max-width: 560px;
-      margin: 12px 0 0;
-      color: var(--chb-ink-soft);
-      font-size: 0.93rem;
-      font-weight: 750;
-    }
-
-    .chb-chai-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 13px;
-      margin-top: 26px;
-    }
-
-    .chb-chai-actions .chb-btn {
-      min-height: 52px;
-    }
-
-    .chb-chai-microproof {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 24px;
-    }
-
-    .chb-chai-proof-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 9px 12px;
-      border: 1px solid var(--chb-border);
-      border-radius: 999px;
-      background: rgba(255, 253, 247, 0.82);
-      color: var(--chb-ink-soft);
-      font-size: 0.86rem;
-      font-weight: 850;
-      box-shadow: 0 10px 28px rgba(41, 24, 12, 0.06);
-    }
-
-    .chb-chai-proof-pill strong {
-      color: var(--chb-ink);
-    }
-
-    .chb-chai-slider-card {
-      border: 1px solid var(--chb-border);
-      border-radius: 32px;
-      background: rgba(255, 253, 247, 0.94);
-      box-shadow: var(--chb-shadow);
-      overflow: hidden;
-    }
-
-    .chb-chai-slider {
-      position: relative;
-      aspect-ratio: 1 / 1;
-      overflow: hidden;
-      background: #fff3de;
-    }
-
-    .chb-chai-slide {
-      position: absolute;
-      inset: 0;
-      display: none;
-      margin: 0;
-    }
-
-    .chb-chai-slide.is-active {
-      display: block;
-    }
-
-    .chb-chai-slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      background: #fff3de;
-    }
-
-    .chb-chai-slider-button {
-      position: absolute;
-      top: 50%;
-      z-index: 2;
-      display: grid;
-      place-items: center;
-      width: 42px;
-      height: 42px;
-      border: 1px solid rgba(37, 22, 14, 0.15);
-      border-radius: 50%;
-      background: rgba(255, 250, 241, 0.92);
-      color: var(--chb-ink);
-      font-size: 1.45rem;
-      font-weight: 900;
-      line-height: 1;
-      cursor: pointer;
-      transform: translateY(-50%);
-      box-shadow: 0 12px 30px rgba(41, 24, 12, 0.12);
-    }
-
-    .chb-chai-slider-button:hover {
-      background: #fffaf1;
-    }
-
-    .chb-chai-slider-button--prev {
-      left: 14px;
-    }
-
-    .chb-chai-slider-button--next {
-      right: 14px;
-    }
-
-    .chb-chai-dots {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 14px;
-      z-index: 3;
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-    }
-
-    .chb-chai-dot {
-      width: 9px;
-      height: 9px;
-      padding: 0;
-      border: 0;
-      border-radius: 999px;
-      background: rgba(255, 250, 241, 0.66);
-      box-shadow: 0 0 0 1px rgba(37, 22, 14, 0.18);
-      cursor: pointer;
-    }
-
-    .chb-chai-dot.is-active {
-      width: 25px;
-      background: var(--chb-spice);
-      box-shadow: none;
-    }
-
-    .chb-chai-card-body {
-      padding: 22px;
-    }
-
-    .chb-chai-card-body h2 {
-      margin: 0;
-      font-size: 1.05rem;
-      letter-spacing: -0.025em;
-    }
-
-    .chb-chai-card-body p {
-      margin: 8px 0 0;
-      color: var(--chb-ink-soft);
-      font-weight: 700;
-    }
-
-    .chb-chai-short-section {
-      padding: 58px 0;
-      background: #fffaf1;
-    }
-
-    .chb-chai-short-section:nth-of-type(even) {
-      background: linear-gradient(180deg, #fffaf1, #f8ead3);
-    }
-
-    .chb-chai-centered {
-      max-width: 780px;
-      margin: 0 auto 28px;
-      text-align: center;
-    }
-
-    .chb-chai-centered .chb-p {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .chb-chai-grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-      margin-top: 28px;
-    }
-
-    .chb-chai-mini-card {
-      padding: 24px;
-      border: 1px solid var(--chb-border);
-      border-radius: 24px;
-      background: rgba(255, 253, 247, 0.92);
-      box-shadow: 0 14px 36px rgba(41, 24, 12, 0.07);
-    }
-
-    .chb-chai-mini-card strong {
-      display: block;
-      margin-bottom: 8px;
-      font-size: 1.02rem;
-      letter-spacing: -0.02em;
-    }
-
-    .chb-chai-mini-card p {
-      margin: 0;
-      color: var(--chb-ink-soft);
-      font-weight: 650;
-    }
-
-    .chb-chai-ingredient-box {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      max-width: 880px;
-      margin: 26px auto 0;
-    }
-
-    .chb-chai-ingredient {
-      padding: 10px 13px;
-      border: 1px solid var(--chb-border);
-      border-radius: 999px;
-      background: rgba(255, 253, 247, 0.86);
-      color: var(--chb-ink);
-      font-size: 0.9rem;
-      font-weight: 900;
-    }
-
-    .chb-chai-buy-panel {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: 26px;
-      align-items: center;
-      padding: 30px;
-      border: 1px solid rgba(255, 250, 241, 0.18);
-      border-radius: 30px;
-      background:
-        linear-gradient(135deg, rgba(37, 22, 14, 0.96), rgba(35, 83, 67, 0.92)),
-        url("assets/images/chai-1.webp") center / cover no-repeat;
-      color: #fffaf1;
-      box-shadow: var(--chb-shadow);
-    }
-
-    .chb-chai-buy-panel .chb-eyebrow {
-      color: #ffd58a;
-    }
-
-    .chb-chai-buy-panel .chb-h2 {
-      max-width: 760px;
-    }
-
-    .chb-chai-buy-panel p {
-      max-width: 660px;
-      margin: 14px 0 0;
-      color: rgba(255, 250, 241, 0.82);
-      font-weight: 650;
-    }
-
-    .chb-chai-buy-panel .chb-btn-light {
-      min-width: 190px;
-      color: var(--chb-ink);
-    }
-
-    .chb-chai-tour-link {
-      text-align: center;
-      padding: 34px 0 0;
-      color: var(--chb-ink-soft);
-      font-weight: 750;
-    }
-
-    .chb-chai-tour-link a {
-      color: var(--chb-spice-dark);
-      font-weight: 950;
-    }
-
-    .chb-chai-mobile-bar {
-      position: fixed;
-      left: 12px;
-      right: 12px;
-      bottom: 12px;
-      z-index: 40;
-      display: none;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      padding: 12px;
-      border: 1px solid var(--chb-border);
-      border-radius: 22px;
-      background: rgba(255, 253, 247, 0.96);
-      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
-      backdrop-filter: blur(16px);
-    }
-
-    .chb-chai-mobile-bar strong,
-    .chb-chai-mobile-bar span {
-      display: block;
-    }
-
-    .chb-chai-mobile-bar strong {
-      font-size: 0.92rem;
-    }
-
-    .chb-chai-mobile-bar span {
-      color: var(--chb-ink-soft);
-      font-size: 0.78rem;
-      font-weight: 800;
-    }
-
-    .chb-chai-mobile-bar .chb-btn {
-      min-height: 44px;
-      padding-inline: 18px;
-      white-space: nowrap;
-    }
-
-    @media (max-width: 980px) {
-      .chb-chai-hero-grid,
-      .chb-chai-buy-panel {
-        grid-template-columns: 1fr;
-      }
-
-      .chb-chai-slider-card {
-        max-width: 560px;
-        margin-inline: auto;
-      }
-
-      .chb-chai-grid-3 {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 760px) {
-      .chb-chai-hero {
-        padding: 34px 0 44px;
-      }
-
-      .chb-chai-hero-grid {
-        gap: 28px;
-      }
-
-      .chb-chai-hero .chb-h1 {
-        font-size: clamp(2.08rem, 10.2vw, 2.86rem);
-      }
-
-      .chb-chai-actions .chb-btn {
-        width: 100%;
-      }
-
-      .chb-chai-price-line strong {
-        font-size: 2.2rem;
-      }
-
-      .chb-chai-short-section {
-        padding: 48px 0;
-      }
-
-      .chb-chai-slider-button {
-        width: 38px;
-        height: 38px;
-      }
-
-      .chb-chai-buy-panel {
-        padding: 24px;
-      }
-
-      .chb-chai-mobile-bar.is-visible {
-        display: flex;
-      }
-    }
-  </style>
+  <!-- Replace every PayPal placeholder below with Jim's live PayPal Payment Link or hosted Buy Button URL. -->
 </head>
 
 <body>
@@ -561,8 +127,7 @@
           <span class="chb-logo-text"><strong>Chai Bhai</strong><em>Masala Chai</em></span>
         </div>
 
-
-        <a class="chb-btn chb-nav-cta" href="https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID" target="_blank" rel="noopener noreferrer" data-paypal-checkout>Buy with PayPal</a>
+        <a class="chb-btn chb-nav-cta" href="https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID" target="_blank" rel="noopener noreferrer" data-paypal-checkout>Buy</a>
       </div>
     </header>
 
@@ -570,25 +135,25 @@
       <section class="chb-chai-hero">
         <div class="chb-wrap chb-chai-hero-grid">
           <div class="chb-chai-copy">
-            <p class="chb-eyebrow">Small-batch chai from Queens</p>
-            <h1 class="chb-h1">Bring home Jim’s Jackson Heights chai.</h1>
-            <p class="chb-lead">Bold Assam tea blended with real spices. No fake chai flavor. Just tea bags that make a warm, malty cup at home.</p>
+            <p class="chb-eyebrow">Small-batch masala chai</p>
+            <h1 class="chb-h1">Real masala chai. Easy tea bags.</h1>
+            <p class="chb-lead">Bold Assam tea blended with whole spices. Six tea bags for a warm, malty cup at home.</p>
 
             <div class="chb-chai-price-line">
               <strong>$12.99</strong>
-              <span>6 masala tea bags</span>
+              <span>6 tea bags</span>
             </div>
 
-            <p class="chb-chai-paypal-note">Secure checkout handled by PayPal. You can pay with PayPal or card, depending on checkout options.</p>
+            <p class="chb-chai-paypal-note">Secure PayPal checkout. Pay with PayPal or card.</p>
 
             <div class="chb-chai-actions">
               <a class="chb-btn" href="https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID" target="_blank" rel="noopener noreferrer" data-paypal-checkout>Buy with PayPal</a>
             </div>
 
             <div class="chb-chai-microproof" aria-label="Product highlights">
+              <span class="chb-chai-proof-pill"><strong>6 tea bags</strong></span>
               <span class="chb-chai-proof-pill"><strong>Ships from NY</strong></span>
-              <span class="chb-chai-proof-pill"><strong>Secure PayPal checkout</strong></span>
-              <span class="chb-chai-proof-pill"><strong>No artificial flavors</strong></span>
+              <span class="chb-chai-proof-pill"><strong>No fake chai flavor</strong></span>
             </div>
           </div>
 
@@ -616,7 +181,7 @@
 
             <div class="chb-chai-card-body">
               <h2>Chai Bhai Masala Tea Bags</h2>
-              <p>Inspired by the chai tastings and spice shops Jim shares on his Jackson Heights walking tours.</p>
+              <p>Bold Assam tea + cardamom, clove, cinnamon, ginger, and peppercorn.</p>
             </div>
           </aside>
         </div>
@@ -626,22 +191,21 @@
         <div class="chb-wrap">
           <div class="chb-chai-centered">
             <p class="chb-eyebrow">What you get</p>
-            <h2 class="chb-h2">Real chai flavor without the work.</h2>
-            <p class="chb-p">Each jar includes 6 tea bags made with bold black tea and whole-spice flavor. Easy enough for a regular morning. Good enough to give as a gift.</p>
+            <h2 class="chb-h2">Whole-spice chai without the work.</h2>
           </div>
 
           <div class="chb-chai-grid-3">
             <article class="chb-chai-mini-card">
               <strong>Bold Assam tea</strong>
-              <p>Strong, malty black tea that holds up with milk.</p>
+              <p>Strong enough for milk.</p>
             </article>
             <article class="chb-chai-mini-card">
-              <strong>Whole-spice taste</strong>
+              <strong>Whole spices</strong>
               <p>Cardamom, clove, cinnamon, ginger, and peppercorn.</p>
             </article>
             <article class="chb-chai-mini-card">
               <strong>No fake flavor</strong>
-              <p>No artificial flavors or additives. Just tea and spices.</p>
+              <p>No artificial flavors or additives.</p>
             </article>
           </div>
 
@@ -661,22 +225,21 @@
         <div class="chb-wrap">
           <div class="chb-chai-centered">
             <p class="chb-eyebrow">How to drink it</p>
-            <h2 class="chb-h2">Hot, iced, or latte style.</h2>
-            <p class="chb-p">Steep it strong. Add milk and sweetener if you want. That’s it.</p>
+            <h2 class="chb-h2">Hot, iced, or as a latte.</h2>
           </div>
 
           <div class="chb-chai-grid-3">
             <article class="chb-chai-mini-card">
-              <strong>Classic hot chai</strong>
-              <p>Steep in hot water, then add milk and sweetener to taste.</p>
+              <strong>Hot chai</strong>
+              <p>Steep strong. Add milk and sugar.</p>
             </article>
             <article class="chb-chai-mini-card">
               <strong>Chai latte</strong>
-              <p>Brew it stronger, then add steamed milk for a creamier cup.</p>
+              <p>Brew strong. Add steamed milk.</p>
             </article>
             <article class="chb-chai-mini-card">
               <strong>Iced chai</strong>
-              <p>Steep, chill, pour over ice, and add milk if you like.</p>
+              <p>Steep, chill, pour over ice.</p>
             </article>
           </div>
         </div>
@@ -687,8 +250,8 @@
           <div class="chb-chai-buy-panel">
             <div>
               <p class="chb-eyebrow">Easy gift. Easy cup.</p>
-              <h2 class="chb-h2">A small taste of Queens you can send anywhere.</h2>
-              <p>Good for tea lovers, NYC people, former tour guests, teachers, hosts, coworkers, or anyone who likes a warm drink with a story behind it.</p>
+              <h2 class="chb-h2">Send a little Queens in a cup.</h2>
+              <p>Good for tea lovers, hosts, teachers, coworkers, former tour guests, or anyone who likes a warm drink with a story behind it.</p>
             </div>
             <a class="chb-btn chb-btn-light" href="https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID" target="_blank" rel="noopener noreferrer" data-paypal-checkout>Buy with PayPal</a>
           </div>
@@ -705,39 +268,27 @@
           <div class="chb-faq-list">
             <details class="chb-faq-item" open>
               <summary><span>How many tea bags are included?</span><span class="chb-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path class="chb-faq-line-h" d="M6 12h12" /><path class="chb-faq-line-v" d="M12 6v12" /></svg></span></summary>
-              <p>Each jar includes 6 Chai Bhai Masala Tea Bags.</p>
+              <p>Six Chai Bhai Masala Tea Bags.</p>
+            </details>
+
+            <details class="chb-faq-item">
+              <summary><span>Can I pay without PayPal?</span><span class="chb-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path class="chb-faq-line-h" d="M6 12h12" /><path class="chb-faq-line-v" d="M12 6v12" /></svg></span></summary>
+              <p>Yes. PayPal checkout usually lets you pay with a card too.</p>
             </details>
 
             <details class="chb-faq-item">
               <summary><span>What does it taste like?</span><span class="chb-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path class="chb-faq-line-h" d="M6 12h12" /><path class="chb-faq-line-v" d="M12 6v12" /></svg></span></summary>
-              <p>Malty, warming, smooth, and spice-forward. It is built around Assam black tea with cardamom, clove, cinnamon, ginger, and peppercorn.</p>
-            </details>
-
-            <details class="chb-faq-item">
-              <summary><span>Can I make it with milk?</span><span class="chb-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path class="chb-faq-line-h" d="M6 12h12" /><path class="chb-faq-line-v" d="M12 6v12" /></svg></span></summary>
-              <p>Yes. It works with milk, as a latte, or iced.</p>
-            </details>
-
-            <details class="chb-faq-item">
-              <summary><span>How do I pay?</span><span class="chb-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path class="chb-faq-line-h" d="M6 12h12" /><path class="chb-faq-line-v" d="M12 6v12" /></svg></span></summary>
-              <p>Checkout is handled through PayPal. Use the buy button, confirm your order, and Jim will ship from Jackson Heights, Queens.</p>
-            </details>
-
-            <details class="chb-faq-item">
-              <summary><span>Do you offer local pickup or bulk orders?</span><span class="chb-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path class="chb-faq-line-h" d="M6 12h12" /><path class="chb-faq-line-v" d="M12 6v12" /></svg></span></summary>
-              <p>Yes. Local pickup and bulk orders are available upon request in Jackson Heights.</p>
+              <p>Bold black tea with warm spice. Malty, smooth, and good with milk.</p>
             </details>
           </div>
-
         </div>
       </section>
     </main>
 
-
     <div class="chb-chai-mobile-bar" aria-label="Mobile buy bar">
       <div>
-        <strong>Masala Tea Bags</strong>
-        <span>$12.99 · 6 bags</span>
+        <strong>Chai Bhai Masala Chai</strong>
+        <span>$12.99 · 6 tea bags</span>
       </div>
       <a class="chb-btn" href="https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID" target="_blank" rel="noopener noreferrer" data-paypal-checkout>Buy</a>
     </div>
@@ -774,7 +325,7 @@
     function updateChaiMobileBar() {
       if (!chaiMobileBar) return;
       const isMobile = window.matchMedia("(max-width: 760px)").matches;
-      const shouldShow = isMobile && window.scrollY > 420;
+      const shouldShow = isMobile && window.scrollY > 380;
       chaiMobileBar.classList.toggle("is-visible", shouldShow);
     }
 
