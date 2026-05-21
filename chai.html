@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,8 +37,7 @@
           "addressCountry": "US"
         },
         "sameAs": [
-          "https://www.instagram.com/chaibhaitours/",
-          "https://www.etsy.com/shop/ChaiBhaiStore"
+          "https://www.instagram.com/chaibhaitours/"
         ]
       },
       {
@@ -58,14 +58,13 @@
         "sku": "CHB-MASALA-TEA-BAGS-6",
         "offers": {
           "@type": "Offer",
-          "url": "https://www.etsy.com/shop/ChaiBhaiStore",
+          "url": "https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID",
           "priceCurrency": "USD",
           "price": "12.99",
           "availability": "https://schema.org/InStock",
           "itemCondition": "https://schema.org/NewCondition",
           "seller": {
-            "@type": "Organization",
-            "name": "ChaiBhaiStore"
+            "@id": "https://mark-nyc.github.io/chaibhai/#business"
           }
         }
       },
@@ -112,6 +111,12 @@
   </script>
 
   <link rel="stylesheet" href="./styles.css" />
+
+  <!--
+    PAYPAL SETUP:
+    Replace every occurrence of this placeholder URL with Jim's live PayPal Payment Link or hosted Buy Button URL:
+    https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID
+  -->
 
   <style>
     .chb-chai-page {
@@ -175,6 +180,14 @@
     .chb-chai-price-line span {
       color: var(--chb-ink-soft);
       font-weight: 850;
+    }
+
+    .chb-chai-paypal-note {
+      max-width: 560px;
+      margin: 12px 0 0;
+      color: var(--chb-ink-soft);
+      font-size: 0.93rem;
+      font-weight: 750;
     }
 
     .chb-chai-actions {
@@ -543,7 +556,7 @@
           <a href="./">Walking Tours</a>
         </nav>
 
-        <a class="chb-btn chb-nav-cta" href="https://www.etsy.com/shop/ChaiBhaiStore" target="_blank" rel="noopener noreferrer">Buy Chai</a>
+        <a class="chb-btn chb-nav-cta" href="https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID" target="_blank" rel="noopener noreferrer" data-paypal-checkout>Buy with PayPal</a>
       </div>
     </header>
 
@@ -560,15 +573,17 @@
               <span>6 masala tea bags</span>
             </div>
 
+            <p class="chb-chai-paypal-note">Secure checkout handled by PayPal. You can pay with PayPal or card, depending on checkout options.</p>
+
             <div class="chb-chai-actions">
-              <a class="chb-btn" href="https://www.etsy.com/shop/ChaiBhaiStore" target="_blank" rel="noopener noreferrer">Buy on Etsy</a>
+              <a class="chb-btn" href="https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID" target="_blank" rel="noopener noreferrer" data-paypal-checkout>Buy with PayPal</a>
               <a class="chb-btn chb-btn-outline-ink" href="#inside">See what’s inside</a>
             </div>
 
             <div class="chb-chai-microproof" aria-label="Product highlights">
               <span class="chb-chai-proof-pill"><strong>Ships from NY</strong></span>
+              <span class="chb-chai-proof-pill"><strong>Secure PayPal checkout</strong></span>
               <span class="chb-chai-proof-pill"><strong>No artificial flavors</strong></span>
-              <span class="chb-chai-proof-pill"><strong>Great hot or iced</strong></span>
             </div>
           </div>
 
@@ -670,7 +685,7 @@
               <h2 class="chb-h2">A small taste of Queens you can send anywhere.</h2>
               <p>Good for tea lovers, NYC people, former tour guests, teachers, hosts, coworkers, or anyone who likes a warm drink with a story behind it.</p>
             </div>
-            <a class="chb-btn chb-btn-light" href="https://www.etsy.com/shop/ChaiBhaiStore" target="_blank" rel="noopener noreferrer">Buy on Etsy</a>
+            <a class="chb-btn chb-btn-light" href="https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID" target="_blank" rel="noopener noreferrer" data-paypal-checkout>Buy with PayPal</a>
           </div>
         </div>
       </section>
@@ -699,6 +714,11 @@
             </details>
 
             <details class="chb-faq-item">
+              <summary><span>How do I pay?</span><span class="chb-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path class="chb-faq-line-h" d="M6 12h12" /><path class="chb-faq-line-v" d="M12 6v12" /></svg></span></summary>
+              <p>Checkout is handled through PayPal. Use the buy button, confirm your order, and Jim will ship from Jackson Heights, Queens.</p>
+            </details>
+
+            <details class="chb-faq-item">
               <summary><span>Do you offer local pickup or bulk orders?</span><span class="chb-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path class="chb-faq-line-h" d="M6 12h12" /><path class="chb-faq-line-v" d="M12 6v12" /></svg></span></summary>
               <p>Yes. Local pickup and bulk orders are available upon request in Jackson Heights. Email <a href="mailto:info@chaibhai.net">info@chaibhai.net</a>.</p>
             </details>
@@ -716,7 +736,7 @@
         <div>
           <h2>Chai Bhai Masala Chai</h2>
           <p>Small-batch chai inspired by Jackson Heights, Queens.</p>
-          <p><a href="https://www.etsy.com/shop/ChaiBhaiStore" target="_blank" rel="noopener noreferrer">Buy on Etsy</a> · <a href="./">Book a Walking Tour</a></p>
+          <p><a href="https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID" target="_blank" rel="noopener noreferrer">Buy with PayPal</a> · <a href="./">Book a Walking Tour</a></p>
         </div>
 
         <div>
@@ -729,7 +749,7 @@
         <div>
           <h3>Find us</h3>
           <p><a href="https://www.instagram.com/chaibhaitours/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
-          <p><a href="https://www.etsy.com/shop/ChaiBhaiStore" target="_blank" rel="noopener noreferrer">Etsy</a></p>
+          <p><a href="https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID" target="_blank" rel="noopener noreferrer" data-paypal-checkout>Buy chai with PayPal</a></p>
           <p><a href="./">Chai Bhai Walking Tours</a></p>
         </div>
       </div>
@@ -740,7 +760,7 @@
         <strong>Masala Tea Bags</strong>
         <span>$12.99 · 6 bags</span>
       </div>
-      <a class="chb-btn" href="https://www.etsy.com/shop/ChaiBhaiStore" target="_blank" rel="noopener noreferrer">Buy</a>
+      <a class="chb-btn" href="https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID" target="_blank" rel="noopener noreferrer" data-paypal-checkout>Buy</a>
     </div>
   </div>
 
