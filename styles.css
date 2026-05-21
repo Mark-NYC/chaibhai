@@ -1492,3 +1492,813 @@ div[id*="cal"] iframe {
     touch-action: manipulation;
   }
 }
+
+/* Chai product landing page */
+.chb-chai-page {
+  min-height: 100vh;
+  overflow: clip;
+  background:
+    radial-gradient(circle at 8% 4%, rgba(242, 177, 61, 0.22), transparent 27rem),
+    radial-gradient(circle at 92% 8%, rgba(200, 79, 33, 0.11), transparent 29rem),
+    linear-gradient(180deg, #fff8eb 0%, #fffaf1 46%, #f8ead3 100%);
+}
+
+.chb-chai-page .chb-topbar {
+  background: rgba(255, 248, 235, 0.9);
+}
+
+.chb-chai-page .chb-chai-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 74px;
+  gap: 16px;
+}
+
+.chb-chai-page .chb-logo {
+  text-decoration: none;
+}
+
+.chb-chai-page .chb-btn {
+  min-height: 50px;
+  padding: 0 24px;
+  box-shadow: 0 16px 30px rgba(200, 79, 33, 0.24);
+}
+
+.chb-chai-page .chb-btn:hover {
+  box-shadow: 0 20px 36px rgba(200, 79, 33, 0.3);
+}
+
+.chb-chai-page .chb-header-cta {
+  min-height: 44px;
+  padding-inline: 18px;
+  font-size: 0.92rem;
+}
+
+.chb-chai-page .chb-main-cta {
+  min-height: 58px;
+  min-width: 220px;
+  padding-inline: 30px;
+  font-size: 1.05rem;
+}
+
+.chb-chai-page .chb-eyebrow {
+  margin: 0 0 12px;
+  font-size: 0.76rem;
+  color: var(--chb-spice);
+}
+
+.chb-chai-page .chb-h1,
+.chb-chai-page .chb-h2 {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  line-height: 1.01;
+  letter-spacing: -0.045em;
+}
+
+.chb-chai-page .chb-h1 {
+  max-width: 720px;
+  font-size: clamp(2.35rem, 4.4vw, 4.05rem);
+}
+
+.chb-chai-page .chb-h2 {
+  max-width: 780px;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+}
+
+.chb-chai-page .chb-lead,
+.chb-chai-page .chb-p {
+  margin: 0;
+  color: var(--chb-ink-soft);
+}
+
+.chb-chai-page .chb-lead {
+  max-width: 610px;
+  margin-top: 18px;
+  font-size: clamp(1rem, 1.2vw, 1.12rem);
+  font-weight: 650;
+}
+
+.chb-chai-page .chb-p {
+  max-width: 720px;
+  margin-top: 14px;
+  font-size: 1rem;
+}
+
+.chb-chai-page .chb-chai-hero {
+  padding: 46px 0 48px;
+  border-bottom: 1px solid var(--chb-border);
+}
+
+.chb-chai-page .chb-chai-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(330px, 0.54fr);
+  gap: 42px;
+  align-items: center;
+}
+
+.chb-chai-page .chb-chai-copy {
+  max-width: 750px;
+}
+
+.chb-chai-page .chb-chai-buy-stack {
+  display: grid;
+  gap: 12px;
+  width: fit-content;
+  margin-top: 22px;
+}
+
+.chb-chai-page .chb-chai-price-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.chb-chai-page .chb-chai-price-line strong {
+  font-size: 2.65rem;
+  line-height: 1;
+  letter-spacing: -0.075em;
+}
+
+.chb-chai-page .chb-chai-price-line span {
+  color: var(--chb-ink-soft);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.chb-chai-page .chb-checkout-note {
+  max-width: 430px;
+  margin: 0;
+  color: var(--chb-ink-soft);
+  font-size: 0.86rem;
+  font-weight: 750;
+}
+
+.chb-chai-page .chb-story-line {
+  max-width: 660px;
+  margin: 18px 0 0;
+  padding: 13px 15px;
+  border-left: 4px solid var(--chb-gold);
+  border-radius: 16px;
+  background: rgba(255, 253, 247, 0.72);
+  color: var(--chb-ink);
+  font-size: 0.97rem;
+  font-weight: 800;
+  box-shadow: 0 10px 26px rgba(41, 24, 12, 0.06);
+}
+
+.chb-chai-page .chb-trust-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 16px;
+}
+
+.chb-chai-page .chb-trust-pills span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 7px 11px;
+  border: 1px solid var(--chb-border);
+  border-radius: 999px;
+  background: rgba(255, 253, 247, 0.82);
+  color: var(--chb-ink-soft);
+  font-size: 0.82rem;
+  font-weight: 900;
+  box-shadow: 0 8px 22px rgba(41, 24, 12, 0.05);
+}
+
+.chb-chai-page .chb-product-card {
+  overflow: hidden;
+  border: 1px solid var(--chb-border);
+  border-radius: 28px;
+  background: rgba(255, 253, 247, 0.9);
+  box-shadow: 0 18px 44px rgba(41, 24, 12, 0.11);
+}
+
+.chb-chai-page .chb-chai-slider {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #fff3de;
+}
+
+.chb-chai-page .chb-chai-slide {
+  position: absolute;
+  inset: 0;
+  display: none;
+  margin: 0;
+}
+
+.chb-chai-page .chb-chai-slide.is-active {
+  display: block;
+}
+
+.chb-chai-page .chb-chai-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #fff3de;
+}
+
+.chb-chai-page .chb-slider-button {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(37, 22, 14, 0.15);
+  border-radius: 50%;
+  background: rgba(255, 250, 241, 0.92);
+  color: var(--chb-ink);
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+  box-shadow: 0 12px 30px rgba(41, 24, 12, 0.12);
+}
+
+.chb-chai-page .chb-slider-button-prev {
+  left: 12px;
+}
+
+.chb-chai-page .chb-slider-button-next {
+  right: 12px;
+}
+
+.chb-chai-page .chb-chai-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 12px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.chb-chai-page .chb-chai-dot {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 250, 241, 0.72);
+  box-shadow: 0 0 0 1px rgba(37, 22, 14, 0.18);
+  cursor: pointer;
+}
+
+.chb-chai-page .chb-chai-dot.is-active {
+  width: 25px;
+  background: var(--chb-spice);
+  box-shadow: none;
+}
+
+.chb-chai-page .chb-product-caption {
+  display: grid;
+  gap: 4px;
+  padding: 17px 19px 18px;
+}
+
+.chb-chai-page .chb-product-caption strong {
+  font-size: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.chb-chai-page .chb-product-caption span {
+  color: var(--chb-ink-soft);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.chb-chai-page .chb-proof-strip {
+  padding: 16px 0;
+  background: #25160e;
+  color: #fffaf1;
+}
+
+.chb-chai-page .chb-proof-strip-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.chb-chai-page .chb-proof-strip strong {
+  color: #ffd58a;
+  font-weight: 950;
+}
+
+.chb-chai-page .chb-proof-strip span {
+  color: rgba(255, 250, 241, 0.84);
+  font-weight: 750;
+}
+
+.chb-chai-page .chb-section {
+  padding: 66px 0;
+}
+
+.chb-chai-page .chb-tight-section {
+  padding: 58px 0;
+}
+
+.chb-chai-page .chb-soft-section,
+.chb-chai-page .chb-faq-section {
+  background: #fffaf1;
+}
+
+.chb-chai-page .chb-section-intro {
+  max-width: 790px;
+  margin-bottom: 26px;
+}
+
+.chb-chai-page .chb-section-intro-centered {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.chb-chai-page .chb-section-intro-centered .chb-h2,
+.chb-chai-page .chb-section-intro-centered .chb-p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chb-chai-page .chb-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.chb-chai-page .chb-mini-card {
+  padding: 22px;
+  border: 1px solid var(--chb-border);
+  border-radius: 22px;
+  background: rgba(255, 253, 247, 0.92);
+  box-shadow: 0 12px 34px rgba(41, 24, 12, 0.06);
+}
+
+.chb-chai-page .chb-mini-card strong {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 1.02rem;
+  letter-spacing: -0.02em;
+}
+
+.chb-chai-page .chb-mini-card p {
+  margin: 0;
+  color: var(--chb-ink-soft);
+  font-weight: 675;
+}
+
+.chb-chai-page .chb-ingredient-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 22px;
+}
+
+.chb-chai-page .chb-ingredient-row span {
+  padding: 9px 12px;
+  border: 1px solid var(--chb-border);
+  border-radius: 999px;
+  background: rgba(255, 253, 247, 0.86);
+  color: var(--chb-ink);
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.chb-chai-page .chb-buy-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 26px;
+  align-items: center;
+  padding: 28px;
+  border: 1px solid rgba(255, 250, 241, 0.18);
+  border-radius: 30px;
+  background:
+    linear-gradient(135deg, rgba(37, 22, 14, 0.96), rgba(35, 83, 67, 0.92)),
+    url("assets/images/chai-1.webp") center / cover no-repeat;
+  color: #fffaf1;
+  box-shadow: var(--chb-shadow);
+}
+
+.chb-chai-page .chb-buy-panel .chb-eyebrow,
+.chb-chai-page .chb-final-cta .chb-eyebrow {
+  color: #ffd58a;
+}
+
+.chb-chai-page .chb-buy-panel p,
+.chb-chai-page .chb-final-cta p {
+  max-width: 650px;
+  margin: 12px 0 0;
+  color: rgba(255, 250, 241, 0.82);
+  font-weight: 700;
+}
+
+.chb-chai-page .chb-panel-action {
+  display: grid;
+  gap: 9px;
+  min-width: 210px;
+  justify-items: stretch;
+}
+
+.chb-chai-page .chb-panel-price {
+  color: #fffaf1;
+  font-size: 1.35rem;
+  font-weight: 950;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.chb-chai-page .chb-panel-price span {
+  font-size: 0.92rem;
+  letter-spacing: -0.02em;
+  opacity: 0.84;
+}
+
+.chb-chai-page .chb-panel-action p {
+  margin: 0;
+  text-align: center;
+  font-size: 0.82rem;
+}
+
+.chb-chai-page .chb-faq-list {
+  display: grid;
+  gap: 10px;
+  width: min(820px, 100%);
+  margin: 26px auto 0;
+}
+
+.chb-chai-page .chb-faq-item {
+  border: 1px solid var(--chb-border);
+  border-radius: 18px;
+  background: #fffdf7;
+  box-shadow: 0 10px 26px rgba(41, 24, 12, 0.05);
+}
+
+.chb-chai-page .chb-faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 16px 18px;
+  font-weight: 900;
+  cursor: pointer;
+  list-style: none;
+}
+
+.chb-chai-page .chb-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.chb-chai-page .chb-faq-item p {
+  margin: 0;
+  padding: 0 18px 18px;
+  color: var(--chb-ink-soft);
+  font-weight: 650;
+}
+
+.chb-chai-page .chb-faq-toggle {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(242, 177, 61, 0.22);
+  color: var(--chb-spice-dark);
+}
+
+.chb-chai-page .chb-faq-toggle svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+}
+
+.chb-chai-page .chb-faq-item[open] .chb-faq-line-v {
+  display: none;
+}
+
+.chb-chai-page .chb-final-cta {
+  padding: 46px 0 54px;
+  color: #fffaf1;
+  background: linear-gradient(135deg, rgba(37, 22, 14, 0.98), rgba(35, 83, 67, 0.94));
+}
+
+.chb-chai-page .chb-final-cta-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+}
+
+.chb-chai-page .chb-final-action {
+  display: grid;
+  gap: 9px;
+  justify-items: center;
+  min-width: 220px;
+}
+
+.chb-chai-page .chb-final-action span {
+  color: rgba(255, 250, 241, 0.74);
+  font-size: 0.84rem;
+  font-weight: 750;
+}
+
+.chb-chai-page .chb-mobile-buy-bar {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  z-index: 40;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--chb-border);
+  border-radius: 22px;
+  background: rgba(255, 253, 247, 0.96);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(16px);
+}
+
+.chb-chai-page .chb-mobile-buy-bar strong,
+.chb-chai-page .chb-mobile-buy-bar span {
+  display: block;
+}
+
+.chb-chai-page .chb-mobile-buy-bar strong {
+  font-size: 0.9rem;
+  line-height: 1.15;
+}
+
+.chb-chai-page .chb-mobile-buy-bar span {
+  color: var(--chb-ink-soft);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.chb-chai-page .chb-mobile-buy-bar .chb-btn {
+  min-height: 44px;
+  padding-inline: 18px;
+  white-space: nowrap;
+}
+
+@media (max-width: 980px) {
+  .chb-chai-page .chb-chai-hero-grid,
+  .chb-chai-page .chb-buy-panel,
+  .chb-chai-page .chb-final-cta-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .chb-chai-page .chb-product-card {
+    max-width: 520px;
+  }
+
+  .chb-chai-page .chb-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chb-chai-page .chb-panel-action,
+  .chb-chai-page .chb-final-action {
+    justify-items: start;
+    min-width: 0;
+  }
+
+  .chb-chai-page .chb-panel-price {
+    text-align: left;
+  }
+
+  .chb-chai-page .chb-panel-action p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 760px) {
+  .chb-chai-page {
+    padding-bottom: 84px;
+  }
+
+  .chb-chai-page .chb-wrap {
+    width: min(100% - 28px, var(--chb-wrap));
+  }
+
+  .chb-chai-page .chb-chai-header {
+    min-height: 64px;
+  }
+
+  .chb-chai-page .chb-logo-img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .chb-chai-page .chb-logo-text strong {
+    font-size: 1rem;
+  }
+
+  .chb-chai-page .chb-logo-text em {
+    font-size: 0.69rem;
+  }
+
+  .chb-chai-page .chb-header-cta {
+    min-height: 40px;
+    padding-inline: 14px;
+    font-size: 0.86rem;
+  }
+
+  .chb-chai-page .chb-chai-hero {
+    padding: 26px 0 32px;
+  }
+
+  .chb-chai-page .chb-chai-hero-grid {
+    gap: 24px;
+  }
+
+  .chb-chai-page .chb-eyebrow {
+    margin-bottom: 9px;
+    font-size: 0.7rem;
+  }
+
+  .chb-chai-page .chb-h1 {
+    font-size: clamp(2rem, 9.5vw, 2.66rem);
+    line-height: 0.99;
+  }
+
+  .chb-chai-page .chb-h2 {
+    font-size: clamp(1.62rem, 7.7vw, 2.15rem);
+  }
+
+  .chb-chai-page .chb-lead {
+    margin-top: 13px;
+    font-size: 0.98rem;
+    line-height: 1.42;
+  }
+
+  .chb-chai-page .chb-chai-buy-stack {
+    width: 100%;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .chb-chai-page .chb-chai-price-line strong {
+    font-size: 2.18rem;
+  }
+
+  .chb-chai-page .chb-main-cta {
+    width: 100%;
+    min-height: 54px;
+  }
+
+  .chb-chai-page .chb-checkout-note {
+    font-size: 0.8rem;
+  }
+
+  .chb-chai-page .chb-story-line {
+    margin-top: 13px;
+    padding: 11px 13px;
+    font-size: 0.9rem;
+    line-height: 1.38;
+  }
+
+  .chb-chai-page .chb-trust-pills {
+    gap: 7px;
+    margin-top: 12px;
+  }
+
+  .chb-chai-page .chb-trust-pills span {
+    min-height: 31px;
+    padding: 6px 9px;
+    font-size: 0.75rem;
+  }
+
+  .chb-chai-page .chb-product-card {
+    max-width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 14px 34px rgba(41, 24, 12, 0.09);
+  }
+
+  .chb-chai-page .chb-product-caption {
+    padding: 14px 16px 15px;
+  }
+
+  .chb-chai-page .chb-proof-strip {
+    padding: 13px 0;
+  }
+
+  .chb-chai-page .chb-proof-strip-inner {
+    display: grid;
+    gap: 3px;
+    font-size: 0.9rem;
+  }
+
+  .chb-chai-page .chb-section,
+  .chb-chai-page .chb-tight-section {
+    padding: 42px 0;
+  }
+
+  .chb-chai-page .chb-section-intro {
+    margin-bottom: 20px;
+  }
+
+  .chb-chai-page .chb-p {
+    margin-top: 11px;
+    font-size: 0.96rem;
+  }
+
+  .chb-chai-page .chb-mini-card {
+    padding: 18px;
+  }
+
+  .chb-chai-page .chb-ingredient-row {
+    gap: 7px;
+    margin-top: 18px;
+  }
+
+  .chb-chai-page .chb-ingredient-row span {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+
+  .chb-chai-page .chb-buy-panel {
+    padding: 22px;
+    border-radius: 25px;
+  }
+
+  .chb-chai-page .chb-panel-action .chb-btn,
+  .chb-chai-page .chb-final-action .chb-btn {
+    width: 100%;
+  }
+
+  .chb-chai-page .chb-faq-list {
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .chb-chai-page .chb-faq-item summary {
+    padding: 14px 15px;
+  }
+
+  .chb-chai-page .chb-faq-item p {
+    padding: 0 15px 15px;
+    font-size: 0.92rem;
+  }
+
+  .chb-chai-page .chb-faq-toggle {
+    width: 28px;
+    height: 28px;
+  }
+
+  .chb-chai-page .chb-final-cta {
+    padding: 38px 0 42px;
+  }
+
+  .chb-chai-page .chb-mobile-buy-bar.is-visible {
+    display: flex;
+  }
+}
+
+@media (max-width: 430px) {
+  .chb-chai-page .chb-wrap {
+    width: calc(100% - 24px);
+  }
+
+  .chb-chai-page .chb-header-cta {
+    padding-inline: 12px;
+    font-size: 0.82rem;
+  }
+
+  .chb-chai-page .chb-logo {
+    gap: 9px;
+  }
+
+  .chb-chai-page .chb-h1 {
+    font-size: 2.08rem;
+  }
+
+  .chb-chai-page .chb-chai-price-line strong {
+    font-size: 2.05rem;
+  }
+
+  .chb-chai-page .chb-mobile-buy-bar {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 10px;
+  }
+
+  .chb-chai-page .chb-mobile-buy-bar strong {
+    font-size: 0.84rem;
+  }
+
+  .chb-chai-page .chb-mobile-buy-bar .chb-btn {
+    padding-inline: 15px;
+  }
+}
