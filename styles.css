@@ -1735,12 +1735,26 @@ div[id*="cal"] iframe {
 }
 
 .chb-pdp-icon svg {
+  display: block;
   width: 25px;
   height: 25px;
+  overflow: visible;
+  color: currentColor;
+  fill: none;
   stroke: currentColor;
   stroke-width: 2.05;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+.chb-pdp-icon svg path,
+.chb-pdp-icon svg circle,
+.chb-pdp-icon svg rect,
+.chb-pdp-icon svg line,
+.chb-pdp-icon svg polyline {
+  fill: none;
+  stroke: currentColor;
+  vector-effect: non-scaling-stroke;
 }
 
 .chb-pdp-buy-box {
@@ -1895,42 +1909,6 @@ div[id*="cal"] iframe {
   font-size: 0.94rem;
 }
 
-.chb-pdp-final {
-  padding: 28px 0 46px;
-  background: #fffaf1;
-}
-
-.chb-pdp-final-inner {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 20px;
-  align-items: center;
-  max-width: 980px;
-  padding: 24px;
-  border: 1px solid rgba(77, 47, 26, 0.14);
-  border-radius: 24px;
-  background: rgba(255, 253, 247, 0.9);
-  box-shadow: 0 16px 38px rgba(41, 24, 12, 0.08);
-}
-
-.chb-pdp-final h2 {
-  margin: 0;
-  color: var(--chb-ink);
-  font-size: 1.35rem;
-  letter-spacing: -0.035em;
-}
-
-.chb-pdp-final p {
-  margin: 5px 0 0;
-  color: var(--chb-ink-soft);
-  font-size: 0.95rem;
-  font-weight: 800;
-}
-
-.chb-pdp-final-button {
-  min-width: 210px;
-  min-height: 50px;
-}
 
 .chb-pdp-mobile-bar {
   position: fixed;
@@ -2136,20 +2114,6 @@ div[id*="cal"] iframe {
 
   .chb-pdp-prep-grid div {
     padding: 15px;
-  }
-
-  .chb-pdp-final {
-    padding: 22px 0 34px;
-  }
-
-  .chb-pdp-final-inner {
-    grid-template-columns: 1fr;
-    padding: 20px;
-    border-radius: 22px;
-  }
-
-  .chb-pdp-final-button {
-    width: 100%;
   }
 
   .chb-pdp-mobile-bar.is-visible {
