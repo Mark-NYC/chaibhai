@@ -126,8 +126,16 @@
         linear-gradient(180deg, #fff8eb 0%, #fffaf1 48%, #f8ead3 100%);
     }
 
-    .chb-chai-nav .chb-nav-links a {
-      white-space: nowrap;
+    .chb-chai-nav {
+      justify-content: space-between;
+    }
+
+    .chb-chai-nav .chb-logo {
+      cursor: default;
+    }
+
+    .chb-chai-nav .chb-nav-links {
+      display: none;
     }
 
     .chb-chai-hero {
@@ -236,11 +244,16 @@
 
     .chb-chai-slider {
       position: relative;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
       background: #fff3de;
     }
 
     .chb-chai-slide {
+      position: absolute;
+      inset: 0;
       display: none;
+      margin: 0;
     }
 
     .chb-chai-slide.is-active {
@@ -249,7 +262,7 @@
 
     .chb-chai-slide img {
       width: 100%;
-      aspect-ratio: 1 / 1;
+      height: 100%;
       object-fit: cover;
       background: #fff3de;
     }
@@ -544,17 +557,11 @@
   <div class="chb-page chb-chai-page">
     <header class="chb-topbar">
       <div class="chb-wrap chb-nav chb-chai-nav">
-        <a class="chb-logo" href="./" aria-label="Chai Bhai Walking Tours home">
+        <div class="chb-logo" aria-label="Chai Bhai Masala Chai">
           <img class="chb-logo-img" src="assets/images/ChaiBhaiLogo.webp" alt="Chai Bhai logo">
           <span class="chb-logo-text"><strong>Chai Bhai</strong><em>Masala Chai</em></span>
-        </a>
+        </div>
 
-        <nav class="chb-nav-links" aria-label="Main navigation">
-          <a href="#inside">What's Inside</a>
-          <a href="#make">How to Make It</a>
-          <a href="#faq">FAQ</a>
-          <a href="./">Walking Tours</a>
-        </nav>
 
         <a class="chb-btn chb-nav-cta" href="https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID" target="_blank" rel="noopener noreferrer" data-paypal-checkout>Buy with PayPal</a>
       </div>
@@ -577,7 +584,6 @@
 
             <div class="chb-chai-actions">
               <a class="chb-btn" href="https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID" target="_blank" rel="noopener noreferrer" data-paypal-checkout>Buy with PayPal</a>
-              <a class="chb-btn chb-btn-outline-ink" href="#inside">See what’s inside</a>
             </div>
 
             <div class="chb-chai-microproof" aria-label="Product highlights">
@@ -720,40 +726,14 @@
 
             <details class="chb-faq-item">
               <summary><span>Do you offer local pickup or bulk orders?</span><span class="chb-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path class="chb-faq-line-h" d="M6 12h12" /><path class="chb-faq-line-v" d="M12 6v12" /></svg></span></summary>
-              <p>Yes. Local pickup and bulk orders are available upon request in Jackson Heights. Email <a href="mailto:info@chaibhai.net">info@chaibhai.net</a>.</p>
+              <p>Yes. Local pickup and bulk orders are available upon request in Jackson Heights.</p>
             </details>
           </div>
 
-          <div class="chb-chai-tour-link">
-            Want the full neighborhood experience? <a href="./">Book a Chai Bhai Walking Tour</a>.
-          </div>
         </div>
       </section>
     </main>
 
-    <footer class="chb-footer">
-      <div class="chb-wrap chb-footer-grid">
-        <div>
-          <h2>Chai Bhai Masala Chai</h2>
-          <p>Small-batch chai inspired by Jackson Heights, Queens.</p>
-          <p><a href="https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID" target="_blank" rel="noopener noreferrer">Buy with PayPal</a> · <a href="./">Book a Walking Tour</a></p>
-        </div>
-
-        <div>
-          <h3>Contact</h3>
-          <p><a href="mailto:info@chaibhai.net">Info@chaibhai.net</a></p>
-          <p><a href="tel:+13474940331">Phone: (347) 494-0331</a></p>
-          <p>Jackson Heights, Queens, NY</p>
-        </div>
-
-        <div>
-          <h3>Find us</h3>
-          <p><a href="https://www.instagram.com/chaibhaitours/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
-          <p><a href="https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID" target="_blank" rel="noopener noreferrer" data-paypal-checkout>Buy chai with PayPal</a></p>
-          <p><a href="./">Chai Bhai Walking Tours</a></p>
-        </div>
-      </div>
-    </footer>
 
     <div class="chb-chai-mobile-bar" aria-label="Mobile buy bar">
       <div>
