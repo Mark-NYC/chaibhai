@@ -224,6 +224,231 @@
         margin-top: 28px !important;
       }
     }
+
+    /* Group-size booking modal */
+    .chb-modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: rgba(0, 9, 24, 0.72);
+      backdrop-filter: blur(8px);
+    }
+
+    .chb-modal-overlay.is-open {
+      display: flex;
+    }
+
+    .chb-booking-modal {
+      width: min(100%, 560px);
+      max-height: calc(100vh - 40px);
+      overflow-y: auto;
+      background: #fffaf2;
+      border: 1px solid rgba(0, 9, 24, 0.14);
+      border-radius: 28px;
+      box-shadow: 0 30px 80px rgba(0, 9, 24, 0.28);
+      color: var(--chb-ink);
+    }
+
+    .chb-modal-head {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 28px 28px 18px;
+      border-bottom: 1px solid rgba(0, 9, 24, 0.1);
+    }
+
+    .chb-modal-kicker {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--chb-ink-soft);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .chb-booking-modal h2,
+    .chb-booking-modal h3,
+    .chb-booking-modal p {
+      color: var(--chb-ink);
+    }
+
+    .chb-booking-modal h2 {
+      margin: 0 0 8px;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(1.7rem, 4vw, 2.25rem);
+      line-height: 1.05;
+    }
+
+    .chb-modal-tour-name {
+      margin: 0;
+      color: var(--chb-ink-soft) !important;
+      font-size: 0.98rem;
+      line-height: 1.45;
+    }
+
+    .chb-modal-close {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      flex: 0 0 auto;
+      border: 1px solid rgba(0, 9, 24, 0.16);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--chb-ink);
+      cursor: pointer;
+      font-size: 1.6rem;
+      line-height: 1;
+    }
+
+    .chb-modal-body {
+      padding: 24px 28px 28px;
+    }
+
+    .chb-group-options {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .chb-group-option {
+      display: flex;
+      min-height: 98px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 8px;
+      padding: 18px;
+      border: 1px solid rgba(0, 9, 24, 0.14);
+      border-radius: 18px;
+      background: #fff;
+      color: var(--chb-ink);
+      cursor: pointer;
+      text-align: left;
+      transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+    }
+
+    .chb-group-option:hover,
+    .chb-group-option:focus-visible {
+      transform: translateY(-2px);
+      border-color: rgba(0, 9, 24, 0.32);
+      box-shadow: 0 14px 30px rgba(0, 9, 24, 0.1);
+      outline: none;
+    }
+
+    .chb-group-option strong {
+      font-size: 1.05rem;
+      font-weight: 900;
+    }
+
+    .chb-group-option span {
+      color: var(--chb-ink-soft);
+      font-size: 0.9rem;
+      line-height: 1.35;
+    }
+
+    .chb-group-option--custom {
+      grid-column: 1 / -1;
+      min-height: 84px;
+      background: rgba(0, 9, 24, 0.04);
+    }
+
+    .chb-custom-form-wrap {
+      display: none;
+    }
+
+    .chb-custom-form-wrap.is-open {
+      display: block;
+    }
+
+    .chb-custom-form-intro {
+      margin: 0 0 18px;
+      color: var(--chb-ink-soft) !important;
+      line-height: 1.5;
+    }
+
+    .chb-custom-form {
+      display: grid;
+      gap: 14px;
+    }
+
+    .chb-form-row {
+      display: grid;
+      gap: 7px;
+    }
+
+    .chb-form-row label {
+      color: var(--chb-ink);
+      font-size: 0.88rem;
+      font-weight: 800;
+    }
+
+    .chb-form-row input,
+    .chb-form-row textarea {
+      width: 100%;
+      border: 1px solid rgba(0, 9, 24, 0.16);
+      border-radius: 14px;
+      background: #fff;
+      color: var(--chb-ink);
+      font: inherit;
+      padding: 13px 14px;
+    }
+
+    .chb-form-row textarea {
+      min-height: 96px;
+      resize: vertical;
+    }
+
+    .chb-modal-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 6px;
+    }
+
+    .chb-modal-back {
+      border: 0;
+      background: transparent;
+      color: var(--chb-ink-soft);
+      cursor: pointer;
+      font: inherit;
+      font-weight: 800;
+      padding: 0 6px;
+    }
+
+    @media (max-width: 560px) {
+      .chb-modal-overlay {
+        align-items: flex-end;
+        padding: 12px;
+      }
+
+      .chb-booking-modal {
+        width: 100%;
+        border-radius: 24px;
+      }
+
+      .chb-modal-head,
+      .chb-modal-body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .chb-group-options {
+        grid-template-columns: 1fr;
+      }
+
+      .chb-group-option {
+        min-height: auto;
+      }
+    }
+
   </style>
 </head>
 
@@ -299,7 +524,7 @@
                 <li>Neighborhood stories and stops</li>
               </ul>
 
-              <button class="chb-btn chb-btn-full" type="button" data-cal-link="chaibhaitours/2-hour" data-cal-namespace="2-hour" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book the 2-Hour Walk</button>
+              <button class="chb-btn chb-btn-full chb-open-booking-modal" type="button" data-tour-duration="2" data-tour-name="2-Hour Food + Culture Walk">Book the 2-Hour Walk</button>
             </div>
           </aside>
         </div>
@@ -330,7 +555,7 @@
               </ul>
 
               <div class="chb-card-action">
-                <button class="chb-btn chb-btn-outline-ink" type="button" data-cal-link="chaibhaitours/1-hour-tour" data-cal-namespace="1-hour-tour" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book the 1-Hour Walk</button>
+                <button class="chb-btn chb-btn-outline-ink chb-open-booking-modal" type="button" data-tour-duration="1" data-tour-name="1-Hour Neighborhood Walk">Book the 1-Hour Walk</button>
               </div>
             </article>
 
@@ -353,7 +578,7 @@
               </ul>
 
               <div class="chb-card-action">
-                <button class="chb-btn" type="button" data-cal-link="chaibhaitours/2-hour" data-cal-namespace="2-hour" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book the 2-Hour Walk</button>
+                <button class="chb-btn chb-open-booking-modal" type="button" data-tour-duration="2" data-tour-name="2-Hour Food + Culture Walk">Book the 2-Hour Walk</button>
               </div>
             </article>
 
@@ -375,7 +600,7 @@
               </ul>
 
               <div class="chb-card-action">
-                <button class="chb-btn chb-btn-outline-ink" type="button" data-cal-link="chaibhaitours/3-hour" data-cal-namespace="3-hour" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book the 3-Hour Deep Dive</button>
+                <button class="chb-btn chb-btn-outline-ink chb-open-booking-modal" type="button" data-tour-duration="3" data-tour-name="3-Hour Deep Dive">Book the 3-Hour Deep Dive</button>
               </div>
             </article>
           </div>
@@ -665,8 +890,90 @@
         <strong>2-hour Food + Culture Walk</strong>
         <span>$59 · private tour with Jim</span>
       </div>
-      <button class="chb-btn" type="button" data-cal-link="chaibhaitours/2-hour" data-cal-namespace="2-hour" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book Now</button>
+      <button class="chb-btn chb-open-booking-modal" type="button" data-tour-duration="2" data-tour-name="2-Hour Food + Culture Walk">Book Now</button>
     </div>
+
+    <div class="chb-modal-overlay" id="chbBookingModal" aria-hidden="true">
+      <div class="chb-booking-modal" role="dialog" aria-modal="true" aria-labelledby="chbBookingModalTitle">
+        <div class="chb-modal-head">
+          <div>
+            <span class="chb-modal-kicker">Private booking</span>
+            <h2 id="chbBookingModalTitle">Choose your group size</h2>
+            <p class="chb-modal-tour-name" id="chbBookingModalTour">2-Hour Food + Culture Walk</p>
+          </div>
+          <button class="chb-modal-close" type="button" aria-label="Close booking options">×</button>
+        </div>
+
+        <div class="chb-modal-body">
+          <div class="chb-group-step" id="chbGroupStep">
+            <div class="chb-group-options" aria-label="Choose group size">
+              <button class="chb-group-option" type="button" data-people="1">
+                <strong>1 person</strong>
+                <span>Open booking calendar</span>
+              </button>
+              <button class="chb-group-option" type="button" data-people="2">
+                <strong>2 people</strong>
+                <span>Open booking calendar</span>
+              </button>
+              <button class="chb-group-option" type="button" data-people="3">
+                <strong>3 people</strong>
+                <span>Open booking calendar</span>
+              </button>
+              <button class="chb-group-option" type="button" data-people="4">
+                <strong>4 people</strong>
+                <span>Open booking calendar</span>
+              </button>
+              <button class="chb-group-option chb-group-option--custom" type="button" id="chbCustomBookingOpen">
+                <strong>5+ people / custom group</strong>
+                <span>Send Jim a quick request</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="chb-custom-form-wrap" id="chbCustomFormWrap">
+            <p class="chb-custom-form-intro">Tell Jim the basics and your email app will open with everything filled in.</p>
+
+            <form class="chb-custom-form" id="chbCustomBookingForm">
+              <div class="chb-form-row">
+                <label for="chbCustomName">Name</label>
+                <input id="chbCustomName" name="name" autocomplete="name" required>
+              </div>
+
+              <div class="chb-form-row">
+                <label for="chbCustomEmail">Email</label>
+                <input id="chbCustomEmail" name="email" type="email" autocomplete="email" required>
+              </div>
+
+              <div class="chb-form-row">
+                <label for="chbCustomPhone">Phone</label>
+                <input id="chbCustomPhone" name="phone" type="tel" autocomplete="tel">
+              </div>
+
+              <div class="chb-form-row">
+                <label for="chbCustomGroupSize">How many people?</label>
+                <input id="chbCustomGroupSize" name="groupSize" inputmode="numeric" placeholder="Example: 6 adults, 2 kids" required>
+              </div>
+
+              <div class="chb-form-row">
+                <label for="chbCustomDate">Preferred date or date range</label>
+                <input id="chbCustomDate" name="date" placeholder="Example: June 14 or any Saturday morning" required>
+              </div>
+
+              <div class="chb-form-row">
+                <label for="chbCustomNotes">Anything Jim should know?</label>
+                <textarea id="chbCustomNotes" name="notes" placeholder="Food preferences, mobility notes, special occasion, timing needs, etc."></textarea>
+              </div>
+
+              <div class="chb-modal-actions">
+                <button class="chb-btn" type="submit">Email Jim</button>
+                <button class="chb-modal-back" type="button" id="chbCustomBookingBack">Back to group size</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
   </div>
 
@@ -707,13 +1014,26 @@
       };
     })(window, "https://app.cal.com/embed/embed.js", "init");
 
-    Cal("init", "1-hour-tour", { origin: "https://app.cal.com" });
-    Cal("init", "2-hour", { origin: "https://app.cal.com" });
-    Cal("init", "3-hour", { origin: "https://app.cal.com" });
+    const chbCalEventLinks = [
+      "chaibhaitours/1-hour-tour-1-person",
+      "chaibhaitours/1-hour-tour-2-people",
+      "chaibhaitours/1-hour-tour-3-people",
+      "chaibhaitours/1-hour-tour-4-people",
+      "chaibhaitours/2-hour-tour-1-person",
+      "chaibhaitours/2-hour-tour-2-people",
+      "chaibhaitours/2-hour-tour-3-people",
+      "chaibhaitours/2-hour-tour-4-people",
+      "chaibhaitours/3-hour-tour-1-person",
+      "chaibhaitours/3-hour-tour-2-people",
+      "chaibhaitours/3-hour-tour-3-people",
+      "chaibhaitours/3-hour-tour-4-people"
+    ];
 
-    Cal.ns["1-hour-tour"]("ui", { hideEventTypeDetails: false, layout: "month_view" });
-    Cal.ns["2-hour"]("ui", { hideEventTypeDetails: false, layout: "month_view" });
-    Cal.ns["3-hour"]("ui", { hideEventTypeDetails: false, layout: "month_view" });
+    chbCalEventLinks.forEach((calLink) => {
+      const namespace = calLink.split("/")[1];
+      Cal("init", namespace, { origin: "https://app.cal.com" });
+      Cal.ns[namespace]("ui", { hideEventTypeDetails: false, layout: "month_view" });
+    });
   </script>
 
   <script>
@@ -759,6 +1079,133 @@
     updateChbMobileBookingBar();
     window.addEventListener("scroll", updateChbMobileBookingBar, { passive: true });
     window.addEventListener("resize", updateChbMobileBookingBar);
+
+    const chbBookingModal = document.querySelector("#chbBookingModal");
+    const chbBookingModalTour = document.querySelector("#chbBookingModalTour");
+    const chbBookingModalClose = chbBookingModal?.querySelector(".chb-modal-close");
+    const chbBookingModalOpeners = document.querySelectorAll(".chb-open-booking-modal");
+    const chbGroupStep = document.querySelector("#chbGroupStep");
+    const chbCustomFormWrap = document.querySelector("#chbCustomFormWrap");
+    const chbCustomBookingOpen = document.querySelector("#chbCustomBookingOpen");
+    const chbCustomBookingBack = document.querySelector("#chbCustomBookingBack");
+    const chbCustomBookingForm = document.querySelector("#chbCustomBookingForm");
+
+    let chbSelectedTourDuration = "2";
+    let chbSelectedTourName = "2-Hour Food + Culture Walk";
+    let chbLastFocusedElement = null;
+
+    function chbOpenBookingModal(button) {
+      if (!chbBookingModal) return;
+
+      chbSelectedTourDuration = button.dataset.tourDuration || "2";
+      chbSelectedTourName = button.dataset.tourName || "2-Hour Food + Culture Walk";
+      chbLastFocusedElement = button;
+
+      if (chbBookingModalTour) {
+        chbBookingModalTour.textContent = chbSelectedTourName;
+      }
+
+      chbShowGroupStep();
+      chbBookingModal.classList.add("is-open");
+      chbBookingModal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+      chbBookingModal.querySelector(".chb-group-option")?.focus();
+    }
+
+    function chbCloseBookingModal() {
+      if (!chbBookingModal) return;
+
+      chbBookingModal.classList.remove("is-open");
+      chbBookingModal.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+
+      if (chbLastFocusedElement) {
+        chbLastFocusedElement.focus();
+      }
+    }
+
+    function chbShowGroupStep() {
+      chbGroupStep?.removeAttribute("hidden");
+      chbCustomFormWrap?.classList.remove("is-open");
+    }
+
+    function chbShowCustomForm() {
+      chbGroupStep?.setAttribute("hidden", "");
+      chbCustomFormWrap?.classList.add("is-open");
+      document.querySelector("#chbCustomName")?.focus();
+    }
+
+    function chbOpenCalForGroup(people) {
+      const peopleSlug = people === "1" ? "1-person" : `${people}-people`;
+      const calLink = `chaibhaitours/${chbSelectedTourDuration}-hour-tour-${peopleSlug}`;
+      const namespace = calLink.split("/")[1];
+
+      chbCloseBookingModal();
+
+      if (window.Cal && Cal.ns && Cal.ns[namespace]) {
+        Cal.ns[namespace]("modal", {
+          calLink,
+          config: {
+            layout: "month_view",
+            useSlotsViewOnSmallScreen: "true"
+          }
+        });
+      } else {
+        window.location.href = `https://cal.com/${calLink}`;
+      }
+    }
+
+    chbBookingModalOpeners.forEach((button) => {
+      button.addEventListener("click", () => chbOpenBookingModal(button));
+    });
+
+    document.querySelectorAll(".chb-group-option[data-people]").forEach((button) => {
+      button.addEventListener("click", () => chbOpenCalForGroup(button.dataset.people));
+    });
+
+    chbCustomBookingOpen?.addEventListener("click", chbShowCustomForm);
+    chbCustomBookingBack?.addEventListener("click", chbShowGroupStep);
+    chbBookingModalClose?.addEventListener("click", chbCloseBookingModal);
+
+    chbBookingModal?.addEventListener("click", (event) => {
+      if (event.target === chbBookingModal) {
+        chbCloseBookingModal();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && chbBookingModal?.classList.contains("is-open")) {
+        chbCloseBookingModal();
+      }
+    });
+
+    chbCustomBookingForm?.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const formData = new FormData(chbCustomBookingForm);
+      const name = formData.get("name") || "";
+      const email = formData.get("email") || "";
+      const phone = formData.get("phone") || "";
+      const groupSize = formData.get("groupSize") || "";
+      const date = formData.get("date") || "";
+      const notes = formData.get("notes") || "";
+
+      const subject = `Custom booking request: ${chbSelectedTourName}`;
+      const body = [
+        `Tour: ${chbSelectedTourName}`,
+        `Name: ${name}`,
+        `Email: ${email}`,
+        `Phone: ${phone}`,
+        `Group size: ${groupSize}`,
+        `Preferred date or date range: ${date}`,
+        "",
+        "Notes:",
+        notes
+      ].join("\n");
+
+      window.location.href = `mailto:info@chaibhai.net?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+
   </script>
 </body>
 </html>
