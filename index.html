@@ -202,7 +202,29 @@
   }
   </script>
 
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.css?v=3" />
+
+  <style>
+    /* Mobile booking section fix: keep white-card text dark and restore CTA spacing */
+    .chb-booking .chb-booking-card,
+    .chb-booking .chb-booking-card .chb-h3,
+    .chb-booking .chb-booking-card .chb-p,
+    .chb-booking .chb-booking-card .chb-booking-muted,
+    .chb-booking .chb-booking-card p,
+    .chb-booking .chb-booking-card li {
+      color: var(--chb-ink) !important;
+    }
+
+    .chb-booking .chb-booking-card .chb-booking-muted {
+      color: var(--chb-ink-soft) !important;
+    }
+
+    @media (max-width: 760px) {
+      .chb-booking .chb-hero-actions {
+        margin-top: 28px !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
