@@ -2647,3 +2647,20 @@ div[id*="cal"] iframe {
     line-height: 1.18;
   }
 }
+
+/* Mobile final booking section fix: restore dark card text + CTA spacing */
+.chb-booking-card .chb-p,
+.chb-booking-card .chb-booking-muted {
+  color: var(--chb-ink-soft) !important;
+}
+
+@media (max-width: 760px) {
+  .chb-booking .chb-hero-actions {
+    margin-top: 24px !important;
+  }
+
+  .chb-booking-card .chb-p,
+  .chb-booking-card .chb-booking-muted {
+    color: var(--chb-ink-soft) !important;
+  }
+}
