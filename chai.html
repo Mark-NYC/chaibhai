@@ -1,291 +1,1098 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Chai Bhai Masala Tea Bags | Small-Batch Masala Chai from Queens</title>
-  <meta name="description" content="Buy Chai Bhai Masala Tea Bags. Bold Assam tea blended with cardamom, clove, cinnamon, ginger, and peppercorn. Six tea bags. Ships from New York." />
-  <link rel="canonical" href="https://mark-nyc.github.io/chaibhai/chai.html" />
-
-  <meta property="og:title" content="Chai Bhai Masala Tea Bags" />
-  <meta property="og:description" content="Small-batch masala chai from Queens. Six tea bags with bold Assam tea and whole spices." />
-  <meta property="og:type" content="product" />
-  <meta property="og:url" content="https://mark-nyc.github.io/chaibhai/chai.html" />
-  <meta property="og:image" content="https://mark-nyc.github.io/chaibhai/assets/images/chai-1.webp" />
+  <title>Make Jim's Masala Chai at Home | Chai Bhai Walking Tours</title>
+  <meta name="description" content="Make Jim's masala chai at home after your Chai Bhai Walking Tour in Jackson Heights, Queens. Get the recipe, watch the brewing guide, and leave Jim a quick review." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://mark-nyc.github.io/chaibhai/#business",
-        "name": "Chai Bhai Walking Tours",
-        "url": "https://mark-nyc.github.io/chaibhai/",
-        "email": "info@chaibhai.net",
-        "telephone": "+1-347-494-0331",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Jackson Heights",
-          "addressRegion": "NY",
-          "addressCountry": "US"
-        },
-        "sameAs": ["https://www.instagram.com/chaibhaitours/"]
-      },
-      {
-        "@type": "Product",
-        "@id": "https://mark-nyc.github.io/chaibhai/chai.html#chai-product",
-        "name": "Chai Bhai Masala Tea Bags",
-        "image": [
-          "https://mark-nyc.github.io/chaibhai/assets/images/chai-1.webp",
-          "https://mark-nyc.github.io/chaibhai/assets/images/chai-2.webp",
-          "https://mark-nyc.github.io/chaibhai/assets/images/chai-3.webp"
-        ],
-        "description": "Bold Assam tea blended with cardamom, clove, cinnamon, ginger, white peppercorn, and green peppercorn. Six masala chai tea bags.",
-        "brand": {
-          "@type": "Brand",
-          "name": "Chai Bhai"
-        },
-        "category": "Tea",
-        "sku": "CHB-MASALA-TEA-BAGS-6",
-        "offers": {
-          "@type": "Offer",
-          "url": "https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID",
-          "priceCurrency": "USD",
-          "price": "12.99",
-          "availability": "https://schema.org/InStock",
-          "itemCondition": "https://schema.org/NewCondition",
-          "seller": {
-            "@id": "https://mark-nyc.github.io/chaibhai/#business"
-          }
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://mark-nyc.github.io/chaibhai/chai.html#faq-schema",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How many tea bags are included?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Each jar includes 6 Chai Bhai Masala Tea Bags."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is inside the chai blend?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Bold Assam tea with cardamom, clove, cinnamon, ginger, white peppercorn, and green peppercorn."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Where does it ship from?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Chai Bhai Masala Tea Bags ship from Jackson Heights, New York."
-            }
-          }
-        ]
+  <style>
+    :root {
+      --chb-ink: #25160e;
+      --chb-ink-soft: #654d3d;
+      --chb-cream: #fff8eb;
+      --chb-cream-2: #f8ead3;
+      --chb-card: #fffdf7;
+      --chb-spice: #c84f21;
+      --chb-spice-dark: #9f3719;
+      --chb-gold: #f2b13d;
+      --chb-gold-soft: #fff1c4;
+      --chb-green: #235343;
+      --chb-border: rgba(77, 47, 26, 0.15);
+      --chb-shadow: 0 24px 70px rgba(41, 24, 12, 0.14);
+      --chb-radius: 28px;
+      --chb-wrap: 1060px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--chb-ink);
+      background:
+        radial-gradient(circle at 10% 0%, rgba(242, 177, 61, 0.22), transparent 30rem),
+        radial-gradient(circle at 95% 10%, rgba(200, 79, 33, 0.1), transparent 30rem),
+        linear-gradient(180deg, #fff8eb 0%, #fffaf1 42%, #f8ead3 100%);
+      line-height: 1.5;
+    }
+
+    img,
+    svg {
+      display: block;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .wrap {
+      width: min(var(--chb-wrap), calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 248, 235, 0.93);
+      border-bottom: 1px solid var(--chb-border);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 76px;
+      gap: 18px;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+    .logo-text {
+      display: grid;
+      line-height: 1.05;
+    }
+
+    .logo-text strong {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.1rem;
+      letter-spacing: -0.03em;
+    }
+
+    .logo-text span {
+      color: var(--chb-ink-soft);
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: rgba(37, 22, 14, 0.78);
+      font-size: 0.9rem;
+      font-weight: 850;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: var(--chb-spice);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 50px;
+      padding: 0 22px;
+      border: 1px solid var(--chb-spice);
+      border-radius: 999px;
+      background: linear-gradient(180deg, #d75b27, var(--chb-spice));
+      color: #fffaf1;
+      font-weight: 950;
+      text-decoration: none;
+      letter-spacing: -0.01em;
+      box-shadow: 0 14px 28px rgba(200, 79, 33, 0.22);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 34px rgba(200, 79, 33, 0.28);
+    }
+
+    .btn svg {
+      width: 18px;
+      height: 18px;
+      stroke: currentColor;
+      stroke-width: 2.4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--chb-ink);
+      border-color: rgba(37, 22, 14, 0.25);
+      box-shadow: none;
+    }
+
+    .btn-light {
+      background: #fffaf1;
+      color: var(--chb-ink);
+      border-color: #fffaf1;
+      box-shadow: 0 14px 28px rgba(37, 22, 14, 0.12);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 72px 0 58px;
+      background:
+        radial-gradient(circle at 18% 8%, rgba(255, 255, 255, 0.55), transparent 22rem),
+        linear-gradient(135deg, #ffe978 0%, #fff0a3 48%, #fff8eb 100%);
+      border-bottom: 1px solid var(--chb-border);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(77, 47, 26, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(77, 47, 26, 0.045) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), transparent 75%);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) 420px;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--chb-spice);
+      font-size: 0.78rem;
+      font-weight: 950;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      letter-spacing: -0.045em;
+      line-height: 1.02;
+    }
+
+    h1,
+    h2 {
+      font-family: "Playfair Display", Georgia, serif;
+    }
+
+    h1 {
+      max-width: 740px;
+      font-size: clamp(2.55rem, 5.4vw, 5.05rem);
+    }
+
+    h2 {
+      font-size: clamp(2rem, 3.4vw, 3.2rem);
+    }
+
+    h3 {
+      font-size: 1.24rem;
+      letter-spacing: -0.025em;
+    }
+
+    .lead {
+      max-width: 650px;
+      margin: 20px 0 0;
+      color: var(--chb-ink-soft);
+      font-size: clamp(1.03rem, 1.4vw, 1.18rem);
+      font-weight: 650;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .hero-card {
+      position: relative;
+      padding: 28px;
+      border: 1px solid rgba(77, 47, 26, 0.14);
+      border-radius: 32px;
+      background: rgba(255, 253, 247, 0.92);
+      box-shadow: var(--chb-shadow);
+    }
+
+    .icon-mark {
+      display: grid;
+      place-items: center;
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 16px;
+      border-radius: 24px;
+      background:
+        radial-gradient(circle at 35% 20%, rgba(255, 255, 255, 0.8), transparent 34%),
+        rgba(242, 177, 61, 0.24);
+      color: var(--chb-spice-dark);
+      border: 1px solid rgba(77, 47, 26, 0.11);
+    }
+
+    .icon-mark svg {
+      width: 42px;
+      height: 42px;
+      stroke: currentColor;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+
+    .hero-card h2 {
+      text-align: center;
+      font-size: 1.6rem;
+    }
+
+    .hero-card p {
+      margin: 12px 0 0;
+      color: var(--chb-ink-soft);
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .mini-proof {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .mini-proof div {
+      display: grid;
+      justify-items: center;
+      gap: 7px;
+      padding: 14px 10px;
+      border-radius: 18px;
+      background: #fff8eb;
+      text-align: center;
+      border: 1px solid rgba(77, 47, 26, 0.12);
+    }
+
+    .mini-proof svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--chb-spice-dark);
+      stroke-width: 2.3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+
+    .mini-proof strong {
+      display: block;
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    .mini-proof span {
+      display: block;
+      color: var(--chb-ink-soft);
+      font-size: 0.76rem;
+      font-weight: 800;
+    }
+
+    .section {
+      padding: 76px 0;
+    }
+
+    .section-intro {
+      max-width: 780px;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      border: 1px solid var(--chb-border);
+      border-radius: var(--chb-radius);
+      background: rgba(255, 253, 247, 0.92);
+      box-shadow: 0 18px 48px rgba(41, 24, 12, 0.09);
+    }
+
+    .recipe-card {
+      overflow: hidden;
+    }
+
+    .recipe-header {
+      padding: 30px;
+      background:
+        radial-gradient(circle at 20% 0%, rgba(255, 255, 255, 0.65), transparent 20rem),
+        linear-gradient(135deg, #fff7d2, #fffdf7);
+      border-bottom: 1px solid var(--chb-border);
+      text-align: center;
+    }
+
+    .recipe-header .icon-mark {
+      margin-bottom: 13px;
+    }
+
+    .recipe-header p {
+      max-width: 620px;
+      margin: 10px auto 0;
+      color: var(--chb-ink-soft);
+      font-weight: 700;
+    }
+
+    .recipe-body {
+      padding: 30px;
+    }
+
+    .ingredients-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-bottom: 26px;
+    }
+
+    .ingredient-group {
+      padding: 20px;
+      border: 1px solid rgba(77, 47, 26, 0.12);
+      border-radius: 22px;
+      background: #fffaf1;
+    }
+
+    .ingredient-group h3 {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 14px;
+      color: var(--chb-spice-dark);
+      font-size: 0.84rem;
+      font-family: "Inter", system-ui, sans-serif;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .ingredient-group h3 svg {
+      width: 21px;
+      height: 21px;
+      stroke: currentColor;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+
+    .ingredient-group ul,
+    .steps-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .ingredient-group li {
+      position: relative;
+      margin-top: 10px;
+      padding-left: 20px;
+      color: var(--chb-ink-soft);
+      font-size: 0.96rem;
+      font-weight: 650;
+    }
+
+    .ingredient-group li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.62em;
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--chb-gold);
+      box-shadow: 0 0 0 3px rgba(242, 177, 61, 0.18);
+    }
+
+    .tip {
+      margin: 0;
+      display: grid;
+      grid-template-columns: 34px minmax(0, 1fr);
+      gap: 12px;
+      align-items: start;
+      padding: 16px 18px;
+      border-left: 4px solid var(--chb-spice);
+      border-radius: 16px;
+      background: #fff4df;
+      color: var(--chb-ink-soft);
+      font-weight: 750;
+    }
+
+    .tip svg {
+      width: 28px;
+      height: 28px;
+      stroke: var(--chb-spice-dark);
+      stroke-width: 2.3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      margin-top: 28px;
+    }
+
+    .steps-card {
+      padding: 26px;
+    }
+
+    .steps-card.quick {
+      border-top: 5px solid var(--chb-gold);
+    }
+
+    .steps-card.street {
+      border-top: 5px solid var(--chb-spice);
+    }
+
+    .steps-card .step-icon {
+      display: inline-grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      margin-bottom: 14px;
+      border-radius: 18px;
+      background: rgba(242, 177, 61, 0.2);
+      color: var(--chb-spice-dark);
+    }
+
+    .steps-card .step-icon svg {
+      width: 28px;
+      height: 28px;
+      stroke: currentColor;
+      stroke-width: 2.3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+
+    .steps-card p {
+      margin: 10px 0 20px;
+      color: var(--chb-ink-soft);
+      font-weight: 650;
+    }
+
+    .steps-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .steps-list li {
+      display: grid;
+      grid-template-columns: 32px minmax(0, 1fr);
+      gap: 12px;
+      align-items: start;
+      color: var(--chb-ink-soft);
+      font-weight: 700;
+    }
+
+    .steps-list span {
+      display: grid;
+      place-items: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--chb-spice);
+      color: #fffaf1;
+      font-size: 0.84rem;
+      font-weight: 950;
+    }
+
+    .review-section {
+      background:
+        radial-gradient(circle at 80% 0%, rgba(242, 177, 61, 0.24), transparent 28rem),
+        #fffaf1;
+    }
+
+    .review-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 360px;
+      gap: 32px;
+      padding: 32px;
+      align-items: center;
+    }
+
+    .review-card p {
+      max-width: 660px;
+      margin: 16px 0 0;
+      color: var(--chb-ink-soft);
+      font-size: 1.04rem;
+      font-weight: 650;
+    }
+
+    .review-buttons {
+      display: grid;
+      gap: 12px;
+    }
+
+    .review-buttons .btn {
+      width: 100%;
+      min-height: 56px;
+    }
+
+    .review-note {
+      margin-top: 14px !important;
+      font-size: 0.9rem !important;
+      font-weight: 700 !important;
+    }
+
+    .video-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      overflow: hidden;
+      background: var(--chb-ink);
+      color: #fffaf1;
+    }
+
+    .video-copy {
+      padding: 34px;
+    }
+
+    .video-copy .eyebrow {
+      color: #ffd58a;
+    }
+
+    .video-copy p {
+      margin: 14px 0 0;
+      color: rgba(255, 250, 241, 0.78);
+      font-weight: 650;
+    }
+
+    .video-box {
+      position: relative;
+      min-height: 320px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      isolation: isolate;
+      background: var(--chb-ink);
+    }
+
+    .video-box img {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .video-box::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background:
+        radial-gradient(circle at 50% 42%, rgba(255, 255, 255, 0.12), transparent 18rem),
+        linear-gradient(180deg, rgba(37, 22, 14, 0.16), rgba(37, 22, 14, 0.58));
+      pointer-events: none;
+    }
+
+    .play {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      place-items: center;
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: #fffaf1;
+      color: var(--chb-spice);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.25);
+      text-decoration: none;
+    }
+
+    .play svg {
+      width: 34px;
+      height: 34px;
+      fill: currentColor;
+    }
+
+    .footer {
+      padding: 42px 0;
+      background: #1d130e;
+      color: rgba(255, 250, 241, 0.74);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .footer h2,
+    .footer h3 {
+      color: #fffaf1;
+    }
+
+    .footer p {
+      margin: 8px 0;
+    }
+
+    .footer a {
+      color: #ffd58a;
+      font-weight: 850;
+    }
+
+    .sticky-review {
+      position: fixed;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      z-index: 30;
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px;
+      border: 1px solid var(--chb-border);
+      border-radius: 22px;
+      background: rgba(255, 253, 247, 0.96);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+      backdrop-filter: blur(16px);
+    }
+
+    .sticky-review strong,
+    .sticky-review span {
+      display: block;
+    }
+
+    .sticky-review strong {
+      font-size: 0.9rem;
+      line-height: 1.15;
+    }
+
+    .sticky-review span {
+      color: var(--chb-ink-soft);
+      font-size: 0.76rem;
+      font-weight: 750;
+    }
+
+    .sticky-review .btn {
+      min-height: 44px;
+      padding-inline: 16px;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .review-card,
+      .video-card,
+      .footer-grid {
+        grid-template-columns: 1fr;
       }
-    ]
-  }
-  </script>
 
-  <!-- Replace every PayPal placeholder below with Jim's live PayPal Payment Link or hosted Buy Button URL. -->
+      .hero-card {
+        max-width: 520px;
+      }
+
+      .ingredients-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .steps-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding-bottom: 84px;
+      }
+
+      .wrap {
+        width: calc(100% - 28px);
+      }
+
+      .nav {
+        min-height: 66px;
+      }
+
+      .logo img {
+        width: 42px;
+        height: 42px;
+      }
+
+      .logo-text strong {
+        font-size: 1rem;
+      }
+
+      .logo-text span {
+        font-size: 0.68rem;
+      }
+
+      .nav .btn {
+        display: none;
+      }
+
+      .hero {
+        padding: 42px 0 38px;
+      }
+
+      h1 {
+        font-size: clamp(2.25rem, 12vw, 3.1rem);
+      }
+
+      h2 {
+        font-size: clamp(1.8rem, 9vw, 2.35rem);
+      }
+
+      .lead {
+        font-size: 1rem;
+        line-height: 1.45;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .section {
+        padding: 56px 0;
+      }
+
+      .recipe-body,
+      .recipe-header,
+      .steps-card,
+      .review-card,
+      .video-copy {
+        padding: 22px;
+      }
+
+      .mini-proof {
+        grid-template-columns: 1fr;
+      }
+
+      .video-box {
+        min-height: 220px;
+      }
+
+      .sticky-review {
+        display: flex;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <div class="chb-page chb-etsy-page">
-    <header class="chb-topbar chb-pdp-topbar">
-      <div class="chb-wrap chb-pdp-nav">
-        <div class="chb-logo" aria-label="Chai Bhai Masala Chai">
-          <img class="chb-logo-img" src="assets/images/ChaiBhaiLogo.webp" alt="Chai Bhai logo">
-          <span class="chb-logo-text"><strong>Chai Bhai</strong><em>Masala Chai</em></span>
-        </div>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="logo" href="index.html" aria-label="Chai Bhai Walking Tours home">
+        <img src="assets/images/ChaiBhaiLogo.webp" alt="Chai Bhai Walking Tours logo">
+        <span class="logo-text">
+          <strong>Chai Bhai</strong>
+          <span>Walking Tours</span>
+        </span>
+      </a>
 
-        <a class="chb-btn chb-pdp-nav-cta" href="https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID" target="_blank" rel="noopener noreferrer" data-paypal-checkout>Buy</a>
-      </div>
-    </header>
+      <nav class="nav-links" aria-label="Page navigation">
+        <a href="#recipe">Recipe</a>
+        <a href="#review">Leave a Review</a>
+        <a href="#video">Watch Jim</a>
+      </nav>
 
-    <main id="top" class="chb-pdp-main">
-      <section class="chb-pdp-hero" aria-labelledby="chaiProductTitle">
-        <div class="chb-wrap chb-pdp-grid">
-          <aside class="chb-pdp-gallery" aria-label="Chai Bhai Masala Tea Bags product photos">
-            <div class="chb-pdp-slider" data-chai-slider>
-              <figure class="chb-pdp-slide is-active">
-                <img src="assets/images/chai-1.webp" alt="Chai Bhai Masala Tea Bags in a glass jar" loading="eager">
-              </figure>
-              <figure class="chb-pdp-slide">
-                <img src="assets/images/chai-2.webp" alt="Chai Bhai tea bag with whole spices" loading="lazy">
-              </figure>
-              <figure class="chb-pdp-slide">
-                <img src="assets/images/chai-3.webp" alt="Chai Bhai Masala Tea Bags product packaging" loading="lazy">
-              </figure>
-
-              <button class="chb-pdp-slider-button chb-pdp-slider-button--prev" type="button" aria-label="Previous product photo" data-chai-prev>‹</button>
-              <button class="chb-pdp-slider-button chb-pdp-slider-button--next" type="button" aria-label="Next product photo" data-chai-next>›</button>
-
-              <div class="chb-pdp-dots" aria-label="Product photo controls">
-                <button class="chb-pdp-dot is-active" type="button" aria-label="Show product photo 1" data-chai-dot="0"></button>
-                <button class="chb-pdp-dot" type="button" aria-label="Show product photo 2" data-chai-dot="1"></button>
-                <button class="chb-pdp-dot" type="button" aria-label="Show product photo 3" data-chai-dot="2"></button>
-              </div>
-            </div>
-          </aside>
-
-          <article class="chb-pdp-info">
-            <p class="chb-pdp-kicker">Small-batch chai from Queens</p>
-            <h1 id="chaiProductTitle" class="chb-pdp-title">Chai Bhai Masala Tea Bags</h1>
-            <p class="chb-pdp-review-line" aria-label="Product trust line"><span aria-hidden="true">★★★★★</span> Real masala chai in easy tea bags</p>
-
-            <div class="chb-pdp-price-block" aria-label="Price and quantity">
-              <strong>$12.99</strong>
-              <span>6 tea bags</span>
-            </div>
-
-            <p class="chb-pdp-description">Bold Assam tea blended with cardamom, clove, cinnamon, ginger, and peppercorn. Whole-spice flavor without measuring spices or simmering a pot.</p>
-
-            <div class="chb-pdp-highlights" aria-label="Product highlights">
-              <h2>Highlights</h2>
-
-              <div class="chb-pdp-highlight-row">
-                <span class="chb-pdp-icon chb-pdp-icon--maker" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M7 11V6a1.4 1.4 0 0 1 2.8 0v5"/><path d="M9.8 10V4.8a1.4 1.4 0 0 1 2.8 0V10"/><path d="M12.6 10.5V6a1.4 1.4 0 0 1 2.8 0v6"/><path d="M15.4 12V8a1.4 1.4 0 0 1 2.8 0v6.5A6.5 6.5 0 0 1 11.7 21h-1.1a5.8 5.8 0 0 1-4.9-2.7l-2-3.1a1.6 1.6 0 0 1 .5-2.2 1.7 1.7 0 0 1 2.3.4L8 15.5"/></svg></span>
-                <span>Made by <strong>ChaiBhaiStore</strong></span>
-              </div>
-
-              <div class="chb-pdp-highlight-row">
-                <span class="chb-pdp-icon chb-pdp-icon--pin" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 21s6-5.7 6-11a6 6 0 0 0-12 0c0 5.3 6 11 6 11Z"/><circle cx="12" cy="10" r="2.2"/></svg></span>
-                <span>Ships from <strong>Jackson Heights, NY</strong></span>
-              </div>
-
-              <div class="chb-pdp-highlight-row">
-                <span class="chb-pdp-icon chb-pdp-icon--leaf" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M20 4c-7.2.3-12.2 4.3-13 11.2 4.5.8 9.9-1.5 13-11.2Z"/><path d="M4 20c2.2-4.9 5.3-8.1 10-10"/></svg></span>
-                <span><strong>Vegan</strong> and made without artificial flavors</span>
-              </div>
-
-              <div class="chb-pdp-highlight-row">
-                <span class="chb-pdp-icon chb-pdp-icon--cup" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 9h11v5.2a5.2 5.2 0 0 1-5.2 5.2h-.6A5.2 5.2 0 0 1 5 14.2V9Z"/><path d="M16 10h1.3a2.8 2.8 0 0 1 0 5.6H16"/><path d="M8 5.5c0-1 .9-1 .9-2S8 2.5 8 1.8"/><path d="M12 5.5c0-1 .9-1 .9-2S12 2.5 12 1.8"/></svg></span>
-                <span>Great with <strong>milk, as a latte, or iced</strong></span>
-              </div>
-            </div>
-
-            <div class="chb-pdp-buy-box">
-              <a class="chb-btn chb-pdp-buy-button" href="https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID" target="_blank" rel="noopener noreferrer" data-paypal-checkout>Buy with PayPal</a>
-              <p>Secure checkout. Pay with PayPal or card.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="chb-pdp-details-section" aria-label="Product details">
-        <div class="chb-wrap chb-pdp-details-wrap">
-          <details class="chb-pdp-detail" open>
-            <summary><span>Item details</span><span class="chb-pdp-chevron" aria-hidden="true"></span></summary>
-            <div class="chb-pdp-detail-body">
-              <p>Real chai made with whole spices. Bold Assam tea + cardamom, clove, cinnamon, ginger, and white/green peppercorn.</p>
-              <p>Small-batch blended in Queens, NYC. Inspired by spice flavors found in local grocery shops and chai tastings during local walking tours in Jackson Heights.</p>
-              <ul class="chb-pdp-check-list">
-                <li>No artificial flavors or additives</li>
-                <li>Great with milk, as a latte, or iced</li>
-                <li>Perfect gift for tea lovers</li>
-              </ul>
-              <p>Local pickup and bulk orders available upon request in Jackson Heights.</p>
-            </div>
-          </details>
-
-          <details class="chb-pdp-detail">
-            <summary><span>Shipping and return policies</span><span class="chb-pdp-chevron" aria-hidden="true"></span></summary>
-            <div class="chb-pdp-detail-body">
-              <div class="chb-pdp-policy-row">
-                <span class="chb-pdp-icon chb-pdp-icon--calendar" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4"/><path d="M16 3v4"/><path d="M4 10h16"/></svg></span>
-                <span>Arrival estimate shown at checkout</span>
-              </div>
-              <div class="chb-pdp-policy-row">
-                <span class="chb-pdp-icon chb-pdp-icon--returns" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M7 7h8.5a5.5 5.5 0 1 1 0 11H8"/><path d="M7 7l3-3"/><path d="M7 7l3 3"/></svg></span>
-                <span>Returns & exchanges accepted within 30 days</span>
-              </div>
-              <div class="chb-pdp-policy-row">
-                <span class="chb-pdp-icon chb-pdp-icon--truck" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M3 7h11v8H3V7Z"/><path d="M14 10h4l3 3v2h-7v-5Z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span>
-                <span>Cost to ship: <strong>$8.03</strong></span>
-              </div>
-              <div class="chb-pdp-policy-row">
-                <span class="chb-pdp-icon chb-pdp-icon--pin" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 21s6-5.7 6-11a6 6 0 0 0-12 0c0 5.3 6 11 6 11Z"/><circle cx="12" cy="10" r="2.2"/></svg></span>
-                <span>Ships from: <strong>Jackson Heights, NY</strong></span>
-              </div>
-            </div>
-          </details>
-
-          <details class="chb-pdp-detail">
-            <summary><span>How to drink it</span><span class="chb-pdp-chevron" aria-hidden="true"></span></summary>
-            <div class="chb-pdp-detail-body">
-              <div class="chb-pdp-prep-grid">
-                <div><strong>Hot chai</strong><p>Steep in hot water, then add milk and sweetener to taste.</p></div>
-                <div><strong>Chai latte</strong><p>Brew it stronger, then add steamed milk.</p></div>
-                <div><strong>Iced chai</strong><p>Steep, chill, pour over ice, and add milk if you like.</p></div>
-              </div>
-            </div>
-          </details>
-        </div>
-      </section>
-    </main>
-
-    <div class="chb-pdp-mobile-bar" aria-label="Mobile buy bar">
-      <div>
-        <strong>Chai Bhai Masala Chai</strong>
-        <span>$12.99 · 6 tea bags</span>
-      </div>
-      <a class="chb-btn" href="https://www.paypal.com/ncp/payment/REPLACE_WITH_PAYPAL_BUTTON_ID" target="_blank" rel="noopener noreferrer" data-paypal-checkout>Buy</a>
+      <a class="btn" href="#review">
+        Leave Jim a Review
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
+      </a>
     </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Thanks for walking Jackson Heights with Jim</p>
+          <h1>Make Jim's masala chai at home.</h1>
+          <p class="lead">You tasted it on the walk. Now here is the simple home version, plus a quick way to share your Chai Bhai experience while the memory is still fresh.</p>
+
+          <div class="hero-actions">
+            <a class="btn" href="#recipe">
+              Get the Recipe
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
+            </a>
+            <a class="btn btn-outline" href="#review">Leave a Review</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Chai guide summary">
+          <div class="icon-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48">
+              <path d="M12 23h22v7c0 6-4.8 10-11 10s-11-4-11-10v-7Z" />
+              <path d="M34 25h3.2a5 5 0 0 1 0 10H33" />
+              <path d="M16 18c0-2 2-2.4 2-4.5S16 11 16 9" />
+              <path d="M24 18c0-2 2-2.4 2-4.5S24 11 24 9" />
+              <path d="M32 18c0-2 2-2.4 2-4.5S32 11 32 9" />
+              <path d="M9 40h30" />
+            </svg>
+          </div>
+          <h2>Chai Bhai Brewing Guide</h2>
+          <p>Two simple ways to copy the cup you had in Queens.</p>
+
+          <div class="mini-proof">
+            <div>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" /><path d="M12 7v5l3 2" /></svg>
+              <strong>8 min</strong>
+              <span>quick version</span>
+            </div>
+            <div>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20h10" /><path d="M8 10h8v4a4 4 0 0 1-8 0v-4Z" /><path d="M16 11h1.5a2 2 0 0 1 0 4H16" /><path d="M9 6c0-1 1-1.2 1-2.2S9 2.6 9 2" /><path d="M13 6c0-1 1-1.2 1-2.2S13 2.6 13 2" /></svg>
+              <strong>15 min</strong>
+              <span>street style</span>
+            </div>
+            <div>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10h10v5a5 5 0 0 1-10 0v-5Z" /><path d="M17 11h1.5a2 2 0 0 1 0 4H17" /><path d="M8 20h8" /><path d="M9 6c0-1 1-1.2 1-2.2S9 2.6 9 2" /></svg>
+              <strong>2 cups</strong>
+              <span>made at home</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="recipe">
+      <div class="wrap">
+        <div class="section-intro">
+          <p class="eyebrow">The recipe</p>
+          <h2>Jim's homemade masala chai.</h2>
+          <p class="lead">This is built for a normal kitchen. Nothing fancy. Just tea, milk, spice, heat, and patience.</p>
+        </div>
+
+        <article class="card recipe-card">
+          <div class="recipe-header">
+            <div class="icon-mark" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <path d="M12 23h22v7c0 6-4.8 10-11 10s-11-4-11-10v-7Z" />
+                <path d="M34 25h3.2a5 5 0 0 1 0 10H33" />
+                <path d="M16 18c0-2 2-2.4 2-4.5S16 11 16 9" />
+                <path d="M24 18c0-2 2-2.4 2-4.5S24 11 24 9" />
+                <path d="M32 18c0-2 2-2.4 2-4.5S32 11 32 9" />
+                <path d="M9 40h30" />
+              </svg>
+            </div>
+            <h2>Masala Chai Base</h2>
+            <p>Enough for about 2 cups. Adjust sugar and spice depending on how strong you like it.</p>
+          </div>
+
+          <div class="recipe-body">
+            <div class="ingredients-grid">
+              <div class="ingredient-group">
+                <h3>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14v3a7 7 0 0 1-14 0V8Z" /><path d="M19 9h1.5a2 2 0 0 1 0 4H19" /><path d="M7 20h10" /></svg>
+                  Tea base
+                </h3>
+                <ul>
+                  <li>1 heaping tbsp Assam CTC black tea</li>
+                  <li>1 to 2 tsp sugar, optional</li>
+                </ul>
+              </div>
+
+              <div class="ingredient-group">
+                <h3>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c2.5 3 5 5.5 5 9a5 5 0 0 1-10 0c0-3.5 2.5-6 5-9Z" /><path d="M9.5 13.5c1 .8 2.1 1.2 3.2 1.1" /></svg>
+                  Spices
+                </h3>
+                <ul>
+                  <li>2 to 3 cardamom pods, crushed</li>
+                  <li>2 cloves</li>
+                  <li>1 small cinnamon stick</li>
+                  <li>2 peppercorns</li>
+                  <li>Small pinch ginger powder or fresh ginger</li>
+                </ul>
+              </div>
+
+              <div class="ingredient-group">
+                <h3>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8" /><path d="M9 3v5l-2 3v7a3 3 0 0 0 3 3h4a3 3 0 0 0 3-3v-7l-2-3V3" /><path d="M8 14h8" /></svg>
+                  Liquid
+                </h3>
+                <ul>
+                  <li>1 cup water</li>
+                  <li>1 cup whole milk or creamy oat milk</li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="tip">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18" /><path d="M5 10c4 0 7-3 7-7" /><path d="M19 10c-4 0-7-3-7-7" /><path d="M5 14c4 0 7 3 7 7" /><path d="M19 14c-4 0-7 3-7 7" /></svg>
+              <span><strong>Pro tip:</strong> Toast the spices for 20 to 30 seconds before adding water. It wakes up the aroma fast.</span>
+            </p>
+
+            <div class="steps-grid">
+              <article class="card steps-card quick">
+                <div class="step-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" /><path d="M12 7v5l3 2" /></svg>
+                </div>
+                <h3>Quick Chai Break</h3>
+                <p>Best when you want the cup without making a whole ritual out of it.</p>
+
+                <ol class="steps-list">
+                  <li><span>1</span><div>Bring water, tea, sugar, and spices to a low boil for 2 to 3 minutes.</div></li>
+                  <li><span>2</span><div>Add milk and return to a gentle boil.</div></li>
+                  <li><span>3</span><div>Simmer 3 to 5 minutes until the color deepens.</div></li>
+                  <li><span>4</span><div>Strain into cups and drink it hot.</div></li>
+                </ol>
+              </article>
+
+              <article class="card steps-card street">
+                <div class="step-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M7 20h10" /><path d="M8 10h8v4a4 4 0 0 1-8 0v-4Z" /><path d="M16 11h1.5a2 2 0 0 1 0 4H16" /><path d="M9 6c0-1 1-1.2 1-2.2S9 2.6 9 2" /><path d="M13 6c0-1 1-1.2 1-2.2S13 2.6 13 2" /></svg>
+                </div>
+                <h3>Street Chai Break</h3>
+                <p>Best when you want it stronger, creamier, and closer to what you tasted with Jim.</p>
+
+                <ol class="steps-list">
+                  <li><span>1</span><div>Boil water, tea, sugar, and spices for 4 to 5 minutes.</div></li>
+                  <li><span>2</span><div>Add milk and let it rise. Lower heat before it spills.</div></li>
+                  <li><span>3</span><div>Repeat the rise 2 or 3 times to thicken the flavor.</div></li>
+                  <li><span>4</span><div>Simmer 2 more minutes, strain, and serve.</div></li>
+                </ol>
+              </article>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section review-section" id="review">
+      <div class="wrap">
+        <article class="card review-card">
+          <div>
+            <p class="eyebrow">One small favor</p>
+            <h2>Enjoyed the walk with Jim?</h2>
+            <p>Reviews help small local tours get found by the next curious traveler. If the walk helped you taste Queens in a new way, a quick review would mean a ton.</p>
+            <p class="review-note">No pressure. Just honest feedback from your experience.</p>
+          </div>
+
+          <div class="review-buttons">
+            <a class="btn" href="https://share.google/KQzzjGNJZ3UmKCYJe" target="_blank" rel="noopener noreferrer">
+              Leave a Google Review
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
+            </a>
+
+            <a class="btn btn-outline" href="https://www.tripadvisor.com/AttractionProductReview-g47960-d33965400-Jackson_Heights_Walking_Tour_Street_Eats_with_a_Queens_Local-Jackson_Heights_Queens.html" target="_blank" rel="noopener noreferrer">
+              Review on TripAdvisor
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
+            </a>
+
+            <a class="btn btn-outline" href="https://www.airbnb.com/experiences/6739540" target="_blank" rel="noopener noreferrer">
+              Review on Airbnb
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="video">
+      <div class="wrap">
+        <article class="card video-card">
+          <div class="video-copy">
+            <p class="eyebrow">Watch Jim make it</p>
+            <h2>See the Instagram version.</h2>
+            <p>Jim already has a short video showing how he makes the chai. Watch it on Instagram, then come back to the recipe when you make your own cup.</p>
+
+            <div class="hero-actions">
+              <a class="btn btn-light" href="https://www.instagram.com/reel/DT1ODJLkVsZ/" target="_blank" rel="noopener noreferrer">
+                Watch Jim Make Chai
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="video-box">
+            <img src="assets/images/chai-bhai-chai-example.webp" alt="Jim making masala chai">
+            <a class="play" href="https://www.instagram.com/reel/DT1ODJLkVsZ/" target="_blank" rel="noopener noreferrer" aria-label="Watch Jim make chai on Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6v12l10-6-10-6Z" /></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h2>Chai Bhai Walking Tours</h2>
+        <p>Taste the neighborhood. Hear its stories.</p>
+        <p>Private Jackson Heights food walks and neighborhood experiences in Queens, New York City.</p>
+      </div>
+
+      <div>
+        <h3>Book or contact Jim</h3>
+        <p><a href="index.html">Back to Chai Bhai Tours</a></p>
+        <p><a href="mailto:info@chaibhai.net">info@chaibhai.net</a></p>
+        <p><a href="tel:+19295449342">(929) 544-9342</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sticky-review" aria-label="Sticky review button">
+    <div>
+      <strong>Enjoyed the tour?</strong>
+      <span>Reviews help Jim get found.</span>
+    </div>
+    <a class="btn" href="https://share.google/KQzzjGNJZ3UmKCYJe" target="_blank" rel="noopener noreferrer">Review</a>
   </div>
-
-  <script>
-    const chaiSlides = Array.from(document.querySelectorAll(".chb-pdp-slide"));
-    const chaiDots = Array.from(document.querySelectorAll(".chb-pdp-dot"));
-    const chaiPrev = document.querySelector("[data-chai-prev]");
-    const chaiNext = document.querySelector("[data-chai-next]");
-    let chaiCurrentSlide = 0;
-
-    function setChaiSlide(index) {
-      if (!chaiSlides.length) return;
-      chaiCurrentSlide = (index + chaiSlides.length) % chaiSlides.length;
-
-      chaiSlides.forEach((slide, slideIndex) => {
-        slide.classList.toggle("is-active", slideIndex === chaiCurrentSlide);
-      });
-
-      chaiDots.forEach((dot, dotIndex) => {
-        dot.classList.toggle("is-active", dotIndex === chaiCurrentSlide);
-      });
-    }
-
-    chaiPrev?.addEventListener("click", () => setChaiSlide(chaiCurrentSlide - 1));
-    chaiNext?.addEventListener("click", () => setChaiSlide(chaiCurrentSlide + 1));
-    chaiDots.forEach((dot) => {
-      dot.addEventListener("click", () => setChaiSlide(Number(dot.dataset.chaiDot)));
-    });
-
-    const chaiMobileBar = document.querySelector(".chb-pdp-mobile-bar");
-
-    function updateChaiMobileBar() {
-      if (!chaiMobileBar) return;
-      const isMobile = window.matchMedia("(max-width: 760px)").matches;
-      const shouldShow = isMobile && window.scrollY > 430;
-      chaiMobileBar.classList.toggle("is-visible", shouldShow);
-    }
-
-    updateChaiMobileBar();
-    window.addEventListener("scroll", updateChaiMobileBar, { passive: true });
-    window.addEventListener("resize", updateChaiMobileBar);
-  </script>
 </body>
 </html>
