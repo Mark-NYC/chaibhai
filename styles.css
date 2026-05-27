@@ -2608,3 +2608,46 @@ div[id*="cal"] iframe {
     padding-inline: 15px;
   }
 }
+
+/* Mobile hero text + proof spacing fix */
+@media (max-width: 760px) {
+  .chb-hero {
+    padding-top: 42px;
+  }
+
+  .chb-lead-mobile {
+    display: block;
+    margin: 14px 0 22px;
+    max-width: 100%;
+    font-size: 1.42rem;
+    line-height: 1.34;
+  }
+
+  .chb-hero-proof {
+    display: flex;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 0 28px;
+    clear: both;
+  }
+
+  .chb-hero-actions {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 430px) {
+  .chb-lead-mobile {
+    font-size: 1.36rem;
+    line-height: 1.34;
+  }
+
+  .chb-hero-proof {
+    padding: 8px 10px;
+  }
+
+  .chb-proof-copy {
+    font-size: 0.78rem;
+    line-height: 1.18;
+  }
+}
