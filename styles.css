@@ -531,38 +531,36 @@ a {
   overflow: hidden;
   margin: 0;
   border-radius: 30px;
-  background:
-    linear-gradient(180deg, rgba(37, 22, 14, 0.04) 24%, rgba(37, 22, 14, 0.66)),
-    var(--mosaic-image, url("./assets/images/chaibhaitour-mobile.webp")) center / cover no-repeat;
   box-shadow: 0 20px 46px rgba(41, 24, 12, 0.12);
   border: 1px solid rgba(77, 47, 26, 0.1);
 }
 
-.chb-mosaic-item--taste {
-  --mosaic-image: url("./assets/images/taste-spots-you-would-never-find-alone.webp");
-  grid-row: span 2;
-  background-position: center center;
+.chb-mosaic-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(37, 22, 14, 0.04) 24%, rgba(37, 22, 14, 0.66));
+  pointer-events: none;
 }
 
-.chb-mosaic-item--chai {
-  --mosaic-image: url("./assets/images/slow-down-with-a-proper-cup-of-chai.webp");
-  background-position: 45% center;
+.chb-mosaic-item img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chb-mosaic-item--taste {
+  grid-row: span 2;
+}
+
+.chb-mosaic-item--chai img {
+  object-position: 45% center;
 }
 
 .chb-mosaic-item--stories {
-  --mosaic-image: url("./assets/images/come-home-with-stories-not-just-photos.webp");
   grid-column: span 2;
-  background-position: center center;
-}
-
-.chb-mosaic-item--local-eyes {
-  --mosaic-image: url("./assets/images/see-the-neighborhood-through-local-eyes.webp");
-  background-position: center center;
-}
-
-.chb-mosaic-item--energy {
-  --mosaic-image: url("./assets/images/feel-the-energy-of-jackson-heights.webp");
-  background-position: center center;
 }
 
 .chb-mosaic-caption {
@@ -576,6 +574,7 @@ a {
   color: #fffaf1;
   font-weight: 900;
   backdrop-filter: blur(8px);
+  z-index: 1;
 }
 
 .chb-mosaic-dots {
